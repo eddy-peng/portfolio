@@ -6,6 +6,12 @@ html, a {
     text-decoration: none;
 }
 
+/* remove unneeded padding and margin on body */
+body {
+    padding:0;
+    margin:0;
+}
+
 /* nav positioning */
 nav {
     text-align: right;
@@ -24,8 +30,8 @@ nav > a {
     margin-right: 20px;
 }
 
-/* spacing in project header */
-.firstImpression {
+/* spacing in h1 headers on project and about pages */
+.firstImpression, .aBitAboutMyself {
     padding: 20px 0px 0px 15px;
 }
 
@@ -84,4 +90,28 @@ button:hover {
     color: white;
     border-color: white;
     background-color: #303030;
+}
+
+/* about paragraph spacing */
+.aboutParagraphs {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* about paragraphs & value paragraphs text spacing */
+.aboutParagraphs > p, .values > p {
+    margin-bottom: 10px;
+    line-height: 2;
+}
+
+/* values div formatting */
+.values {
+    margin-top: 30px;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+
+/* italic on values */
+.values > h2 {
+    font-style: italic;
 }
