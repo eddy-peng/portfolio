@@ -1,0 +1,87 @@
+
+/* font style/color for whole site */
+html, a {
+    font-family: 'Montserrat', sans-serif, 'Times New Roman';
+    color: #303030;
+    text-decoration: none;
+}
+
+/* nav positioning */
+nav {
+    text-align: right;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+/* footer content spacing */
+footer > a {
+    padding: 20px;
+}
+
+/* nav links styling/spacing */
+nav > a {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/* spacing in project header */
+.firstImpression {
+    padding: 20px 0px 0px 15px;
+}
+
+/* font size of first header line & footer text & nav text */
+.firstImpression > h1, footer > p, nav > a {
+    font-size: 20px;
+}
+
+/* footer content spacing */
+footer > a {
+    padding: 20px;
+}
+
+/* centers all case study buttons & footer content */
+.caseStudySection, footer {
+    text-align: center;
+}
+
+/* changes sizing & spacing of case study buttons & my image */
+.caseStudy, .selfPhoto > img {
+    width: 95%;
+    margin-top: 10px;
+}
+
+.selfPhoto {
+    text-align: center;
+}
+
+/* case study buttons and hyperlinks hover effect */
+a:hover {
+    opacity: 50%;
+}
+
+/* projects/about navigation active link */
+.active {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+/* button style */
+button {
+    background-color: white;
+    border-color: #303030;
+    color: #303030;
+    padding: 20px 150px 20px 150px;
+    font-size: 20px;
+}
+
+/* cancel a tag effect on button */
+.selfPhoto > a:hover {
+    opacity: 100%;
+}
+
+/* button on hover */
+button:hover {
+    color: white;
+    border-color: white;
+    background-color: #303030;
+}
