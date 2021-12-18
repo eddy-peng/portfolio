@@ -10,22 +10,11 @@ html, a {
     text-decoration: none;
 }
 
-/* remove unneeded padding and margin on body */
-body {
-    padding: 0;
-    margin: 0;
-}
-
 /* nav positioning */
 nav {
     text-align: center;
     padding-bottom: 30px;
     padding-top: 10px;
-}
-
-/* footer content spacing */
-footer > a {
-    padding: 20px;
 }
 
 /* nav links styling/spacing */
@@ -40,7 +29,7 @@ nav > a {
 }
 
 /* font size of first header line & footer text */
-.firstImpression > h1, footer > p {
+.firstImpression > h1, .theFooter > p {
     font-size: 20px;
 }
 
@@ -50,12 +39,17 @@ nav > a {
 }
 
 /* footer content spacing */
-footer > a {
+.theFooter > a {
     padding: 20px;
 }
 
-/* centers all case study buttons & footer content */
-.caseStudySection, footer {
+/* space before footer */
+footer {
+    margin-top: 20px;
+}
+
+/* centers all case study buttons & footer content & photo */
+.caseStudySection, footer, .selfPhoto {
     text-align: center;
 }
 
@@ -63,10 +57,6 @@ footer > a {
 .caseStudy, .selfPhoto > img {
     width: 95%;
     margin-top: 10px;
-}
-
-.selfPhoto {
-    text-align: center;
 }
 
 /* case study buttons and hyperlinks hover effect */
@@ -86,13 +76,8 @@ button {
     background-color: white;
     border-color: #303030;
     color: #303030;
-    padding: 20px 100px 20px 100px;
+    padding: 20px 31% 20px 31%;
     font-size: 20px;
-}
-
-/* cancel a tag effect on button */
-.selfPhoto > a:hover {
-    opacity: 100%;
 }
 
 /* button on hover */
@@ -100,6 +85,11 @@ button:hover {
     color: white;
     border-color: white;
     background-color: #303030;
+}
+
+/* cancel a tag effect on button */
+.resumeButton > a:hover {
+    opacity: 100%;
 }
 
 /* about paragraph spacing */
@@ -117,8 +107,12 @@ button:hover {
 /* values div formatting */
 .values {
     margin-top: 30px;
-    background-color: rgb(240, 240, 240);
     padding: 20px;
+}
+
+/* spacing for about page headers */
+.values > h1, .aBitAboutMyself {
+    margin-bottom: 30px;
 }
 
 /* italic on values */
@@ -134,16 +128,20 @@ button:hover {
     nav {
         text-align: right;
     }
-    button {
-        padding: 20px 200px 20px 200px;
-    }
 }
 
 /* for medium screens */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+    html {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .aboutParagraphs {
         width: 50%;
         float: left;
+    }
+    .aboutParagraphs > p {
+        font-size: 15px;
     }
     .selfPhoto {
         width: 50%;
@@ -151,14 +149,12 @@ button:hover {
         margin-top: -70px;
         margin-bottom: 100px;
     }
-    .values {
-        background-color: white;
-    }
+}
+
+/* for larger screens */
+@media (min-width: 992px) {
     .aboutParagraphs > p {
-        font-size: 17px;
-    }
-    button {
-        padding: 20px 130px 20px 130px;
+        font-size: 18px;
     }
     html {
         margin-left: 50px;
@@ -167,12 +163,19 @@ button:hover {
     .firstImpression {
         padding-left: 20px;
     }
-    footer > p, footer > a {
+    .theFooter > p, .theFooter > a {
         font-size: 20px;
+    }
+    .resumeButton {
+        width: 50%;
+        float: right;
+    }
+    button {
+        padding: 20px 20px 20px 20px;
     }
 }
 
-/* for larger screens */
+/* for even larger screens */
 @media (min-width: 1200px) {
     html {
         margin-left: 150px;
@@ -183,14 +186,5 @@ button:hover {
     }
     .firstImpression > h2 {
         font-size: 40px;
-    }
-    .aboutParagraphs > p {
-        font-size: 22px;
-    }
-    button {
-        padding: 30px 175px 30px 175px;
-    }
-    footer > p, footer > a {
-        font-size: 25px;
     }
 }
