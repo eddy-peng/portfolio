@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Eddy Peng">
+        <meta name="description" content="zoom feature addition">
+        <title>Projects</title>
+
+        <!-- load style sheet -->
+        <link rel="stylesheet" href="style.css">  
+
+        <!-- load icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+
+        <!-- download fonts (Montserrat Regular/italic light 300) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- this is the navigation -->
+        <nav class="navOnCaseStudies">
+            <a href="index.html" class="active">Projects</a>
+            <a href="about.html">About</a>
+            <a href="" target="_blank">Resume</a>
+            <a href="mailto:lodt548@gmail.com" class="fa fa-envelope-o fa-lg"></a>
+            <a href="" target="_blank" class="fa fa-linkedin fa-lg"></a>  
+        </nav>
+
+        <main>
+            <!-- title section -->
+            <img src="img/zoom/zoomIntro.png" alt="title slide of zoom case study" class="imageSize" />
+
+            <!-- clarification -->
+            <h1 class="clarify">I am not associated with Zoom in any way.</h1>
+
+            <!-- context section -->
+            <table>
+                <tr>
+                    <td>Project Type</td>
+                    <td>Concept Project</td>
+                </tr>
+                <tr>
+                    <td>Timeline</td>
+                    <td>2021 (2 weeks)</td>
+                </tr>
+                <tr>
+                    <td>Device</td>
+                    <td>Desktop</td>
+                </tr>
+                <tr>
+                    <td>Final Product</td>
+                    <td>Prototype</td>
+                </tr>
+            </table>
+
+            <!-- problem section -->
+            <div class="caseSection">
+                <h1>My Dilemma.</h1>
+                <p>
+                    Recently, I went to a drop-in office hour to get help from a TA (Teaching Assistant). I remember being in the waiting room for a long time. Although other drop-in office hours were open, I was hesitant to leave the waiting room.
+                </p>
+                <p>
+                    I was hesitant to leave because I convinced myself that I was near the front of the line. As such, if I wait a bit longer, I would likely be admitted. On the other hand, If I left, I would have wasted time. Plus, there was no guarantee the other TA waiting rooms were not crowded, which meant I have to spend more time waiting.
+                </p>
+                <h2>
+                    “How might I make the waiting room more tolerable during crowded drop-in hours?”
+                </h2>
+            </div>
+
+            <!-- ux process -->
+            <div class="caseSection">
+                <h1>The Process.</h1>
+                <img src="img/zoom/zoomProcess.png" alt="my user experience process for this project" class="imageSize" />
+            </div>
+
+            <!-- understand -->
+            <div class="caseSection">
+                <h1>Why the current waiting room is bad.</h1>
+                <img src="img/zoom/original.png" alt="current zoom waiting room" class="imageSize" />
+                <p>
+                    How many people before me? How long will I have to wait? These questions do not get answered, so I am stuck in the waiting room hesitant to leave.
+                </p>
+            </div>
+
+            <!-- user research -->
+            <div class="caseSection">
+                <h1>17 others agree with me.</h1>
+                <p>
+                    I interviewed 17 classmates and other people who partake in crowded drop-in office hours/meetings. I then summarized the results.
+                </p>
+                <ol>
+                    <li>
+                        The waiting room adds pressure to students whose stress levels are already high. By spending a lot of time waiting, students fear they will never get the help they need to succeed in class.
+                    </li>
+                    <li>
+                        Students want to make decisions (stay and wait or go to another room). However, the current waiting room makes these decisions difficult because students lack the necessary information.
+                    </li>
+                </ol>
+            </div>
+
+            <!-- research of zoom -->
+            <div class="caseSection">
+                <h1>Checking for existing solutions.</h1>
+                <p>
+                    Before I started designing, I wanted to be sure there was no existing solution that would give drop-in office hour attendees the information to make decisions in the waiting room.
+                </p>
+                <img src="img/zoom/researchProgress.png" alt="doing research on the zoom software" class="imageSize"/>
+                <p>
+                    However, after extensive exploration of the internet and the software itself, I came to the conclusion that there were no settings or hidden features that Zoom has that would address the problem.
+                </p>
+            </div>
+
+            <!-- proposed solution -->
+            <div class="caseSection">
+                <h1>Proposed Solution.</h1>
+                <p>
+                    Modify the participant's view of the waiting room to show the number of people in the waiting room and the participant's place in the queue while keeping all participants anonymous.
+                </p>
+            </div>
+
+            <!-- sketching -->
+            <div class="caseSection">
+                <h1>Sketching.</h1>
+                <img src="img/zoom/sketch.png" alt="sketches of a better zoom waiting room" class="imageSize"/>
+            </div>
+
+            <!-- wireframe -->
+            <div class="caseSection">
+                <h1>Wireframing.</h1>
+                <div class="wireframeScreens">
+                    <img src="img/zoom/wireframe1.png" alt="wireframe of new zoom waiting room tab one" class="imageSize"/>
+                    <p>
+                        I chose to use a toggle bar to separate the meeting messages and participants because during my exploration of the Zoom software, I noticed that the toggle bar was frequently used to keep two different functions separated.
+                    </p>
+                </div>
+                <div class="wireframeScreens">
+                    <img src="img/zoom/wireframe2.png" alt="wireframe of new zoom waiting room tab two" class="imageSize"/>
+                    <p>
+                        New waiting room concept uses the toggle bar to display the number of participants in the waiting room. Additionally, there is also a visual representation of the queue and a participant's place in line. Anonymity is also maintained.
+                    </p>
+                </div>
+            </div>
+
+            <!-- prototype -->
+            <div class="caseSection">
+                <h1>Prototyping.</h1>
+                <div class="prototypeScreens">
+                    <img src="img/zoom/prototype1.png" alt="prototype of new zoom waiting room tab one" class="imageSize"/>
+                    <p>Improved Zoom waiting room meeting messages tab</p>
+                </div>
+                <div class="prototypeScreens">
+                    <img src="img/zoom/prototype2.png" alt="prototype of new zoom waiting room tab one" class="imageSize"/>
+                    <p>Improved Zoom waiting room participants tab</p>
+                </div>
+            </div>
+
+            <!-- user feedback -->
+            <div class="caseSection">
+                <h1>User Feedback.</h1>
+                <p>
+                    So, what did other students think about my modifications to Zoom’s waiting room?
+                </p>
+                <br />
+                <p>
+                    “Definitely solves my anxiety.”
+                </p>
+                <p>
+                    “This is more than enough and makes the waiting room much more endurable.”
+                </p>
+                <p>
+                    “Now that it (the waiting room) is usable in drop-in meetings, perhaps hosts would use it rather than trying to avoid it.”
+                </p>
+                <p>
+                    “This is great! I can finally feel good about leaving a waiting room.”
+                </p>
+            </div>
+
+            <!-- takeaways -->
+            <div class="caseSection">
+                <h1>Takeaways.</h1>
+                <p>
+                    Before designing a solution for a product, check for an existing solution. Although other people and I have the same problem, we may have overlooked hidden settings that offer a solution. If that were true, my priority would be to redesign that setting to be more noticeable.
+                </p>
+                <p>
+                    Even though my research of the Zoom app showed no existing solution, knowing more about the product helped me create a solution consistent with existing design choices (such as usage of the toggle bar).
+                </p>
+            </div>
+
+            <!-- promote next project -->
+            <div class="promoteNext">
+                <hr />
+                <h1>Next up:</h1>
+                <a href=""><img class="caseStudy" src="img/dynamo.png" alt="big clickable button to the case study: dynamo"/></a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Feel free to contact me!</p>
+            <a href="mailto:lodt548@gmail.com">Email</a>
+            <a href="" target="_blank">Linkedin</a>
+        </footer>
+    </body>
+
+</html>

@@ -95,6 +95,65 @@ footer > a {
     text-underline-offset: 5px;
 }
 
+
+/* zoom case study */
+
+.clarify {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #FBF8E5;
+    border: 1px solid #F7EACF;
+    color: #856D42;
+}
+
+.imageSize {
+    width: 100%;
+}
+
+table {
+    border-spacing: 40px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+tr td:last-of-type {
+    padding-left: 150px;
+}
+
+td {
+    padding: 20px;
+}
+
+.caseSection, .promoteNext {
+    margin: 20px;
+}
+
+.caseSection > h1 {
+    color: #448CF7;
+}
+
+.caseSection > p, .caseSection > ol > li {
+    line-height: 1.5;
+}
+
+.caseSection, .caseSection > ol > li, .wireframeScreens, .prototypeScreens {
+    margin-top: 50px;
+}
+
+.promoteNext {
+    margin-bottom: 50px;
+}
+
+.prototypeScreens > p {
+    text-align: center;
+    opacity: 50%;
+}
+
 /* for small screens */
 @media (min-width: 600px) {
     nav {
