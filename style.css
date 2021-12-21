@@ -126,7 +126,8 @@ tr td:last-of-type {
 }
 
 td {
-    padding: 20px;
+    padding: 10px;
+    font-size: 12px;
 }
 
 .caseSection, .promoteNext {
@@ -147,6 +148,7 @@ td {
 
 .promoteNext {
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .prototypeScreens > p {
@@ -193,6 +195,12 @@ td {
     footer > a {
         font-size: 20px;
     }
+
+    /* zoom case study */
+    td {
+        padding: 15px;
+        font-size: 15px;
+    }
 }
 
 /* for large screens */
@@ -220,5 +228,16 @@ td {
     }
     .firstImpression > h2 {
         font-size: 40px;
+    }
+
+    /* zoom case study */
+    td {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .caseSection, .promoteNext {
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-bottom: 50px;
     }
 }
