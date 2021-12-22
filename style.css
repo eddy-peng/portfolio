@@ -9,6 +9,11 @@ html, a {
     text-decoration: none;
 }
 
+body {
+    padding:0;
+    margin:0;
+}
+
 a:hover {
     opacity: 50%;
     font-style: italic;
@@ -176,7 +181,6 @@ td {
     font-size: 12px;
 }
 
-
 /* 
 
 css for case studies
@@ -218,10 +222,6 @@ tr td:last-of-type is for spacing of the context "answers"
         float: left;
         margin-top: -70px;
         margin-bottom: 100px;
-    }
-    footer {
-        display: flex;
-        margin-left: 25%;
     }
     footer > a {
         font-size: 16px;
@@ -291,7 +291,7 @@ tr td:last-of-type is for spacing of the context "answers"
 
 /* for even larger screens */
 @media (min-width: 1200px) {
-    .notCaseStudies {
+    html {
         margin-left: 150px;
         margin-right: 150px;
     }
@@ -311,9 +311,5 @@ tr td:last-of-type is for spacing of the context "answers"
         margin-left: 200px;
         margin-right: 200px;
         margin-bottom: 50px;
-    }
-    .caseSection > h1, .caseSection > h2, .caseSection > p, .caseSection > ol > li {
-        margin-left: 150px;
-        margin-right: 150px;
     }
 }
