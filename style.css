@@ -157,19 +157,19 @@ td {
     font-size: 12px;
 }
 
-.caseSection, .promoteNext {
+.zoomCaseSection, .promoteNext {
     margin: 20px;
 }
 
-.caseSection > h1 {
+.zoomCaseSection > h1 {
     color: #448CF7;
 }
 
-.caseSection {
+.zoomCaseSection {
     line-height: 1.5;
 }
 
-.caseSection, .caseSection > ol > li, .wireframeScreens, .prototypeScreens {
+.zoomCaseSection, .zoomCaseSection > ol > li, .wireframeScreens, .prototypeScreens {
     margin-top: 50px;
 }
 
@@ -192,7 +192,7 @@ css for case studies
 .imageSize controls size of all images
 table | tr | td is for the context table
 tr td:last-of-type is for spacing of the context "answers"
-.caseSection are all the different sections of the case study
+.zoomCaseSection or .[insert case study name here]CaseSection are all the different sections of the case study
 .promoteNext is for the section at the end that introduces the next case study
 .wireframeScreens and .prototypeScreens is for more spacing of the screenshots
 */
@@ -241,7 +241,7 @@ tr td:last-of-type is for spacing of the context "answers"
     .prototypeScreens > p {
         font-size: 16px;
     }
-    .caseSection {
+    .zoomCaseSection {
         line-height: 2;
     }
 }
@@ -273,7 +273,7 @@ tr td:last-of-type is for spacing of the context "answers"
 
     nav label { 
       display: inline-block; 
-      color: #303030;
+      color: #00b9fb;
       font-style: normal;
       font-size: 2em;
       padding: 10px;
@@ -310,7 +310,7 @@ tr td:last-of-type is for spacing of the context "answers"
         padding: 20px;
         font-size: 20px;
     }
-    .caseSection, .promoteNext {
+    .zoomCaseSection, .promoteNext {
         margin-left: 200px;
         margin-right: 200px;
         margin-bottom: 50px;
