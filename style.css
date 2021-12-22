@@ -14,7 +14,7 @@ a:hover {
     font-style: italic;
 }
 
-/* navigation rip mobile first approach */
+/* making navigation work on desktop rip mobile first approach */
 
 nav > a > h1 {
     margin: 0;
@@ -157,7 +157,7 @@ td {
     color: #448CF7;
 }
 
-.caseSection > p, .caseSection > ol > li, .wireframeScreens > p, .caseSection > h2 {
+.caseSection {
     line-height: 1.5;
 }
 
@@ -175,6 +175,20 @@ td {
     opacity: 50%;
     font-size: 12px;
 }
+
+
+/* 
+
+css for case studies
+
+.clarify is for the warning message
+.imageSize controls size of all images
+table | tr | td is for the context table
+tr td:last-of-type is for spacing of the context "answers"
+.caseSection are all the different sections of the case study
+.promoteNext is for the section at the end that introduces the next case study
+.wireframeScreens and .prototypeScreens is for more spacing of the screenshots
+*/
 
 /* for small screens */
 @media (min-width: 600px) {
@@ -224,7 +238,7 @@ td {
     .prototypeScreens > p {
         font-size: 16px;
     }
-    .caseSection > p, .caseSection > ol > li, .wireframeScreens > p, .caseSection > h2 {
+    .caseSection {
         line-height: 2;
     }
 }
@@ -243,8 +257,7 @@ td {
     }
 }
 
-/* making the hamburger menu work on mobile.
-rip mobile first approach might fix later if I am in the mood */
+/* making the hamburger menu work on mobile. rip mobile first approach */
 @media (max-width: 992px) {
 
     .navItems a {
@@ -278,7 +291,7 @@ rip mobile first approach might fix later if I am in the mood */
 
 /* for even larger screens */
 @media (min-width: 1200px) {
-    html {
+    .notCaseStudies {
         margin-left: 150px;
         margin-right: 150px;
     }
@@ -298,5 +311,9 @@ rip mobile first approach might fix later if I am in the mood */
         margin-left: 200px;
         margin-right: 200px;
         margin-bottom: 50px;
+    }
+    .caseSection > h1, .caseSection > h2, .caseSection > p, .caseSection > ol > li {
+        margin-left: 150px;
+        margin-right: 150px;
     }
 }
