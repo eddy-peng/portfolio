@@ -67,6 +67,12 @@ nav label, #hamburger {
     padding: 20px 0px 0px 15px;
 }
 
+/* changing text color to brand color */
+mark {
+    background-color: white;
+    color: #00b9fb;
+}
+
 /* font size secret change of project first line h1/h2 & footer p tags */
 .firstImpression > h1, .firstImpression > h2, footer > p {
     font-size: 20px;
@@ -107,10 +113,6 @@ nav label, #hamburger {
     margin-bottom: 30px;
 }
 
-.values > h2 {
-    color: #00b9fb;
-}
-
 /* footer stuff */
 footer {
     margin-top: 20px;
@@ -123,8 +125,9 @@ footer > a {
     text-decoration-color: #00b9fb;
 }
 
-/* zoom case study */
+/* universal case study elements */
 
+/* use if there is a warning */
 .clarify {
     font-size: 12px;
     text-align: center;
@@ -134,10 +137,12 @@ footer > a {
     color: #856D42;
 }
 
+/* controls all image sizes */
 .imageSize {
     width: 100%;
 }
 
+/* context table should be at the top of every case study */
 table {
     border-spacing: 40px;
     margin: 0 auto;
@@ -157,45 +162,44 @@ td {
     font-size: 12px;
 }
 
-.zoomCaseSection, .promoteNext {
+/* handles margins of all sections */
+.caseSection, .promoteNext {
     margin: 20px;
-}
-
-.zoomCaseSection > h1 {
-    color: #448CF7;
-}
-
-.zoomCaseSection {
     line-height: 1.5;
 }
 
-.zoomCaseSection, .zoomCaseSection > ol > li, .wireframeScreens, .prototypeScreens {
-    margin-top: 50px;
-}
-
+/* promotes next project */
 .promoteNext {
     margin-bottom: 50px;
     text-align: center;
 }
 
+/* handles vertical spacing of elements */
+.caseSection, .caseSection > ol > li, .wireframeScreens, .prototypeScreens {
+    margin-top: 50px;
+}
+
+/* for captions */
 .prototypeScreens > p {
     text-align: center;
     opacity: 50%;
     font-size: 12px;
 }
 
-/* 
+/* specific to zoom case study */
+.zoomHeaders {
+    color: #448CF7;
+}
 
-css for case studies
+/* specific to candy researcher case study */
+.researcherHeaders {
+    color: #E76773;
+}
 
-.clarify is for the warning message
-.imageSize controls size of all images
-table | tr | td is for the context table
-tr td:last-of-type is for spacing of the context "answers"
-.zoomCaseSection or .[insert case study name here]CaseSection are all the different sections of the case study
-.promoteNext is for the section at the end that introduces the next case study
-.wireframeScreens and .prototypeScreens is for more spacing of the screenshots
-*/
+/* specific to dynamo case study */
+.dynamoHeaders {
+    color: #4F5FAA;
+}
 
 /* for small screens */
 @media (min-width: 600px) {
@@ -230,7 +234,7 @@ tr td:last-of-type is for spacing of the context "answers"
         font-size: 16px;
     }
 
-    /* zoom case study */
+    /* universal case study elements */
     .clarify {
         font-size: 16px;
     }
@@ -238,11 +242,11 @@ tr td:last-of-type is for spacing of the context "answers"
         padding: 15px;
         font-size: 16px;
     }
+    .caseSection {
+        line-height: 2;
+    }
     .prototypeScreens > p {
         font-size: 16px;
-    }
-    .zoomCaseSection {
-        line-height: 2;
     }
 }
 
@@ -305,12 +309,12 @@ tr td:last-of-type is for spacing of the context "answers"
         font-size: 40px;
     }
 
-    /* zoom case study */
+    /* universal case study elements */
     td {
         padding: 20px;
         font-size: 20px;
     }
-    .zoomCaseSection, .promoteNext {
+    .caseSection, .promoteNext {
         margin-left: 200px;
         margin-right: 200px;
         margin-bottom: 50px;
