@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="style.css">  
 
         <!-- load icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- download fonts (Montserrat light (italic) 300 & Cookie) -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -236,6 +236,26 @@
             <a href="mailto:lodt548@gmail.com">Email</a>
             <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">Linkedin</a>
         </footer>
+
+        <!-- html and jQuery code for floating back to top button is written by Muhammad Asif -->
+        <!-- https://codeconvey.com/floating-back-to-top-button-html/ -->
+        <a href="javascript:" id="return-to-top"><i>↑</i></a>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script>
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 500) {
+                    $('#return-to-top').fadeIn(200);
+                } else {
+                    $('#return-to-top').fadeOut(200);
+                }
+            });
+            $('#return-to-top').click(function() {
+                $('body,html').animate({
+                    scrollTop : 0
+                }, 500);
+            });
+        </script>
+    
     </body>
 
 </html>
