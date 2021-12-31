@@ -19,7 +19,7 @@ a:hover {
     font-style: italic;
 }
 
-/* making navigation work on desktop rip mobile first approach */
+/* css code and modified from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ (by W.S. Toh) */
 
 nav > a > h1 {
     margin: 0;
