@@ -258,6 +258,7 @@ td {
     }
     .firstImpression {
         padding-left: 20px;
+        padding-right: 10px;
     }
     .aboutParagraphs > p {
         font-size: 20px;
