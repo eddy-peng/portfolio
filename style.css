@@ -26,7 +26,7 @@ nav > a > h1 {
     float: left;
     margin-left: 15px;
     font-family: 'Cookie', cursive;
-    color: #FFC600;
+    color: #ff4500;
 }
 
 nav {
@@ -44,7 +44,7 @@ nav {
 .active {
     text-decoration: underline;
     text-underline-offset: 10px;
-    text-decoration-color: #FFC600;
+    text-decoration-color: #ff4500;
 }
 
 .navItems a {
@@ -70,7 +70,7 @@ nav label, #hamburger {
 /* changing text color to brand color */
 mark {
     background-color: white;
-    color: #FFC600;
+    color: #ff4500;
 }
 
 /* font size secret change of project first line h1/h2 & footer p tags */
@@ -122,7 +122,7 @@ footer > a {
     padding: 20px;
     text-decoration: underline;
     text-underline-offset: 5px;
-    text-decoration-color: #FFC600;
+    text-decoration-color: #ff4500;
 }
 
 /* universal case study elements */
@@ -269,7 +269,7 @@ td {
         position: fixed;
         bottom: 20px;
         right: 20px;
-        background: #FFC600;
+        background: #ff4500;
         width: 50px;
         height: 50px;
         display: block;
@@ -317,7 +317,7 @@ td {
 
     nav label { 
       display: inline-block; 
-      color: #FFC600;
+      color: #ff4500;
       font-style: normal;
       font-size: 2em;
       padding: 10px;
