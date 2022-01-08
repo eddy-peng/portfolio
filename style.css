@@ -94,13 +94,13 @@ mark {
     padding-right: 15px;
 }
 
-.aboutParagraphs > p, .values > p {
+.aboutParagraphs > p, .values > p, .theQuestions > p {
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
 /* about page: my values & title line of about page */
-.values {
+.values, .theQuestions {
     margin-top: 30px;
     padding: 20px;
 }
@@ -111,6 +111,10 @@ mark {
 
 .values > h1, .aBitAboutMyself {
     margin-bottom: 30px;
+}
+
+.aBitAboutMyself, .theQuestions > h1, .values > h1 {
+    color: #42C0FB;
 }
 
 /* footer stuff */
@@ -255,6 +259,10 @@ td {
     .firstImpression {
         padding-left: 20px;
         padding-right: 10px;
+    }
+    .theQuestions, .values {
+        margin-left: 100px;
+        margin-right: 100px;
     }
     .aboutParagraphs > p {
         font-size: 20px;
