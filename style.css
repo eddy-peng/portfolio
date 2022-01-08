@@ -19,6 +19,14 @@ a:hover {
     font-style: italic;
 }
 
+.bigDisplay {
+    display: none;
+}
+
+.smallDisplay {
+    display: inline-block;
+}
+
 /* css code and modified from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ (by W.S. Toh) */
 
 nav > a > h1 {
@@ -216,6 +224,12 @@ td {
     html {
         margin-left: 20px;
         margin-right: 20px;
+    }
+    .bigDisplay {
+        display: inline-block;
+    }
+    .smallDisplay {
+        display: none;
     }
     .aboutParagraphs {
         width: 50%;
