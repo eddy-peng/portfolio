@@ -379,3 +379,23 @@ td {
         margin-bottom: 50px;
     }
 }
+
+/* more bigger screens */
+@media (min-width: 1600px) {
+    html {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+@media (min-width: 1800px) {
+    html {
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+}
+@media (min-width: 1920px) {
+    html {
+        margin-left: 450px;
+        margin-right: 450px;
+    }
+}
