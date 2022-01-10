@@ -75,6 +75,15 @@ nav label, #hamburger {
     padding: 20px 0px 0px 15px;
 }
 
+.firstImpression {
+    padding-right: 20px;
+}
+
+/* add spacing between title tagline */
+.firstImpression > h2 {
+    line-height: 30px;
+}
+
 /* changing text color to brand color */
 mark {
     background-color: white;
@@ -82,8 +91,13 @@ mark {
 }
 
 /* font size secret change of project first line h1/h2 & footer p tags */
-.firstImpression > h1, .firstImpression > h2, footer > p {
+.firstImpression > h2, footer > p {
     font-size: 20px;
+}
+
+.firstImpression > h1 {
+    padding-top: 30px;
+    font-size: 15px;
 }
 
 /* case study cards & my photo settings & footer centering */
@@ -217,6 +231,9 @@ td {
     nav > a {
         font-size: 20px;
     }
+    .firstImpression {
+        padding-right: 40px;
+    }
 }
 
 /* for medium screens */
@@ -230,6 +247,10 @@ td {
     }
     .smallDisplay {
         display: none;
+    }
+    .firstImpression > h2 {
+        font-size: 30px;
+        line-height: 50px;
     }
     .aboutParagraphs {
         width: 50%;
@@ -272,7 +293,7 @@ td {
     }
     .firstImpression {
         padding-left: 20px;
-        padding-right: 10px;
+        padding-right: 40px;
     }
     .theQuestions, .values {
         margin-left: 100px;
@@ -361,11 +382,15 @@ td {
         margin-left: 150px;
         margin-right: 150px;
     }
+    .firstImpression {
+        padding-right: 0px;
+    }
     .firstImpression > h1 {
         font-size: 20px;
     }
     .firstImpression > h2 {
-        font-size: 40px;
+        font-size: 35px;
+        line-height: 60px;
     }
 
     /* universal case study elements */
