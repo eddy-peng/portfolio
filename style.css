@@ -97,11 +97,49 @@ mark {
 
 .firstImpression > h1 {
     padding-top: 30px;
+}
+
+.firstImpression > h1 {
     font-size: 15px;
 }
 
-/* case study cards & my photo settings & footer centering */
-.caseStudySection, footer, .selfPhoto {
+/* more about me page stuff */
+.moreMeHead {
+    line-height: 1.5em;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.moreMeSection {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.moreMeSection > h1 {
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.moreMeSection > h2 {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.artCite {
+    opacity: 50%;
+    padding-bottom: 20px;
+}
+
+.moreMeSection > ul > li {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* case study cards & my photo settings & more about me section headers & footer centering */
+.caseStudySection, footer, .selfPhoto, .moreMeSection > h1, .moreMeSection > h2, .moreMeSection > h3, .shamelessPlug {
     text-align: center;
 }
 
@@ -116,7 +154,7 @@ mark {
     padding-right: 15px;
 }
 
-.aboutParagraphs > p, .values > p, .theQuestions > p {
+.aboutParagraphs > p, .values > p, .theQuestions > p, .moreMeSection > p {
     margin-bottom: 20px;
     line-height: 1.5;
 }
@@ -234,6 +272,10 @@ td {
     .firstImpression {
         padding-right: 40px;
     }
+    .moreMeSection > ul > li {
+        font-size: 30px;
+        line-height: 45px;
+    }
 }
 
 /* for medium screens */
@@ -267,6 +309,15 @@ td {
     }
     footer > a {
         font-size: 16px;
+    }
+    .moreMeSection > ul > li {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .moreMeHead {
+        font-size: 40px;
+        text-align: center;
+        padding-top: 100px;
     }
 
     /* universal case study elements */
@@ -346,7 +397,6 @@ td {
 
 /* making the hamburger menu work on mobile. rip mobile first approach */
 @media (max-width: 992px) {
-
     .navItems a {
       box-sizing: border-box;
       display: block;
@@ -354,7 +404,6 @@ td {
       border-bottom: 1px solid #303030;
       text-decoration: none;
     }
-
     nav label { 
       display: inline-block; 
       color: #42C0FB;
@@ -362,15 +411,12 @@ td {
       font-size: 2em;
       padding: 10px;
     }
-
     nav input:checked ~ .navItems {
         display: block;
     }
-
     .navItems {
         display: none;
     }
-
     nav > a > h1 {
         margin-top: 15px;
     }
@@ -398,9 +444,11 @@ td {
         padding: 20px;
         font-size: 20px;
     }
-    .caseSection, .promoteNext {
-        margin-left: 200px;
-        margin-right: 200px;
+
+    /* and more about me page too */
+    .caseSection, .promoteNext, .moreMeSection {
+        margin-left: 150px;
+        margin-right: 150px;
         margin-bottom: 50px;
     }
 }
