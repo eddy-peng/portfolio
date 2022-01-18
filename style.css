@@ -401,7 +401,6 @@ td {
       box-sizing: border-box;
       display: block;
       width: 100%;
-      border-bottom: 1px solid #303030;
       text-decoration: none;
     }
     nav label { 
