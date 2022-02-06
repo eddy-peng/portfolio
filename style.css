@@ -32,6 +32,25 @@ a:hover {
     display: inline-block;
 }
 
+/* context table stuff */
+.column {
+    float: left;
+    width: 25%;
+    padding-bottom: 50px;
+}
+
+.row {
+    padding-top: 100px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
 /* css code and modified from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ (by W.S. Toh) */
 
 nav > a > h1 {
@@ -211,22 +230,6 @@ footer > a {
     width: 100%;
 }
 
-/* context table should be at the top of every case study */
-table {
-    border-spacing: 40px;
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-
-tr td:last-of-type {
-    padding-left: 150px;
-}
-
-td {
-    padding: 10px;
-    font-size: 12px;
-}
-
 /* handles margins of all sections */
 .caseSection, .promoteNext {
     margin: 20px;
@@ -264,6 +267,13 @@ td {
 /* specific to dynamo case study */
 .dynamoHeaders {
     color: #4F5FAA;
+}
+
+/* context table stuff */
+@media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
 }
 
 /* for small screens */
@@ -327,10 +337,6 @@ td {
 
     /* universal case study elements */
     .clarify {
-        font-size: 16px;
-    }
-    td {
-        padding: 15px;
         font-size: 16px;
     }
     .caseSection {
@@ -443,13 +449,7 @@ td {
         line-height: 60px;
     }
 
-    /* universal case study elements */
-    td {
-        padding: 20px;
-        font-size: 20px;
-    }
-
-    /* and more about me page too */
+    /* universal case study elements and more about me page too */
     .caseSection, .promoteNext, .moreMeSection {
         margin-left: 150px;
         margin-right: 150px;
