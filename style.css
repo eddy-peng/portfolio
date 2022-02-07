@@ -4,7 +4,7 @@
 }
 
 html, a {
-    font-family: 'Montserrat', sans-serif, 'Times New Roman';
+    font-family: 'Montserrat', 'Times New Roman', Helvetica;
     color: #303030;
     text-decoration: none;
 }
