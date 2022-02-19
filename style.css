@@ -46,9 +46,13 @@ a:hover {
 }
 
 .row:after {
-content: "";
-display: table;
-clear: both;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sidenav {
+    display: none;
 }
 
 /* css code and modified from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ (by W.S. Toh) */
@@ -67,10 +71,7 @@ nav {
     padding-top: 10px;
     width: 100%;
     background: white;
-    position: sticky;
     top: 0;
-    z-index: 99;
-    border-bottom: 1px solid #ddd;
 }
 
 .active {
@@ -438,6 +439,10 @@ footer > a {
         margin-left: 150px;
         margin-right: 150px;
     }
+    nav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .firstImpression {
         padding-right: 0px;
     }
@@ -447,6 +452,25 @@ footer > a {
     .firstImpression > h2 {
         font-size: 35px;
         line-height: 60px;
+    }
+    /* sidebar */
+    .sidenav {
+        display: inline-block;
+        width: 160px;
+        position: fixed;
+        top: 30%; 
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    
+    /* The sidebar navigation menu links */
+    .sidenav a, .sidenav h1 {
+        padding: 5px 5px 5px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #303030;
+        display: block;
     }
 
     /* universal case study elements and more about me page too */
