@@ -56,7 +56,6 @@ a:hover {
 }
 
 /* css code and modified from https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/ (by W.S. Toh) */
-
 nav > a > h1 {
     margin: 0;
     float: left;
@@ -93,6 +92,46 @@ nav {
 nav label, #hamburger {
     display: none;
     cursor: pointer;
+}
+
+/* css code for floating back to top button is written by Muhammad Asif */
+/* https://codeconvey.com/floating-back-to-top-button-html/ */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #42C0FB;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: white;
+    margin: 0;
+    position: relative;
+    left: 10px;
+    top: -10px;
+    font-size: 50px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover i {
+    top: -15px;
 }
 
 /* padding for title lines */
@@ -169,7 +208,7 @@ mark {
 }
 
 .caseStudy, .selfPhoto > img {
-    width: 95%;
+    width: 95.5%;
     margin-top: 10px;
 }
 
@@ -364,46 +403,6 @@ footer > a {
     }
     .aboutParagraphs > p {
         font-size: 20px;
-    }
-
-    /* css code for floating back to top button is written by Muhammad Asif */
-    /* https://codeconvey.com/floating-back-to-top-button-html/ */
-    #return-to-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: #42C0FB;
-        width: 50px;
-        height: 50px;
-        display: block;
-        text-decoration: none;
-        -webkit-border-radius: 35px;
-        -moz-border-radius: 35px;
-        border-radius: 35px;
-        display: none;
-        -webkit-transition: all 0.3s linear;
-        -moz-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-    }
-
-    #return-to-top i {
-        color: white;
-        margin: 0;
-        position: relative;
-        left: 10px;
-        top: -10px;
-        font-size: 50px;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-    }
-
-    #return-to-top:hover i {
-        top: -15px;
     }
 }
 
