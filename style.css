@@ -61,7 +61,7 @@ nav > a > h1 {
     float: left;
     margin-left: 15px;
     font-family: 'Cookie', cursive;
-    color: #42C0FB;
+    color: #3B29FF;
 }
 
 nav {
@@ -76,7 +76,7 @@ nav {
 .active {
     text-decoration: underline;
     text-underline-offset: 10px;
-    text-decoration-color: #42C0FB;
+    text-decoration-color: #3B29FF;
 }
 
 .navItems a {
@@ -100,7 +100,7 @@ nav label, #hamburger {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #42C0FB;
+    background: #3B29FF;
     width: 50px;
     height: 50px;
     display: block;
@@ -151,11 +151,11 @@ nav label, #hamburger {
 /* changing text color to brand color */
 mark {
     background-color: white;
-    color: #42C0FB;
+    color: #3B29FF;
 }
 
-/* font size secret change of project first line h1/h2 & footer p tags */
-.firstImpression > h2, footer > p {
+/* font size secret change of project first line h1/h2 */
+.firstImpression > h2 {
     font-size: 20px;
 }
 
@@ -238,19 +238,32 @@ mark {
 }
 
 .aBitAboutMyself, .theQuestions > h1, .values > h1 {
-    color: #42C0FB;
+    color: #3B29FF;
 }
 
 /* footer stuff */
 footer {
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
-footer > a {
-    padding: 20px;
+.footerContain {
+    padding-bottom: 10px;
+}
+
+.footerContain > a {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 10px;
     text-decoration: underline;
     text-underline-offset: 5px;
-    text-decoration-color: #42C0FB;
+    text-decoration-color: #3B29FF;
+}
+
+.footerTitle {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 35px;
+    color: #3B29FF;
 }
 
 /* universal case study elements */
@@ -362,9 +375,6 @@ footer > a {
         margin-top: -70px;
         margin-bottom: 100px;
     }
-    footer > a {
-        font-size: 16px;
-    }
     .moreMeSection > ul > li {
         font-size: 35px;
         line-height: 50px;
@@ -373,6 +383,14 @@ footer > a {
         font-size: 40px;
         text-align: center;
         padding-top: 100px;
+    }
+    .footerContain > a {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 16px;
+    }
+    .footerTitle {
+        font-size: 45px;
     }
 
     /* universal case study elements */
@@ -416,7 +434,7 @@ footer > a {
     }
     nav label { 
       display: inline-block; 
-      color: #42C0FB;
+      color: #3B29FF;
       font-style: normal;
       font-size: 2em;
       padding: 10px;
