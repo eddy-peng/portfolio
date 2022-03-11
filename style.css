@@ -140,7 +140,9 @@ nav label, #hamburger {
 }
 
 .firstImpression {
-    padding-right: 20px;
+    margin-right: 20px;
+    padding-bottom: 50px;
+    padding-top: 30px;
 }
 
 /* add spacing between title tagline */
