@@ -214,6 +214,15 @@ mark {
     margin-top: 10px;
 }
 
+.dividerLine {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lastLine {
+    margin-top: 100px;
+}
+
 /* about page: paragraphs */
 .aboutParagraphs {
     padding-left: 15px;
@@ -359,6 +368,9 @@ footer {
     }
     .smallDisplay {
         display: none;
+    }
+    .smallMod {
+        width: 47.5%;
     }
     .firstImpression > h2 {
         font-size: 30px;
