@@ -333,6 +333,10 @@ footer {
     color: #4F5FAA;
 }
 
+.tunnelHeaders {
+    color: #000000;
+}
+
 /* context table stuff */
 @media (max-width: 600px) {
     .column {

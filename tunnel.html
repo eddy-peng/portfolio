@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Eddy Peng">
+        <meta name="description" content="zoom feature addition">
+        <title>Eddy Peng | Tunnel_vzn</title>
+        <link rel="shortcut icon" href="img/eddypengLogo.ico" type="image/x-icon">
+
+        <!-- load style sheet -->
+        <link rel="stylesheet" href="style.css">  
+
+        <!-- load icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- download fonts (Montserrat light (italic) 300 & Cookie) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- this is the navigation -->        
+        <nav>
+            <a href="index.html"><h1>Eddy Peng</h1></a>
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+
+            <div class="navItems">
+                <a href="index.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="https://drive.google.com/file/d/1gqwHx7DTF6TiXR-dTsU5EPDa6a08G0g1/view?usp=sharing" target="_blank">Resume</a>
+                <a href="mailto:lodt548@gmail.com" class="fa fa-envelope-o fa-lg"></a>
+                <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank" class="fa fa-linkedin fa-lg"></a>  
+            </div>
+        </nav>
+
+        <main>
+            <!-- title section -->
+            <img src="img/progress/tunnelvznIntro.png" alt="title slide of the tunnel_vzn case study" class="imageSize" />
+
+            <!-- context section -->
+            <div class="row">
+                <div class="column">
+                    <u>DURATION</u>
+                    <br/>
+                    Feb 2022 - Present
+                </div>
+                <div class="column">
+                    <u>PROJECT TYPE</u>
+                    <br/>
+                    Start-up
+                </div>
+                <div class="column">
+                    <u>TEAM SIZE</u>
+                    <br/>
+                    7 Members
+                </div>
+                <div class="column">
+                    <u>ROLE(S)</u>
+                    <br/>
+                    Founder
+                    <br />
+                    Design Lead
+                    <br />
+                    PM
+                </div>
+                <div class="column">
+                    <u>TASKS</u>
+                    <br/>
+                    Lead Meetings
+                    <br/>
+                    Prototyping
+                    <br/>
+                    Task Management
+                    <br />
+                    Branding
+                </div>
+            </div>
+
+            <!-- problem section -->
+            <div class="caseSection">
+                <h1 class="tunnelHeaders">What is Tunnel_vzn?</h1>
+                <p>
+                    Tunnel_vzn is a story-telling website that comforts demoralized University of Washington (UW) Students. 
+                    The website consists of case studies that provide UW Students an objective glimpse into social obstacles
+                    they and other students face daily. By providing new perspectives through story-telling, UW Students will 
+                    understand that they are not alone in their struggles and will feel empowered to walk forward in life.
+                </p>
+            </div>
+
+            <!-- project status -->
+            <div class="caseSection">
+                <h1 class="tunnelHeaders">Project status</h1>
+                <p>
+                    I am currently collaborating with UX designers, illustrators, and front-end developers on the onboarding and landing page.
+                </p>
+            </div>
+
+           
+        <footer>
+            <p class="footerTitle">Let's be friends! 👋</p>
+            <div class="footerContain">
+                <a href="index.html" class="active">Projects</a>
+                <a href="about.html">About</a>
+                <a href="https://drive.google.com/file/d/1gqwHx7DTF6TiXR-dTsU5EPDa6a08G0g1/view?usp=sharing" target="_blank">Resume</a>
+                <a href="mailto:lodt548@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">Linkedin</a>
+            </div>
+            <h6>Designed and coded by me :)</h6>
+        </footer>
+
+        <!-- html and jQuery code for floating back to top button is written by Muhammad Asif -->
+        <!-- https://codeconvey.com/floating-back-to-top-button-html/ -->
+        <a href="javascript:" id="return-to-top"><i>↑</i></a>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script>
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 500) {
+                    $('#return-to-top').fadeIn(200);
+                } else {
+                    $('#return-to-top').fadeOut(200);
+                }
+            });
+            $('#return-to-top').click(function() {
+                $('body,html').animate({
+                    scrollTop : 0
+                }, 500);
+            });
+        </script>
+    
+    </body>
+
+</html>
