@@ -337,6 +337,10 @@ footer {
     color: #000000;
 }
 
+.dailyHeaders {
+    color: #1864FF;
+}
+
 /* context table stuff */
 @media (max-width: 600px) {
     .column {
