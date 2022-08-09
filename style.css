@@ -1,7 +1,16 @@
 /* Applies to the whole page */
 body {
     font-family: 'Inter', sans-serif;
+    z-index: -99;
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, rgb(235, 235, 235) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(235, 235, 235) 1px, transparent 1px);
 }
+
+p, h1 {
+  color: #303030;
+} 
 
 .logo {
   padding-top: 0.5vh;
@@ -12,6 +21,7 @@ body {
 .navigation {
   border: 1px solid #303030;
   height: 7vh;
+  background: white;
 }
 
 *, *:before, *:after 
@@ -95,19 +105,30 @@ label ul {
   z-index: 200;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   opacity: 0;
   -webkit-transition: .25s 0s ease-in-out;
   transition: .25s 0s ease-in-out;
+  list-style-type: none;  
 }
 
 label a {
-  margin-bottom: 1em;
+  font-size: 5vh;
+  margin-bottom: 5vh;
   display: block;
   color: #303030;
   text-decoration: none;
+}
+
+.active {
+  background: -webkit-linear-gradient(#00D1FF, #3300FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  pointer-events: none;
+  cursor: default;
 }
 
 /* nav ends */
@@ -123,6 +144,10 @@ h1 {
   margin-bottom: 8vh;
 }
 
+.selfDesc {
+  font-size: 1.8vh;
+}
+
 .textGrad {
   background: -webkit-linear-gradient(#00D1FF, #3300FF);
   -webkit-background-clip: text;
@@ -135,21 +160,17 @@ h1 {
     transition: 0.3s;
     margin: 1vh;
     margin-bottom: 2vh;
-  }
+}
 
-  .card img {
-    width: 100%;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 #A9A9A9;
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-  }
+.card img {
+  width: 100%;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  background: white;
+}
 
 .quickFacts {
     color: #A9A9A9;
@@ -167,4 +188,13 @@ h1 {
 .cardDes {
     font-size: 1.8vh;
     margin-top: 10px;
+}
+
+.shrink {
+  transition: all .2s ease-in-out; 
+}
+
+
+.shrink:hover { 
+  transform: scale(0.95); 
 }
