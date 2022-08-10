@@ -11,6 +11,9 @@
         <!-- load style sheet -->
         <link rel="stylesheet" href="style.css">  
 
+        <!-- load icons -->
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
         <!-- font downloads -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,10 +22,10 @@
     <body>
 
         <div class="navigation">
-            <img src="img/universal/logoDef.svg" alt="eddy's logo" class="logo">
+            <a href="#"><img src="img/universal/logoDef.svg" alt="eddy's logo" class="logo bigShrink"></a>
             <label>
                 <input type="checkbox">
-                <span class="menu"><span class="hamburger"></span></span>
+                <span class="menu bigShrink"><span class="hamburger"></span></span>
 
                 <ul>
                 <li><a href="#" class="active">- Projects</a></li>
@@ -81,6 +84,32 @@
                 <p class="cardDes">Designing a more tolerable Zoom waiting room for Attendees stuck in long drop-in office hours</p>
             </div>
         </div>
-
     </body>
+    <footer>
+        <div class="bigShrink"><p><a href="#">Projects</a></p></div>
+        <div class="bigShrink"><p><a href="#">About</a></p></div>
+        <div class="bigShrink"><p><a href="#">Resume</a></p></div>
+        <div class="bigShrink" id="icons"><p><a href="#"><span class="iconify" data-icon="la:linkedin-in" style="color: #303030;"></span></a></p></div>
+        <div class="bigShrink" id="icons"><p><a href="#"><span class="iconify" data-icon="clarity:email-solid" style="color: #303030;"></a></span></p></div>
+        <br/>
+        <p class="bragFooter">This website was designed & coded by Eddy!</p>
+    </footer>
+    <!-- html and jQuery code for floating back to top button is written by Muhammad Asif -->
+    <!-- https://codeconvey.com/floating-back-to-top-button-html/ -->
+    <a href="javascript:" id="return-to-top"><b>↑</b></a>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 300) {
+                $('#return-to-top').fadeIn(200);
+            } else {
+                $('#return-to-top').fadeOut(200);
+            }
+        });
+        $('#return-to-top').click(function() {
+            $('body,html').animate({
+                scrollTop : 0
+            }, 500);
+        });
+    </script>
 </html>
