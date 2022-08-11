@@ -145,6 +145,12 @@ h1 {
 }
 
 .selfDesc {
+  display: block;
+  font-size: 1.8vh;
+}
+
+.desktopSelfDesc {
+  display: none;
   font-size: 1.8vh;
 }
 
@@ -216,7 +222,7 @@ footer {
   text-align: center;
 }
 
-footer div {
+footer .footerContent div {
   margin: 0;
   background: #FFF;
   border: 1px solid #303030;
@@ -228,13 +234,13 @@ footer div {
   margin-top: 3vh;
 }
 
-footer div p {
+footer .footerContent div p {
   font-size: 2vh;
   margin: 0px;
   margin-top: 1vh;
 }
 
-footer div p a {
+footer .footerContent div p a {
   text-decoration: none;
   color: #303030;
 }
@@ -250,6 +256,10 @@ footer div p a {
   text-align: center;
   font-size: 2vh;
   color: #A9A9A9;
+}
+
+.footerLogoContainer {
+  display: none;
 }
 
 /* css code for floating back to top button is written by Muhammad Asif */
@@ -293,11 +303,42 @@ footer div p a {
 }
 
 @media (min-width: 992px) {
+  /* narrowing things down */
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
   .content {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+  }
+  .selfDesc {
+    display: none;
+  }
+  .desktopSelfDesc {
+    display: block;
+  }
+  .footerContent {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: right;
+  }
+  .bragFooter {
+    text-align: right; 
+  }
+  .footerLogoContainer {
+    display: block;
+    position: absolute;
+    margin-top: 3vh;
+    text-align: left;
+    margin-left: 10%;
+  }
+  .footerLogo {
+    padding-top: 0.5vh;
+    margin-left: 1vh;
+    width: 4vh;
   }
 }
 
