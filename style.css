@@ -12,6 +12,10 @@ p, h1 {
   color: #303030;
 } 
 
+a {
+  text-decoration: none;
+}
+
 .logo {
   padding-top: 0.5vh;
   margin-left: 1vh;
@@ -218,33 +222,33 @@ h1 {
   transform: scale(0.85); 
 }
 
-/* footer */
 footer {
   margin-top: 5vh;
   width: 100%;
   height: 15%;
   position: absolute;
-  left:0;
+  left: 0;
   background-color: #FFF;
   border-top: 1px solid #303030;
   text-align: center;
 }
 
 footer .footerContent div {
-  margin: 0;
   background: #FFF;
   border: 1px solid #303030;
   width: 9vh;
   height: 5vh;
   display: inline-block;
-  text-align: center;
+  text-align: center; 
+  position: relative;
   margin-left: 0.5vh;
   margin-top: 3vh;
 }
 
-footer .footerContent div p {
-  font-size: 2vh;
-  margin: 0px;
+#tabs p {
+  /* font-size: 2vh; */
+  margin: 0;
+  padding: 0;
   margin-top: 1vh;
 }
 
@@ -253,14 +257,30 @@ footer .footerContent div p a {
   color: #303030;
 }
 
+#icons p {
+  margin: 0;
+  padding: 0;
+  margin-top: 1vh;
+}
+
+/* icon container */
 #icons {
   height: 5vh;
   width: 5vh;
-  margin-left: 0.5vh;
 }
 
+/* #icons p img {
+  width: 2.5vh;
+  height: 2.5vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-self: center;
+} */
+
 .bragFooter {
-  margin-top: 3vh;
+  margin-top: 2vh;
   text-align: center;
   font-size: 2vh;
   color: #A9A9A9;
@@ -272,7 +292,7 @@ footer .footerContent div p a {
 
 /* css code for floating back to top button is written by Muhammad Asif */
 /* https://codeconvey.com/floating-back-to-top-button-html/ */
-#return-to-top {
+/* #return-to-top {
   position: fixed;
   bottom: 11vh;
   right: 2vh;
@@ -296,9 +316,9 @@ footer .footerContent div p a {
   -webkit-text-fill-color: transparent;
   margin: 0;
   position: relative;
-  left: 0px;
-  top: -1vh;
-  font-size: 8vh;
+  left: 1.5vh;
+  top: 1vh;
+  font-size: 5vh;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -308,13 +328,126 @@ footer .footerContent div p a {
 
 #return-to-top:hover {
   transform: scale(0.85); 
-}
+} */
 
-@media (min-width: 992px) {
-  /* narrowing things down */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
   body {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .intro {
+    margin: 1vh;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+  }
+
+  /* get rid of mobile nav */
+  .navigation {
+    display: none;
+  }
+
+  /* container for large rectangle and the social buttons */
+  .desktopNav {
+    display: flex;
+    height: 8vh;
+    padding-top: 5vh;
+    width: 100%;
+  }
+
+  /* the larger rectangle */
+  .navTabs {
+    height: 8vh;
+    border: 1px solid #303030;
+    background: white;
+    width: 100%;
+  }
+
+  /* I grouped the social buttons together */
+  .socialArea {
+    display: flex;
+    height: 8vh;
+  }
+
+  /* logo that is in the large rectangle */
+  .desktopLogo {
+    margin-top: 0.6vh;
+    float: left;
+  }
+
+  /* logo size */
+  .logo {
+    width: 3.5vh;
+  }
+
+  /* tabs in the large rectangle */
+  nav a {
+    float: right;
+    text-decoration: none;
+    display: inline-block;
+    color: #303030;
+    font-size:2.5vh;
+    padding-right: 3vh;
+    padding-top: 2vh;
+  }
+
+  /* email social button */
+  .emailBox {
+    font-size: 3.5vh;
+    border: 1px solid #303030;
+    background: white;
+    width: 8vh;
+    height: 8vh;
+    text-align: center; 
+    position: relative;
+  }
+
+  .emailBox img {
+    display: block;
+    margin: 0 auto;
+    width: 3.5vh;
+    height: 3.5vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-self: center;
+  }
+
+  /* linkedin social button */
+  .linkedInBox {
+    font-size: 3.5vh;
+    border: 1px solid #303030;
+    background: white;
+    width: 8vh;
+    height: 8vh;
+    text-align: center; 
+    position: relative;
+  }
+
+  .linkedInBox img {
+    display: block;
+    margin: 0 auto;
+    width: 3.5vh;
+    height: 3.5vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-self: center;
+  }
+
+  /* making the two social buttons appear side by side in its social area container */
+  .linkedInBox, .emailBox {
+    display: inline-block;
+  }
+  .mobileTag {
+    display: none;
+  }
+  .deskTag {
+    display: block;
   }
   .content {
     display: grid;
@@ -322,11 +455,27 @@ footer .footerContent div p a {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
-  .mobileTag {
-    display: none;
+  /* #return-to-top {
+    bottom: 11vh;
+    right: 6.5vh;
+  } */
+  .quickFacts {
+    font-size: 1vh;
   }
-  .deskTag {
-    display: block;
+  .cardTitle {
+      font-size: 2vh;
+  }
+  .cardDes {
+    font-size: 1.3vh;
+  }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .selfDesc {
     display: none;
@@ -358,98 +507,72 @@ footer .footerContent div p a {
   label {
     display: none;
   }
-
-  
-  /* desktop nav */
-
-  /* get rid of mobile nav */
-  .navigation {
-    display: none;
-  }
-
-  /* container for large rectangle and the social buttons */
-  .desktopNav {
-    display: flex;
-    height: 10vh;
-    padding-top: 5vh;
-  }
-
-  /* the larger rectangle */
-  .navTabs {
-    height: 10vh;
-    border: 1px solid #303030;
-    background: white;
-    width: 100%;
-  }
-
-  /* I grouped the social buttons together */
-  .socialArea {
-    display: flex;
-    height: 10vh;
-    width: 155px;
-  }
-
-  /* logo that is in the large rectangle */
-  .desktopLogo {
-    padding-left: 3vh;
-    margin-top: 0.6vh;
-    float: left;
-  }
-
-  /* logo size */
-  .logo {
-    width: 4.5vh;
-  }
-
-  /* tabs in the large rectangle */
+  /* #return-to-top {
+    bottom: 11vh;
+    right: 4vh;
+  } */
   nav a {
-    float: right;
-    text-decoration: none;
-    display: inline-block;
-    color: #303030;
     font-size: 3.4vh;
     padding-right: 5vh;
     padding-top: 2.5vh;
   }
-
-  /* email social button */
-  .emailBox {
-    font-size: 5vh;
-    border: 1px solid #303030;
-    background: white;
-    width: 10vh;
-    height: 10vh;
-    text-align: center;
-  }
-
-  /* position of the icons */
-  .emailBox p, .linkedInBox p {
-    position: absolute;
-    margin: 0px;
-    margin: 2vh;
-  }
-
-  /* linkedin social button */
-  .linkedInBox {
-    font-size: 5vh;
-    border: 1px solid #303030;
-    background: white;
-    width: 10vh;
-    height: 10vh;
-    text-align: center;
-  }
-
-  /* making the two social buttons appear side by side in its social area container */
   .linkedInBox, .emailBox {
-    display: inline-block;
+    font-size: 5vh;
+    width: 10vh;
+  }
+  .desktopNav, .navTabs, .socialArea, .linkedInBox, .emailBox {
+    height: 10vh;
+  }
+  .logo {
+    width: 4.5vh;
+  }
+  .quickFacts {
+    font-size: 1.5vh;
+  }
+  .cardTitle {
+      font-size: 2.2vh;
+  }
+  .cardDes {
+      font-size: 1.8vh;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...} */
+@media (min-width: 1200px) {
+  body {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .footerContent {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .footerLogoContainer {
+    margin-left: 15%;
+  }
+  /* #return-to-top {
+    bottom: 11vh;
+    right: 20vh;
+  } */
+}
+
+/* omg such big screens */
+@media (min-width: 1980px) {
+  .myName {
+    font-size: 3vh;
+  }
+  body {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .footerContent {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .footerLogoContainer {
+    margin-left: 20%;
+  }
+  h1 {
+    font-size: 5vh;
+  }
+}
