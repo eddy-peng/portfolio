@@ -4,11 +4,57 @@ body {
     z-index: -99;
     background-size: 40px 40px;
     background-image:
-      linear-gradient(to right, rgb(235, 235, 235) 1px, transparent 1px),
-      linear-gradient(to bottom, rgb(235, 235, 235) 1px, transparent 1px);
+      linear-gradient(to right, rgb(249, 249, 249) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(249, 249, 249) 1px, transparent 1px);
 }
 
-p, h1 {
+/* about stuff */
+.aboutContent, .moreAboutContent {
+  margin-top: 10vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+.aboutContent p, .moreAboutContent p {
+  line-height: 3.5vh;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.portImg {
+  width: 100%;
+}
+
+.sectionThree img {
+  margin-bottom: 4vh;
+}
+
+.sectionOne, .sectionTwo, .sectionThree, .sectionFour, .sectionFive, .moreAboutContent div {
+  margin-bottom: 5vh;
+}
+
+.artCite {
+  font-size: 1.5vh;
+  color: #A9A9A9;
+  text-align: center;
+}
+
+.instaCite {
+  font-size: 2vh;
+  color: #303030;
+  text-align: center;
+}
+
+div ul li {
+  font-size: 3vh;
+  line-height: 4vh;
+}
+
+/* end of about stuff */
+
+p, h1, h2 {
   color: #303030;
 } 
 
@@ -222,15 +268,20 @@ h1 {
   transform: scale(0.85); 
 }
 
+/* footer stuff */
 footer {
   margin-top: 5vh;
   width: 100%;
-  height: 15%;
+  height: 20%;
   position: absolute;
   left: 0;
   background-color: #FFF;
   border-top: 1px solid #303030;
   text-align: center;
+}
+
+hr {
+  display: none;
 }
 
 footer .footerContent div {
@@ -240,13 +291,12 @@ footer .footerContent div {
   height: 5vh;
   display: inline-block;
   text-align: center; 
-  position: relative;
   margin-left: 0.5vh;
   margin-top: 3vh;
 }
 
-#tabs p {
-  /* font-size: 2vh; */
+footer .footerContent div p {
+  font-size: 2vh;
   margin: 0;
   padding: 0;
   margin-top: 1vh;
@@ -257,42 +307,34 @@ footer .footerContent div p a {
   color: #303030;
 }
 
-#icons p {
-  margin: 0;
-  padding: 0;
-  margin-top: 1vh;
+.contactMe {
+  font-size: 2vh;
 }
 
-/* icon container */
-#icons {
-  height: 5vh;
-  width: 5vh;
+.contactMe a {
+  background: -webkit-linear-gradient(#00D1FF, #3300FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  color:#303030; 
 }
-
-/* #icons p img {
-  width: 2.5vh;
-  height: 2.5vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  justify-self: center;
-} */
 
 .bragFooter {
   margin-top: 2vh;
   text-align: center;
-  font-size: 2vh;
+  font-size: 1.5vh;
   color: #A9A9A9;
 }
 
 .footerLogoContainer {
   display: none;
 }
+/* end of footer stuff */
+
 
 /* css code for floating back to top button is written by Muhammad Asif */
 /* https://codeconvey.com/floating-back-to-top-button-html/ */
-/* #return-to-top {
+#return-to-top {
   position: fixed;
   bottom: 11vh;
   right: 2vh;
@@ -328,7 +370,7 @@ footer .footerContent div p a {
 
 #return-to-top:hover {
   transform: scale(0.85); 
-} */
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -468,6 +510,57 @@ footer .footerContent div p a {
   .cardDes {
     font-size: 1.3vh;
   }
+
+  /* about stuff */
+  .aboutContent, .moreAboutContent {
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+  .aboutText, .whyText {
+    padding-right: 5vh;
+    width: 50%;
+    float: left;
+  }
+  .profileImg, .blueUx {
+    width: 50%;
+    float: left;
+  }
+  .sectionOne, .title {
+    padding-top: 10vh;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 5vh;
+  }
+
+  .sectionOne, .sectionTwo, .sectionThree {
+    min-height: 100px;
+    overflow: hidden;
+  }
+  .sectionOne, .sectionTwo, .sectionThree, .sectionFour, .sectionFive, .moreAboutContent div {
+    margin-bottom: 15vh;
+  }
+  .values {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .sectionHead {
+    margin-bottom: 5vh;
+  }
+  div ul li {
+    font-size: 4.5vh;
+    line-height: 6vh;
+  }
+  .musicList {
+    margin-top: 5vh;
+  }
 }
 
 
@@ -483,6 +576,15 @@ footer .footerContent div p a {
   .desktopSelfDesc {
     display: block;
   }
+
+  /* footer stuff */
+  hr {
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    color: #303030;
+  }
+
   .footerContent {
     margin-left: 10%;
     margin-right: 10%;
@@ -491,7 +593,13 @@ footer .footerContent div p a {
   .bragFooter {
     text-align: right; 
     margin-top: 2vh;
-    font-size: 1.5vh;
+    font-size: 2vh;
+  }
+  .contactMe {
+    position: absolute;
+    margin: 0;
+    margin-left: 1vh;
+    text-align: left;
   }
   .footerLogoContainer {
     display: block;
@@ -502,8 +610,10 @@ footer .footerContent div p a {
   }
   .footerLogo {
     margin-left: 1vh;
-    width: 5.5vh;
+    width: 3.5vh;
   }
+/* end of footer stuff */
+
   label {
     display: none;
   }
@@ -543,6 +653,8 @@ footer .footerContent div p a {
     margin-left: 15%;
     margin-right: 15%;
   }
+
+  /* footer stuff */
   .footerContent {
     margin-left: 15%;
     margin-right: 15%;
@@ -550,6 +662,8 @@ footer .footerContent div p a {
   .footerLogoContainer {
     margin-left: 15%;
   }
+  /* end of footer stuff */
+
   /* #return-to-top {
     bottom: 11vh;
     right: 20vh;
@@ -565,6 +679,8 @@ footer .footerContent div p a {
     margin-left: 20%;
     margin-right: 20%;
   }
+
+  /* footer stuff */
   .footerContent {
     margin-left: 20%;
     margin-right: 20%;
@@ -572,6 +688,8 @@ footer .footerContent div p a {
   .footerLogoContainer {
     margin-left: 20%;
   }
+  /* end of footer stuff */
+
   h1 {
     font-size: 5vh;
   }
