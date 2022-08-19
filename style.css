@@ -54,6 +54,79 @@ div ul li {
 
 /* end of about stuff */
 
+/* start of case story stuff oooooooooo */
+/* images use .portImg */
+
+/* for cover of case study */
+.cover {
+  padding-top: 3vh;
+}
+
+.dailyUiContent {
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+/* context */
+.context {
+  margin-bottom: 10vh;
+}
+
+.context div {
+  margin-bottom: 3vh;
+}
+.context div h1 {
+  font-size: 5vh;
+  margin-bottom: 1vh;
+}
+.context div h2 {
+  margin-bottom: 1vh;
+}
+
+.context div p {
+  margin-top: 0;
+  line-height: 3.5vh;
+  font-size: 2vh;
+}
+
+/* the list */
+.context div ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 2vh; 
+}
+.context div ul li {
+  font-size: 2vh;
+  color: #303030;
+}
+/* about/summary */
+.context div h2 {
+  font-size: 3vh;
+}
+
+/* sections */
+.sec {
+  margin-bottom: 5vh;
+}
+
+.sec h1 {
+  margin-top: 1vh;
+}
+.sec h2 {
+  font-size: 2vh;
+  color: #A9A9A9;
+  margin-bottom: 0;
+
+}
+.sec p {
+  line-height: 3.5vh;
+  font-size: 2vh;
+}
+
+
+
+/* end of case story stuff oooooooooooo */
+
 p, h1, h2 {
   color: #303030;
 } 
@@ -560,6 +633,25 @@ footer .footerContent div p a {
   }
   .musicList {
     margin-top: 5vh;
+  }
+  /* Case study stuff */
+  .dailyUiContent {
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+  .cover {
+    padding-top: 10vh;
+  }
+  .context {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  /* the list */
+  .context div ul li {
+    line-height: 3.5vh;
   }
 }
 
