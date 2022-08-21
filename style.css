@@ -27,6 +27,11 @@ body {
   text-align: center;
 }
 
+.underlinedLink {
+  text-decoration: underline;
+  text-decoration-color: #196DFF;
+}
+
 .portImg {
   width: 100%;
 }
@@ -87,6 +92,11 @@ div ul li {
   line-height: 3.5vh;
   font-size: 2vh;
 }
+
+.caseLink a {
+  text-decoration: underline;
+  text-decoration-color: #196DFF;
+} 
 
 /* the list */
 .context div ul {
@@ -291,9 +301,8 @@ a {
 }
 
 .underlined {
-  text-decoration: underline;
-  text-underline-offset: 3.3vh;
-  text-decoration-color: #196DFF;
+  border-bottom: 10px solid #196DFF;
+  padding-bottom: 2.3vh;
 }
 
 /* nav ends */
@@ -379,6 +388,12 @@ h1 {
   transform: scale(0.85); 
 }
 
+.musicList {
+  padding-left: 0;
+  margin-top: 5vh;
+  list-style: none;
+}
+
 /* footer stuff */
 footer {
   margin-top: 5vh;
@@ -426,7 +441,8 @@ footer .footerContent div p a {
   background: -webkit-linear-gradient(#00D1FF, #3300FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: #196DFF;
   color:#303030; 
 }
 
@@ -624,15 +640,14 @@ footer .footerContent div p a {
     margin-left: 5vh;
     margin-right: 5vh;
   }
-  .aboutText, .whyText {
-    padding-right: 5vh;
-    width: 50%;
-    float: left;
+
+  .sectionOne, .sectionTwo {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 20px;
+    vertical-align: middle;
   }
-  .profileImg, .blueUx {
-    width: 50%;
-    float: left;
-  }
+
   .sectionOne, .title {
     padding-top: 10vh;
   }
@@ -666,9 +681,6 @@ footer .footerContent div p a {
     font-size: 4.5vh;
     line-height: 6vh;
   }
-  .musicList {
-    margin-top: 5vh;
-  }
   /* Case study stuff */
   .cover {
     padding-top: 10vh;
@@ -686,8 +698,9 @@ footer .footerContent div p a {
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
   .underlined {
-    text-underline-offset: 4vh;
+    padding-bottom: 2.7vh;
   }
+  
   body {
     margin-left: 10%;
     margin-right: 10%;
