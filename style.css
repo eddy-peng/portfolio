@@ -119,6 +119,11 @@ div ul li {
   font-size: 2vh;
 }
 
+  /* case study teleport list */
+  .telePoints {
+    display: none;
+  }
+
 
 
 /* end of case story stuff oooooooooooo */
@@ -199,27 +204,23 @@ label input { display: none; }
 label input:checked + .menu {
   box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
   border-radius: 0;
-  
 }
 
 label input:checked + .menu .hamburger {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  
 }
 
 label input:checked + .menu .hamburger:after {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   bottom: 0;
-  
 }
 
 label input:checked + .menu .hamburger:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   top: 0;
-  
 }
 
 label input:checked + .menu + ul { opacity: 1; }
@@ -250,8 +251,8 @@ label a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
-  pointer-events: none;
-  cursor: default;
+  /* pointer-events: none;
+  cursor: default; */
 }
 
 .underlined {
@@ -411,7 +412,7 @@ footer .footerContent div p a {
 /* https://codeconvey.com/floating-back-to-top-button-html/ */
 #return-to-top {
   position: fixed;
-  bottom: 11vh;
+  bottom: 16vh;
   right: 2vh;
   background: #FFFFFF;
   border: 1px solid #303030;
@@ -431,6 +432,7 @@ footer .footerContent div p a {
   background: -webkit-linear-gradient(#00D1FF, #3300FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 100%;
   margin: 0;
   position: relative;
   left: 1.5vh;
@@ -572,10 +574,6 @@ footer .footerContent div p a {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
-  /* #return-to-top {
-    bottom: 11vh;
-    right: 6.5vh;
-  } */
   .quickFacts {
     font-size: 1vh;
   }
@@ -706,10 +704,7 @@ footer .footerContent div p a {
   label {
     display: none;
   }
-  /* #return-to-top {
-    bottom: 11vh;
-    right: 4vh;
-  } */
+
   nav a {
     font-size: 3.4vh;
     padding-right: 5vh;
@@ -735,9 +730,29 @@ footer .footerContent div p a {
       font-size: 1.8vh;
   }
   /* case study stuff */
-  .dailyUiContent {
+  .caseContent {
     margin-left: 15vh;
     margin-right: 15vh;
+  }
+
+  /* case study teleport list */
+  .telePoints {
+    display: block;
+    position: fixed;
+    top: 40%;
+  }
+  .telePoints ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .telePoints ul a li {
+    font-size: 2vh;
+    line-height: 3vh;
+    color: #303030;
+  }
+  .telePoints ul a {
+    text-decoration: none;
   }
 }
 
@@ -758,15 +773,11 @@ footer .footerContent div p a {
   }
   /* end of footer stuff */
 
-  /* #return-to-top {
-    bottom: 11vh;
-    right: 20vh;
-  } */
-    /* case study stuff */
-    .dailyUiContent {
-      margin-left: 20vh;
-      margin-right: 20vh;
-    }
+  /* case study stuff */
+  .caseContent {
+    margin-left: 20vh;
+    margin-right: 20vh;
+  }
 }
 
 /* omg such big screens */
@@ -791,9 +802,5 @@ footer .footerContent div p a {
 
   h1 {
     font-size: 5vh;
-  }
-  .dailyUiContent {
-    margin-left: 25vh;
-    margin-right: 25vh;
   }
 }
