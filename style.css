@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 /* Applies to the whole page */
 body {
     font-family: 'Inter', sans-serif;
@@ -152,98 +156,129 @@ a {
   display: none;
 }
 
-*, *:before, *:after 
-{box-sizing: border-box;}
+/* start */
 
-label .menu {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  z-index: 100;
-  width: 7vh;
+/* hamburger */
+.checkbox {
+  display: none;
+}
+
+.button {
+  position: relative;
+  background-color: white;
   height: 7vh;
-  background: #FFF;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  width: 7vh;
+  position: absolute;
+  top: 8px; 
+  right: 8px; 
+  z-index: 2000;
+  text-align: center; 
   cursor: pointer;
   border: 1px solid #303030;
 }
 
-label .hamburger {
+.background {
+  height: 7vh;
+  width: 7vh;
   position: absolute;
-  top: 3.07vh;
-  left: 1.39vh;
-  width: 4.18vh;
-  height: 0.42vh;
-  background: #196DFF;
-  display: block;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  top: 8px; 
+  right: 8px; 
+  background-color: #FFFFFF;
+  z-index: 1000;
+  border: 1px solid #303030;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-label .hamburger:after, label .hamburger:before {
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  content: "";
+.nav {
+  height: 100vh;
   position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #196DFF;
-}
-
-label .hamburger:before { top: -10px; }
-
-label .hamburger:after { bottom: -10px; }
-
-label input { display: none; }
-
-label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-  border-radius: 0;
-}
-
-label input:checked + .menu .hamburger {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-label input:checked + .menu .hamburger:after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  bottom: 0;
-}
-
-label input:checked + .menu .hamburger:before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
   top: 0;
+  right: -60vw;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s;
 }
 
-label input:checked + .menu + ul { opacity: 1; }
-
-label ul {
-  z-index: 200;
+.list {
   position: absolute;
   top: 50%;
-  left: 30%;
-  -webkit-transform: translate(-50%, -50%);
+  left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
-  -webkit-transition: .25s 0s ease-in-out;
-  transition: .25s 0s ease-in-out;
-  list-style-type: none;  
+  list-style: none;
+  width: 100%;
 }
 
-label a {
-  font-size: 5vh;
-  margin-bottom: 5vh;
-  display: block;
+.item {
+  margin: 5vh;
+  font-size: 36px;
+}
+  
+.item a {
   color: #303030;
-  text-decoration: none;
+}
+
+/* functionality */
+.checkbox:checked ~ .background {
+  transform: scale(80);
+}
+.checkbox:checked ~ .nav {
+  opacity: 1;
+  width: 100%;
+  right: 0;
+}
+
+/*  */
+/* styling hamb ICON */
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon,
+.icon::before,
+.icon::after {
+  width: 5vh;
+  height: 0.5vh;
+  background-color: #196DFF;
+  display: inline-block;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.icon::before {
+  top: -0.8rem;
+}
+.icon::after {
+  top: 0.8rem;
+}
+
+.button:hover icon:before {
+  top: -1rem;
+}
+.button:hover icon::after {
+  top: 1rem;
+}
+
+.checkbox:checked + .button .icon {
+  background-color: transparent;
+}
+
+.checkbox:checked + .button .icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.checkbox:checked + .button .icon::after {
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 .active {
