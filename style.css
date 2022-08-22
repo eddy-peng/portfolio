@@ -1,15 +1,16 @@
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Applies to the whole page */
 body {
     font-family: 'Inter', sans-serif;
     z-index: -99;
-    background-size: 40px 40px;
+    background-size: 100px 100px;
     background-image:
-      linear-gradient(to right, rgb(249, 249, 249) 1px, transparent 1px),
-      linear-gradient(to bottom, rgb(249, 249, 249) 1px, transparent 1px);
+      linear-gradient(to right, rgb(241, 241, 241) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(241, 241, 241) 1px, transparent 1px);
 }
 
 /* about stuff */
@@ -76,11 +77,15 @@ div ul li {
   margin-bottom: 10vh;
 }
 
+.spaceBelow {
+  margin-bottom: 5vh;
+}
+
 .context div {
   margin-bottom: 3vh;
 }
 .context div h1 {
-  font-size: 5vh;
+  font-size: 4vh;
   margin-bottom: 1vh;
 }
 .context div h2 {
@@ -102,7 +107,7 @@ div ul li {
 .context div ul {
   margin: 0;
   padding: 0;
-  padding-left: 2vh; 
+  list-style: none;
 }
 .context div ul li {
   font-size: 2vh;
@@ -788,6 +793,9 @@ footer .footerContent div p a {
     display: block;
     position: fixed;
     top: 40%;
+  }
+  .telePoints p {
+    font-weight: bolder;
   }
   .telePoints ul {
     padding: 0;

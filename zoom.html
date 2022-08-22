@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Eddy Peng">
+        <meta name="description" content="Eddy's UX Design Portfolio">
+        <title>Eddy Peng | Zoom Queue</title>
+        <link rel="shortcut icon" href="img/universal/favIcon.ico" type="image/x-icon">
+
+        <!-- load style sheet -->
+        <link rel="stylesheet" href="style.css">  
+
+        <!-- font downloads -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <header>
+        <!-- mobile navigation -->
+        <div class="navigation">
+            <a href="./index.html"><img src="img/universal/logoDef.svg" alt="eddy's logo" class="logo bigShrink"></a>
+
+            <!-- hamburger -->
+            <input type="checkbox" id="navi-toggle" class="checkbox" />
+                <label for="navi-toggle" class="button bigShrink">
+                    <span class="icon">&nbsp;</span>
+                </label>
+            <div class="background">&nbsp;</div>
+
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="list">
+                    <li class="item shrink"><a href="./index.html" class="active">- Projects</a></li>
+                    <li class="item shrink"><a href="./about.html">- About</a></li>
+                    <li class="item shrink"><a href="#">- Resume</a></li>
+                    <li class="item shrink"><a href="mailto: eddyp2@uw.edu">- Email</a></li>
+                    <li class="item shrink"><a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">- LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- desktop navigation -->
+        <div class="desktopNav">
+            <div class="navTabs">
+                <div class="desktopLogo">
+                    <a href="./index.html"><img src="img/universal/logoDef.svg" alt="eddy's logo" class="logo bigShrink"></a>
+                </div>
+                <nav>
+                    <a href="#" class="bigShrink">Resume</a>
+                    <a href="./about.html" class="bigShrink">About</a>
+                    <a href="./index.html" class="active"><span class="underlined">Projects</span></a>
+                </nav>
+            </div>
+            <div class="socialArea">
+                <a href="mailto: eddyp2@uw.edu">
+                    <div class="bigShrink emailBox">
+                        <img src="./img/universal/email.svg">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">
+                    <div class="bigShrink linkedInBox">
+                        <img src="./img/universal/linkedin.svg">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- End of Desktop Navigation -->
+    </header>
+    
+    <body>
+        <img src="./img/zoom/zoomFullCover.svg" class="portImg cover">
+
+        <div class="telePoints">
+            <p>Teleport To...</p>
+            <ul>
+                <a href="#problem"><li class="bigShrink">- Problem</li></a>
+                <a href="#research"><li class="bigShrink">- Research</li></a>
+                <a href="#brainstorm"><li class="bigShrink">- Brainstorm</li></a>
+                <a href="#solution"><li class="bigShrink">- Solution</li></a>
+                <a href="#prototype"><li class="bigShrink">- Prototype</li></a>
+                <a href="#feedback"><li class="bigShrink">- Feedback</li></a>
+                <a href="#reflection"><li class="bigShrink">- Reflection</li></a>
+            </ul>
+        </div>
+
+        <div class="caseContent">
+            <div class="context">
+                <div>
+                    <h1>Zoom Waiting Room</h1>
+                    <ul>
+                        <li>- UX Designer</li>
+                        <li>- Conceptual Project (Desktop App)</li>
+                        <li>- Solo</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Summary</h2>
+                    <p>
+                        I designed a solution to a problem my classmates and I were facing during drop-in office hours that occurred in the Zoom waiting room. I researched the users and the product to inform the decisions I made on the prototype screens. I am not associate with Zoom in anyway.
+                    </p>
+                </div>
+                <div>
+                    <h2>Tools</h2>
+                    <p>
+                        Figma, Miro
+                    </p>
+                </div>
+                <div>
+                    <h2>Duration</h2>
+                    <p>
+                        Mar 2021 (2 Weeks)
+                    </p>
+                </div>
+            </div>
+            <div class="sec" id="problem">
+                <h2>The Problem</h2>
+                <h1>Designing a tolerable waiting room for Attendees.</h1>
+                <p>
+                    Recently, I went to a drop-in office hour to get help from a Teaching Assistant (TA). I remember being in the waiting room for a long time. Although other drop-in office hours were open, I was hesitant to leave.
+                </p>
+                <p>
+                    I convinced myself I was at the front of the line. As such, if I waited longer, I would be admitted. On the other hand, if I left, I would have wasted time. There was no guarantee the other TAs were more available.
+                </p>
+            </div>
+            <div class="sec">
+                <h2>The Cause</h2>
+                <h1>The current waiting room leaves much to be desired.</h1>
+                <p>
+                    How many people before me? How long will I have to wait? These questions do not get answered so I would sit in limbo for hours.
+                </p>
+                <img src="./img/zoom/origin.svg" class="portImg">
+            </div>
+            <div class="sec" id="research">
+                <h2>User Research</h2>
+                <h1>My thoughts were echoed by 17 classmates and friends.</h1>
+                <p>
+                    I interviewed 17 people who have been in crowded drop-in office hours. I conducted these thirty minute interviews over text message as I waited in waiting rooms, which puts into perspective the long waiting times.
+                </p>
+                <img src="./img/zoom/zoomResearch.svg" class="portImg">
+            </div>
+            <div class="sec">
+                <h2>Product Research</h2>
+                <h1>I checked for existing solutions within the product.</h1>
+                <p>
+                    If a solution does exist, then my objective would shift to making that solution more discoverable. It’s better to take it slow than to jump to conclusions. Spoiler alert: I found none.
+                </p>
+                <img src="./img/zoom/zoomProductExplore.svg" class="portImg spaceBelow">
+                <h1>No hidden functions but, I became more knowledgeable.</h1>
+                <p>
+                    I learned about Zoom's design choices such as brand styles and toggle bars. Toggle bars were used to separate two different functions yet allowing easy navigation. If I was adding an additional feature, using a toggle bar would be the best way to do it because it maintains consistency.
+                </p>
+                <img src="./img/zoom/zoomStyles.svg" class="portImg">
+            </div>
+            <div class="sec" id="brainstorm">
+                <h2>Solution Brainstorm</h2>
+                <h1>The two ideas I considered were a room chat and queue.</h1>
+                <p>
+                    An anonymous chat feature will allow attendees to socialize with other people in the waiting room and ease the stress of waiting. However, it may be a distraction. It also doesn’t solve the problem of unknown waiting durations.
+                </p>
+                <p>
+                    A queue visual will provide attendees with an estimated waiting duration. It will allow people to make decisions on whether to leave or stay. However, the solution doesn’t account for the host’s behavior. A host may admit people in random order, defeating the purpose of having a queue visualization.
+                </p>
+                <img src="./img/zoom/zoomSolutionProsCons.svg" class="portImg">
+            </div>
+            <div class="sec" id="solution">
+                <h2>The Solution</h2>
+                <h1>Implement queue visualization into the waiting room.</h1>
+                <p>
+                    The most practical solution is the queue. Although the room chat has its upsides (like making the attendee feel less lonely due to the social aspect), it relies too heavily on the attendees’ participation, which may prove inconsistent.
+                </p>
+                <img src="./img/zoom/zoomFinalSolution.svg" class="portImg">
+            </div>
+            <div class="sec">
+                <h2>UI Sketches</h2>
+                <h1>Experimented with the queue visualization layout.</h1>
+                <p>
+                    Though the toggle bar was on my mind, I tested other UI elements to ensure that the toggle bar was the best option. Sketching allowed rapid visualization. I also experimented with the anonymous profile displays.
+                </p>
+                <img src="./img/zoom/zoomSketch.png" class="portImg">
+            </div>
+            <div class="sec" id="prototype">
+                <h2>Prototype Mocks</h2>
+                <h1>I created the screens with the design language in mind.</h1>
+                <p>
+                    From the toggle bar to the font styles, I closely matched the UI of Zoom. Part of the waiting room's function is to keep attendees anonymous. As such, there are question marks on the profile cubes. 
+                </p>
+                <img src="./img/zoom/zoomProtoOne.svg" class="portImg spaceBelow">
+                <img src="./img/zoom/zoomProtoTwo.svg" class="portImg">
+            </div>
+            <div class="sec" id="feedback">
+                <h2>User Feedback</h2>
+                <h1>Attendees found the new designs wayyy more helpful.</h1>
+                <p>
+                    I handed the screens to 7 waiting room attendees. Although all attendees were thrilled with the new feature, some preferred having the queue visualization on the host messages space.
+                </p>
+                <p>
+                    Hey, that sounds familiar! I sketched out the idea before! However, I felt it was too much information. Sure, maybe I go with a short sentence communicating the attendee’s place in the queue. But that would not be consistent with Zoom’s design language.
+                </p>
+            </div>
+            <div class="sec" id="reflection">
+                <h2>Reflections</h2>
+                <h1>Understand a product’s design language goes a long way.</h1>
+                <p>
+                    Because this was a feature addition project, conducting user research (although important) is not enough. The product needs to be analyzed because the design language can influence a new feature’s entire user experience. 
+                </p>
+                <p>
+                    If I could do this project over again, I would have created the screen with the queue visualization on the host message space and conducted an A/B test on a larger population of waiting room attendees.
+                </p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footerLogoContainer">
+            <a href="./index.html"><img src="img/universal/logoDef.svg" alt="eddy's logo" class="footerLogo bigShrink"></a>
+        </div>
+        <div class="footerContent">
+            <a href="./index.html"><div class="bigShrink"><p>Projects</p></div></a>
+            <a href="./about.html"><div class="bigShrink"><p>About</p></div></a>
+            <a href="#"><div class="bigShrink"><p>Resume</p></div></a>
+            <br/>
+            <hr/>
+            <p class="contactMe">Get In Touch -> <a href="mailto: eddyp2@uw.edu">eddyp2@uw.edu</a> · <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">LinkedIn</a></p>
+            <p class="bragFooter">This website was designed & coded by Eddy!</p>
+        </div>
+    </footer>
+    <!-- html and jQuery code for floating back to top button is written by Muhammad Asif -->
+    <!-- https://codeconvey.com/floating-back-to-top-button-html/ -->
+    <a href="javascript:" id="return-to-top"><b>↑</b></a>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 300) {
+                $('#return-to-top').fadeIn(200);
+            } else {
+                $('#return-to-top').fadeOut(200);
+            }
+        });
+        $('#return-to-top').click(function() {
+            $('body,html').animate({
+                scrollTop : 0
+            }, 500);
+        });
+    </script>
+</html>
