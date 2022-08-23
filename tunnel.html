@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Eddy Peng">
+        <meta name="description" content="Eddy's UX Design Portfolio">
+        <title>Eddy Peng | Tunnel_vzn</title>
+        <link rel="shortcut icon" href="img/universal/favIcon.ico" type="image/x-icon">
+
+        <!-- load style sheet -->
+        <link rel="stylesheet" href="style.css">  
+
+        <!-- font downloads -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+
+    <header>
+        <!-- mobile navigation -->
+        <div class="navigation">
+            <a href="./index.html"><img src="img/universal/logoDef.svg" alt="eddy's logo" class="logo bigShrink"></a>
+
+            <!-- hamburger -->
+            <input type="checkbox" id="navi-toggle" class="checkbox" />
+                <label for="navi-toggle" class="button bigShrink">
+                    <span class="icon">&nbsp;</span>
+                </label>
+            <div class="background">&nbsp;</div>
+
+            <!-- nav -->
+            <nav class="nav">
+                <ul class="list">
+                    <li class="item shrink"><a href="./index.html" class="active">- Projects</a></li>
+                    <li class="item shrink"><a href="./about.html">- About</a></li>
+                    <li class="item shrink"><a href="#">- Resume</a></li>
+                    <li class="item shrink"><a href="mailto: eddyp2@uw.edu">- Email</a></li>
+                    <li class="item shrink"><a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">- LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- desktop navigation -->
+        <div class="desktopNav">
+            <div class="navTabs">
+                <div class="desktopLogo">
+                    <a href="./index.html"><img src="img/universal/logoDef.svg" alt="eddy's logo" class="logo bigShrink"></a>
+                </div>
+                <nav>
+                    <a href="#" class="bigShrink">Resume</a>
+                    <a href="./about.html" class="bigShrink">About</a>
+                    <a href="./index.html" class="active"><span class="underlined">Projects</span></a>
+                </nav>
+            </div>
+            <div class="socialArea">
+                <a href="mailto: eddyp2@uw.edu">
+                    <div class="bigShrink emailBox">
+                        <img src="./img/universal/email.svg">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">
+                    <div class="bigShrink linkedInBox">
+                        <img src="./img/universal/linkedin.svg">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- End of Desktop Navigation -->
+    </header>
+    
+    <body>
+        <img src="./img/tunnel/tunnelFullCover.svg" class="portImg cover">
+
+        <!-- <div class="telePoints">
+            <p class="bold">Teleport To...</p>
+            <ul>
+                <a href="#"><li class="bigShrink">- </li></a>
+                <a href="#"><li class="bigShrink">- </li></a>
+                <a href="#"><li class="bigShrink">- </li></a>
+                <a href="#"><li class="bigShrink">- </li></a>
+            </ul>
+        </div> -->
+
+        <div class="caseContent">
+            <div class="context">
+                <div>
+                    <h1>Project Tunnel_vzn</h1>
+                    <ul>
+                        <li>- Founder & Product Designer</li>
+                        <li>- Student Start-Up</li>
+                        <li>- 7 Members</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>About</h2>
+                    <p>
+                        Tunnel_vzn is a storytelling website that focuses on the mental/social struggles of University of Washington students. Research on student experiences influences the stories.
+                    </p>
+                    <!-- <p class="textGrad caseLink">
+                        <a href="#" target="_blank" class="bold">www.tunnelvzn.com</a>
+                    </p> -->
+                    <p>
+                        Website Coming Soon...
+                    </p>
+                </div>
+                <div>
+                    <h2>Tools</h2>
+                    <p>
+                        Figma, Github, HTML, CSS, JS
+                    </p>
+                </div>
+                <div>
+                    <h2>Duration</h2>
+                    <p>
+                        Jan 2022 - Present
+                    </p>
+                </div>
+            </div>
+            <div class="sec" id="#">
+                <h2>In Progress</h2>
+                <h1>This story is currently being written. Please check back in 2 days!</h1>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footerLogoContainer">
+            <a href="./index.html"><img src="img/universal/logoDef.svg" alt="eddy's logo" class="footerLogo bigShrink"></a>
+        </div>
+        <div class="footerContent">
+            <a href="./index.html"><div class="bigShrink"><p>Projects</p></div></a>
+            <a href="./about.html"><div class="bigShrink"><p>About</p></div></a>
+            <a href="#"><div class="bigShrink"><p>Resume</p></div></a>
+            <br/>
+            <hr/>
+            <p class="contactMe">Get In Touch -> <a href="mailto: eddyp2@uw.edu">eddyp2@uw.edu</a> · <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">LinkedIn</a></p>
+            <p class="bragFooter">This website was designed & coded by Eddy!</p>
+        </div>
+    </footer>
+    <!-- html and jQuery code for floating back to top button is written by Muhammad Asif -->
+    <!-- https://codeconvey.com/floating-back-to-top-button-html/ -->
+    <a href="javascript:" id="return-to-top"><b>↑</b></a>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 300) {
+                $('#return-to-top').fadeIn(200);
+            } else {
+                $('#return-to-top').fadeOut(200);
+            }
+        });
+        $('#return-to-top').click(function() {
+            $('body,html').animate({
+                scrollTop : 0
+            }, 500);
+        });
+    </script>
+</html>
