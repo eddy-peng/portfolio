@@ -87,6 +87,15 @@ div ul li {
   margin-bottom: 5vh;
 }
 
+.halfSpaceBelow {
+  margin-bottom: 2.5vh;
+}
+
+.noSpace {
+  padding: 0;
+  margin: 0;
+}
+
 .context div {
   margin-bottom: 3vh;
 }
@@ -157,6 +166,13 @@ div ul li {
 .listRemove li {
   line-height: 3.5vh;
   font-size: 2vh;
+}
+
+.tunnelResearchDesk {
+  display: none;
+}
+#problem .tunnelProb {
+  font-size: 2.5vh;
 }
 
 
@@ -661,6 +677,7 @@ footer .footerContent div p a {
     margin-right: 5vh;
   }
 
+  /* heree */
   .sectionOne, .sectionTwo {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -801,6 +818,13 @@ footer .footerContent div p a {
   .caseContent {
     margin-left: 15vh;
     margin-right: 15vh;
+  }
+
+  .tunnelResearchMobile {
+    display: none;
+  }
+  .tunnelResearchDesk {
+    display: block;
   }
 
   /* case study teleport list */
