@@ -77,7 +77,7 @@ div ul li {
 
 /* for cover of case study */
 .cover {
-  padding-top: 3vh;
+  padding-top: 7vh;
 }
 
 /* context */
@@ -359,16 +359,6 @@ a {
 
 /* nav ends */
 
-
-
-
-
-
-
-
-
-
-
 h1 {
   font-size: 3.4vh;
 }
@@ -527,6 +517,7 @@ footer .footerContent div p a {
   bottom: 16vh;
   right: 2vh;
   background: #FFFFFF;
+  opacity: 80%;
   border: 1px solid #303030;
   width: 8vh;
   height: 8vh;
