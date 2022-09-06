@@ -360,7 +360,7 @@ a {
 /* nav ends */
 
 h1 {
-  font-size: 3.4vh;
+  font-size: 3vh;
 }
 
 .intro {
@@ -562,8 +562,8 @@ footer .footerContent div p a {
 
   .intro {
     margin: 1vh;
-    margin-top: 15vh;
-    margin-bottom: 10vh;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
   }
 
   /* get rid of mobile nav */
