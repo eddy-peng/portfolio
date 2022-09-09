@@ -78,6 +78,7 @@ div ul li {
 /* for cover of case study */
 .cover {
   padding-top: 7vh;
+  z-index: -1;
 }
 
 /* context */
@@ -447,7 +448,6 @@ h1 {
 
 /* footer stuff */
 footer {
-  margin-top: 5vh;
   width: 100%;
   height: 20%;
   position: absolute;
@@ -507,6 +507,32 @@ footer .footerContent div p a {
 .footerLogoContainer {
   display: none;
 }
+
+.projectFooter {
+  height: 80%;
+}
+
+.otherProjects {
+  border-bottom: 1px solid #303030;
+}
+
+.otherProjects h1 {
+  padding-top: 2vh;
+}
+
+.footerImg {
+  margin-top: 1vh;
+  width: 95%;
+}
+
+.projectFooter .footerContent {
+  margin-top: 5vh;
+}
+
+.footerImgSpace {
+  padding-bottom: 4vh;
+}
+
 /* end of footer stuff */
 
 
@@ -695,7 +721,7 @@ footer .footerContent div p a {
   }
 
   /* heree */
-  .sectionOne, .sectionTwo {
+  .sectionOne, .sectionTwo, .nextSection {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-column-gap: 20px;
@@ -746,6 +772,9 @@ footer .footerContent div p a {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
   }
+  .projectFooter {
+    height: 60%;
+  }
 }
 
 
@@ -774,16 +803,29 @@ footer .footerContent div p a {
     color: #303030;
   }
 
+  .otherProjects {
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom: none;
+  }
+
   .footerContent {
     margin-left: 10%;
     margin-right: 10%;
     text-align: right;
+    /* margin-top: 10vh; */
   }
   .bragFooter {
     text-align: right; 
     margin-top: 2vh;
     font-size: 2vh;
   }
+
+  .footerImg {
+    margin-top: 1vh;
+    width: 100%;
+  }
+
   .contactMe {
     position: absolute;
     margin: 0;
@@ -796,6 +838,9 @@ footer .footerContent div p a {
     margin-top: 3vh;
     text-align: left;
     margin-left: 10%;
+  }
+  .projectFooter .footerLogoContainer {
+    margin-top: 8vh;
   }
   .footerLogo {
     margin-left: 1vh;
@@ -874,6 +919,10 @@ footer .footerContent div p a {
 
   /* footer stuff */
   .footerContent {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .otherProjects {
     margin-left: 15%;
     margin-right: 15%;
   }
