@@ -22,14 +22,19 @@ body {
 }
 
 /* about stuff */
-.aboutContent, .moreAboutContent {
+
+.aboutPagesSpace, .aboutPagesSpaceBetween, .spaceTop {
   margin-top: 10vh;
-  margin-left: 2vh;
-  margin-right: 2vh;
 }
 
-.aboutContent p, .moreAboutContent p {
-  line-height: 3.5vh;
+.title {
+  margin-top: 20vh;
+  text-align: left;
+  margin-bottom: 10vh;
+}
+
+.title h1 {
+  font-size: 5vh;
 }
 
 .imageContainer {
@@ -526,7 +531,7 @@ footer .footerContent div p a {
 }
 
 .projectFooter .footerContent {
-  margin-top: 5vh;
+  margin-top: 6vh;
 }
 
 .footerImgSpace {
@@ -721,32 +726,24 @@ footer .footerContent div p a {
   }
 
   /* heree */
-  .sectionOne, .sectionTwo, .nextSection {
+  #why, #me, .nextSection {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-column-gap: 20px;
     vertical-align: middle;
   }
 
-  .sectionOne, .title {
-    padding-top: 10vh;
-  }
-
   .title {
+    margin-top: 0;
+    padding-top: 10vh;
     text-align: center;
+    margin-bottom: 10vh;
   }
 
   .title h1 {
     font-size: 5vh;
   }
 
-  .sectionOne, .sectionTwo, .sectionThree {
-    min-height: 100px;
-    overflow: hidden;
-  }
-  .sectionOne, .sectionTwo, .sectionThree, .sectionFour, .sectionFive, .moreAboutContent div {
-    margin-bottom: 15vh;
-  }
   .values {
     margin-top: 5vh;
     display: grid;
@@ -754,9 +751,7 @@ footer .footerContent div p a {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
   }
-  .sectionHead {
-    margin-bottom: 5vh;
-  }
+
   div ul li {
     font-size: 4.5vh;
     line-height: 6vh;
@@ -840,6 +835,9 @@ footer .footerContent div p a {
     margin-left: 10%;
   }
   .projectFooter .footerLogoContainer {
+    margin-top: 11vh;
+  }
+  .projectFooter .footerContent {
     margin-top: 8vh;
   }
   .footerLogo {
