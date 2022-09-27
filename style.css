@@ -172,6 +172,7 @@ div ul li {
   list-style: none;
 }
 .listRemove li {
+  color: #303030;
   line-height: 3.5vh;
   font-size: 2vh;
 }
