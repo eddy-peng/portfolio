@@ -448,6 +448,14 @@ h1 {
   list-style: none;
 }
 
+.amotionsObservation {
+  color: #B22222;
+}
+
+.amotionsAction {
+  color: #006600;
+}
+
 /* footer stuff */
 footer {
   width: 100%;
