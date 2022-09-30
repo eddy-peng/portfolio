@@ -895,6 +895,8 @@ footer .footerContent div p a {
 
   /* case study teleport list */
   .telePoints {
+    padding-right: 1.5vh;
+    border-right: 1px solid #A9A9A9;
     display: block;
     position: fixed;
     top: 40%;
@@ -905,7 +907,7 @@ footer .footerContent div p a {
     list-style: none;
   }
   .telePoints ul a li {
-    font-size: 2vh;
+    font-size: 1.7vh;
     line-height: 3vh;
     color: #303030;
   }
