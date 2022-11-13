@@ -883,7 +883,6 @@ footer .footerContent div p a {
   /* case study stuff */
   .caseContent {
     margin-left: 15vh;
-    margin-right: 15vh;
   }
 
   .tunnelResearchMobile {
@@ -896,7 +895,7 @@ footer .footerContent div p a {
   /* case study teleport list */
   .telePoints {
     padding-right: 1.5vh;
-    border-right: 1px solid #A9A9A9;
+    border-right: 1px solid #e0e0e0;
     display: block;
     position: fixed;
     top: 40%;
@@ -907,8 +906,8 @@ footer .footerContent div p a {
     list-style: none;
   }
   .telePoints ul a li {
-    font-size: 1.7vh;
-    line-height: 3vh;
+    font-size: 1.4vh;
+    line-height: 2.5vh;
     color: #303030;
   }
   .telePoints ul a {
@@ -940,7 +939,11 @@ footer .footerContent div p a {
   /* case study stuff */
   .caseContent {
     margin-left: 20vh;
-    margin-right: 20vh;
+  }
+  .telePoints ul a li {
+    font-size: 1.7vh;
+    line-height: 3vh;
+    color: #303030;
   }
 }
 
