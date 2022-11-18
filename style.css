@@ -12,8 +12,8 @@ body {
     z-index: -99;
     background-size: 100px 100px;
     background-image:
-      linear-gradient(to right, rgb(241, 241, 241) 1px, transparent 1px),
-      linear-gradient(to bottom, rgb(241, 241, 241) 1px, transparent 1px);
+      linear-gradient(to right, rgb(250, 250, 250) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(250, 250, 250) 1px, transparent 1px);
 }
 
 /* automatic bold for text */
@@ -130,7 +130,8 @@ div ul li {
 .context div ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: square;
+  margin-left: 2vh;
 }
 .context div ul li {
   font-size: 2vh;
@@ -169,18 +170,14 @@ div ul li {
 /* only in candy researcher case study */
 .listRemove {
   padding: 0;
-  list-style: none;
+  list-style-type: square;
+  margin-left: 2vh;
 }
 .listRemove li {
   color: #303030;
   line-height: 3.5vh;
   font-size: 2vh;
 }
-
-.tunnelResearchDesk {
-  display: none;
-}
-
 
 /* end of case story stuff oooooooooooo */
 
@@ -271,7 +268,8 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  list-style: none;
+  list-style-type: square;
+  margin-left: 25%;
   width: 100%;
 }
 
@@ -377,8 +375,15 @@ h1 {
   display: none;
 }
 
-.selfDesc {
-  display: block;
+.descList {
+  margin: 0;
+  padding: 0;
+  margin-left: 2vh;
+  list-style-type: square;
+}
+
+.mobileSelfDesc {
+  /* display: block; */
   font-size: 1.8vh;
 }
 
@@ -446,14 +451,15 @@ h1 {
 .musicList {
   padding-left: 0;
   margin-top: 5vh;
-  list-style: none;
+  margin-left: 3.5vh;
+  list-style-type: square;
 }
 
-.amotionsObservation {
+.darkRed {
   color: #B22222;
 }
 
-.amotionsAction {
+.darkGreen {
   color: #006600;
 }
 
@@ -554,7 +560,6 @@ footer .footerContent div p a {
   bottom: 16vh;
   right: 2vh;
   background: #FFFFFF;
-  opacity: 80%;
   border: 1px solid #303030;
   width: 8vh;
   height: 8vh;
@@ -662,6 +667,7 @@ footer .footerContent div p a {
     height: 8vh;
     text-align: center; 
     position: relative;
+    margin-left: 1vh;
   }
 
   .emailBox img {
@@ -685,6 +691,7 @@ footer .footerContent div p a {
     height: 8vh;
     text-align: center; 
     position: relative;
+    margin-left: 1vh;
   }
 
   .linkedInBox img {
@@ -776,6 +783,12 @@ footer .footerContent div p a {
   .projectFooter {
     height: 60%;
   }
+  .instaGrid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
 }
 
 
@@ -789,7 +802,7 @@ footer .footerContent div p a {
     margin-left: 10%;
     margin-right: 10%;
   }
-  .selfDesc {
+  .mobileSelfDesc {
     display: none;
   }
   .desktopSelfDesc {
@@ -801,7 +814,8 @@ footer .footerContent div p a {
     display: block;
     margin-top: 3vh;
     margin-bottom: 3vh;
-    color: #303030;
+    color: #ededed;
+    opacity: 0.2;
   }
 
   .otherProjects {
@@ -885,17 +899,8 @@ footer .footerContent div p a {
     margin-left: 15vh;
   }
 
-  .tunnelResearchMobile {
-    display: none;
-  }
-  .tunnelResearchDesk {
-    display: block;
-  }
-
   /* case study teleport list */
   .telePoints {
-    padding-right: 1.5vh;
-    border-right: 1px solid #e0e0e0;
     display: block;
     position: fixed;
     top: 40%;
@@ -903,15 +908,22 @@ footer .footerContent div p a {
   .telePoints ul {
     padding: 0;
     margin: 0;
-    list-style: none;
+    margin-left: 1.5vh;
+    list-style-type: square;
   }
   .telePoints ul a li {
     font-size: 1.4vh;
     line-height: 2.5vh;
-    color: #303030;
+    color: #A9A9A9;
   }
   .telePoints ul a {
     text-decoration: none;
+  }
+  .telePoints ul a li:hover {
+    background: -webkit-linear-gradient(#00D1FF, #3300FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
   }
 }
 
@@ -943,7 +955,7 @@ footer .footerContent div p a {
   .telePoints ul a li {
     font-size: 1.7vh;
     line-height: 3vh;
-    color: #303030;
+    color: #A9A9A9;
   }
 }
 
