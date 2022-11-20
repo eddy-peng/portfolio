@@ -83,6 +83,7 @@ div ul li {
 /* for cover of case study */
 .cover {
   padding-top: 7vh;
+  margin-top: 3vh;
   z-index: -1;
 }
 
@@ -367,12 +368,8 @@ h1 {
 
 .intro {
   margin: 1vh;
-  margin-top: 10vh;
+  margin-top: 15vh;
   margin-bottom: 8vh;
-}
-
-.deskTag {
-  display: none;
 }
 
 .descList {
@@ -383,7 +380,6 @@ h1 {
 }
 
 .mobileSelfDesc {
-  /* display: block; */
   font-size: 1.8vh;
 }
 
@@ -608,6 +604,11 @@ footer .footerContent div p a {
     margin-bottom: 6vh;
   }
 
+  .descList li {
+    margin-top: -2vh;
+    margin-bottom: -2vh;
+  }
+
   /* get rid of mobile nav */
   .navigation, .navBackground {
     display: none;
@@ -710,12 +711,6 @@ footer .footerContent div p a {
   .linkedInBox, .emailBox {
     display: inline-block;
   }
-  .mobileTag {
-    display: none;
-  }
-  .deskTag {
-    display: block;
-  }
   .content {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -772,6 +767,7 @@ footer .footerContent div p a {
   /* Case study stuff */
   .cover {
     padding-top: 10vh;
+    margin-top: 0;
   }
   .context {
     margin-top: 5vh;
