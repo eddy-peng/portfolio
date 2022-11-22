@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Eddy Peng">
         <meta name="description" content="Eddy's UX Design Portfolio">
-        <title>Eddy Peng | Daily UI</title>
+        <title>Eddy Peng | Gallery</title>
         <link rel="shortcut icon" href="img/universal/favIcon.ico" type="image/x-icon">
 
         <!-- load style sheet -->
@@ -34,7 +34,8 @@
             <nav class="nav">
                 <ul class="list">
                     <li class="item shrink"><a href="./index.html">Projects</a></li>
-                    <li class="item shrink"><a href="./about.html" class="active">About</a></li>
+                    <li class="item shrink"><a href="./about.html">About</a></li>
+                    <li class="item shrink"><a href="./gallery.html" class="active">Gallery</a></li>
                     <li class="item shrink"><a href="https://drive.google.com/file/d/1gqwHx7DTF6TiXR-dTsU5EPDa6a08G0g1/view?usp=sharing" target="_blank">Resume</a></li>
                     <li class="item shrink"><a href="mailto: eddyp2@uw.edu">Email</a></li>
                     <li class="item shrink"><a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">LinkedIn</a></li>
@@ -50,7 +51,8 @@
                 </div>
                 <nav>
                     <a href="https://drive.google.com/file/d/1gqwHx7DTF6TiXR-dTsU5EPDa6a08G0g1/view?usp=sharing" target="_blank" class="bigShrink">Resume</a>
-                    <a href="./about.html" class="active"><span class="underlined">About</span></a>
+                    <a href="./gallery.html" class="active"><span class="underlined">Gallery</span></a>
+                    <a href="./about.html" class="bigShrink">About</a>
                     <a href="./index.html" class="bigShrink">Projects</a>
                 </nav>
             </div>
@@ -71,91 +73,23 @@
     </header>
     
     <body>
-        <img src="./img/daily/dailyFullCover.png" class="portImg cover">
-        <div class="telePoints">
-            <p class="bold">Jump To:</p>
-            <ul>
-                <a href="#day1"><li>Day #1</li></a>
-                <a href="#day2"><li>Day #2</li></a>
-                <a href="#day4"><li>Day #4</li></a>
-                <a href="#day9"><li>Day #9</li></a>
-                <a href="#day33"><li>Day #33</li></a>
-            </ul>
+        <div class="title">
+            <h1>On my freetime, I practice my UI skills.</h1>
         </div>
-        <div class="caseContent">
-            <div class="context">
-                <div>
-                    <h1>Daily UI Challenge</h1>
-                    <ul>
-                        <li>UI Designer</li>
-                        <li>Design Challenges</li>
-                        <li>Solo</li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>Overview</h2>
-                    <p>
-                        Daily UI consists of 100 daily design challenges. 
-                        Giving myself an hour to craft something on Figma, I use these challenges as an opportunity for experimentation and self-expression. 
-                        Here are some of my favorite screens so far!
-                    </p>
-                </div>
-                <div>
-                    <h2>Tools</h2>
-                    <p>
-                        Figma
-                    </p>
-                </div>
-                <div>
-                    <h2>Duration</h2>
-                    <p>
-                        Jan 2022 - Jul 2022
-                    </p>
-                </div>
-            </div>
-            <div class="sec" id="day1">
-                <h2>Day #1</h2>
-                <h1>Sign Up</h1>
-                <p>
-                    This pop-up page promotes a candy basket giveaway. After leaving their email, users would get an email prompting them for shipping details.
-                </p>
-                <img src="./img/daily/uiOne.png" class="portImg">
-            </div>
-            <div class="sec" id="day2">
-                <h2>Day #2</h2>
-                <h1>Credit Card Checkout</h1>
-                <p>
-                    I designed a check-out experience for an imaginary company that sells overpriced cardboard boxes.
-                </p>
-                <img src="./img/daily/uiTwo.png" class="portImg">
-            </div>
-            <div class="sec" id="day4">
-                <h2>Day #4</h2>
-                <h1>Calculator</h1>
-                <p>
-                    I envisioned a calculator output written out similarly to math done on paper!
-                </p>
-                <img src="./img/daily/uiFour.png" class="portImg">
-            </div>
-            <div class="sec" id="day9">
-                <h2>Day #9</h2>
-                <h1>Music Player</h1>
-                <p>
-                    A music player that plays calming music! This deep blue gradient is the picture of calmness!
-                </p>
-                <img src="./img/daily/uiNine.png" class="portImg">
-            </div>
-            <div class="sec" id="day33">
-                <h2>Day #33</h2>
-                <h1>Customize Product</h1>
-                <p>
-                    The Dodge Hellcat is my favorite car. As such, it was unsurprising that I created a car customization screen.
-                </p>
-                <img src="./img/daily/uiThirtyThree.png" class="portImg">
-            </div>
+        <div class="galleryGrid">
+            <img class="myImages" id="myImg" src="./img/gallery/uiOne.png" alt="Daily UI: Sign Up">
+            <img class="myImages" id="myImg" src="./img/gallery/uiTwo.png" alt="Daily UI: Credit Card Checkout">
+            <img class="myImages" id="myImg" src="./img/gallery/uiFour.png" alt="Daily UI: Calculator">
+            <img class="myImages" id="myImg" src="./img/gallery/uiNine.png" alt="Daily UI: Music Player">
+            <img class="myImages" id="myImg" src="./img/gallery/uiThirtyThree.png" alt="Daily UI: Customize Product">
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
         </div>
     </body>
-    <footer>
+    <footer class="spaceTop">
         <div class="footerLogoContainer">
             <a href="./index.html"><img src="img/universal/logoDef.svg" alt="eddy's logo" class="footerLogo bigShrink"></a>
         </div>
@@ -165,13 +99,13 @@
             <a href="https://drive.google.com/file/d/1gqwHx7DTF6TiXR-dTsU5EPDa6a08G0g1/view?usp=sharing" target="_blank"><div class="bigShrink"><p>Resume</p></div></a>
             <br/>
             <hr/>
-            <p class="contactMe">Get In Touch -> <a href="mailto: eddyp2@uw.edu">eddyp2@uw.edu</a> · <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">LinkedIn</a></p>
+            <p class="contactMe">Get In Touch -> <a href="mailto: eddyp2@uw.edu" class="bold">eddyp2@uw.edu</a> · <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank" class="bold">LinkedIn</a></p>
             <p class="bragFooter">This website was designed & coded by Eddy!</p>
         </div>
     </footer>
     <!-- html and jQuery code for floating back to top button is written by Muhammad Asif -->
     <!-- https://codeconvey.com/floating-back-to-top-button-html/ -->
-    <a href="javascript:" id="return-to-top"><b>↑</b></a>
+    <!-- <a href="javascript:" id="return-to-top"><b>↑</b></a>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script>
         $(window).scroll(function() {
@@ -186,5 +120,32 @@
                 scrollTop : 0
             }, 500);
         });
+    </script> -->
+    <script>
+        // create references to the modal...
+        var modal = document.getElementById('myModal');
+        // to all images -- note I'm using a class!
+        var images = document.getElementsByClassName('myImages');
+        // the image in the modal
+        var modalImg = document.getElementById("img01");
+        // and the caption in the modal
+        var captionText = document.getElementById("caption");
+
+        // Go through all of the images with our custom class
+        for (var i = 0; i < images.length; i++) {
+        var img = images[i];
+        // and attach our click listener for this image.
+        img.onclick = function(evt) {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
     </script>
 </html>

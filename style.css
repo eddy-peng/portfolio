@@ -591,6 +591,101 @@ footer .footerContent div p a {
 }
 
 
+
+/* Modal Gallery Images */
+
+#myImg {
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+  width: 100%;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-gap: 1vh;
+  grid-template-columns: 2fr 2fr;
+}
+
+#myImg:hover {
+  transform: scale(0.85); 
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 200;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(242, 242, 242, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #333333;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #333333;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover {
+  background: -webkit-linear-gradient(#00D1FF, #3300FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Gallery Images END */
+
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
   body {
@@ -654,9 +749,9 @@ footer .footerContent div p a {
     text-decoration: none;
     display: inline-block;
     color: #303030;
-    font-size:2.5vh;
-    padding-right: 3vh;
-    padding-top: 2vh;
+    font-size: 2.5vh;
+    padding-right: 2vh;
+    padding-top: 2.2vh;
   }
 
   /* email social button */
@@ -867,9 +962,9 @@ footer .footerContent div p a {
   }
 
   nav a {
-    font-size: 3.4vh;
-    padding-right: 5vh;
-    padding-top: 2.5vh;
+    font-size: 3vh;
+    padding-right: 3vh;
+    padding-top: 3vh;
   }
   .linkedInBox, .emailBox {
     font-size: 5vh;
