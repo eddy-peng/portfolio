@@ -75,6 +75,11 @@ div ul li {
   line-height: 4vh;
 }
 
+.musicList li {
+  font-size: 2.5vh;
+  line-height: 3.5vh;
+}
+
 /* end of about stuff */
 
 /* start of case story stuff oooooooooo */
