@@ -331,13 +331,6 @@ a {
   top: 0.8rem;
 }
 
-.button:hover icon:before {
-  top: -1rem;
-}
-.button:hover icon::after {
-  top: 1rem;
-}
-
 .checkbox:checked + .button .icon {
   background-color: transparent;
 }
@@ -438,15 +431,6 @@ h1 {
 
 .shrink, .bigShrink {
   transition: all .2s ease-in-out; 
-}
-
-
-.shrink:hover { 
-  transform: scale(0.95); 
-}
-
-.bigShrink:hover { 
-  transform: scale(0.85); 
 }
 
 .musicList {
@@ -591,10 +575,6 @@ footer .footerContent div p a {
   transition: all 0.3s ease;
 }
 
-#return-to-top:hover {
-  transform: scale(0.85); 
-}
-
 
 
 /* Modal Gallery Images */
@@ -617,10 +597,6 @@ footer .footerContent div p a {
   content: "";
   display: table;
   clear: both;
-}
-
-#myImg:hover {
-  transform: scale(0.85); 
 }
 
 .modal {
@@ -648,14 +624,14 @@ footer .footerContent div p a {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 #caption {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 600px;
   text-align: center;
   color: #333333;
   padding: 10px 0;
@@ -685,13 +661,6 @@ footer .footerContent div p a {
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
-}
-
-.close:hover {
-  background: -webkit-linear-gradient(#00D1FF, #3300FF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-decoration: none;
   cursor: pointer;
 }
 
@@ -903,6 +872,31 @@ footer .footerContent div p a {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
+  .button:hover icon:before {
+    top: -1rem;
+  }
+  .button:hover icon::after {
+    top: 1rem;
+  }
+  #return-to-top:hover {
+    transform: scale(0.85); 
+  }
+  #myImg:hover {
+    transform: scale(0.90); 
+  }
+  .shrink:hover { 
+    transform: scale(0.95); 
+  }
+  
+  .bigShrink:hover { 
+    transform: scale(0.85); 
+  }
+  .close:hover {
+    background: -webkit-linear-gradient(#00D1FF, #3300FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
   .underlined {
     padding-bottom: 2.7vh;
   }
