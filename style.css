@@ -605,10 +605,18 @@ footer .footerContent div p a {
   width: 100%;
 }
 
-.galleryGrid {
-  display: grid;
-  grid-gap: 1vh;
-  grid-template-columns: 2fr 2fr;
+.galleryColumn {
+  float: left;
+  width: 33%;
+  margin-left: 0.1vh;
+  margin-right: 0.1vh;
+}
+
+/* Clear floats after the columns */
+.galleryRow:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #myImg:hover {
@@ -689,6 +697,11 @@ footer .footerContent div p a {
 
 /* Modal Gallery Images END */
 
+@media screen and (max-width: 600px) {
+  .galleryColumn {
+    width: 100%;
+  }
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
