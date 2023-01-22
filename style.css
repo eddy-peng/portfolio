@@ -7,7 +7,7 @@ html {
 /* Applies to the whole page */
 body {
     overflow-x: hidden !important;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 300;
     z-index: -99;
     background-size: 100px 100px;
@@ -565,8 +565,8 @@ footer .footerContent div p a {
   opacity: 100%;
   margin: 0;
   position: relative;
-  left: 1.5vh;
-  top: 1vh;
+  left: 2.5vh;
+  top: 0.2vh;
   font-size: 5vh;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
