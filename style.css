@@ -538,44 +538,6 @@ footer .footerContent div p a {
 /* end of footer stuff */
 
 
-/* css code for floating back to top button is written by Muhammad Asif */
-/* https://codeconvey.com/floating-back-to-top-button-html/ */
-#return-to-top {
-  position: fixed;
-  bottom: 16vh;
-  right: 2vh;
-  background: #FFFFFF;
-  border: 1px solid #303030;
-  width: 8vh;
-  height: 8vh;
-  display: block;
-  text-decoration: none;
-  display: none;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-#return-to-top b {
-  background: -webkit-linear-gradient(#00D1FF, #3300FF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 100%;
-  margin: 0;
-  position: relative;
-  left: 2.5vh;
-  top: 0.2vh;
-  font-size: 5vh;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-
 
 /* Modal Gallery Images */
 
@@ -999,36 +961,9 @@ footer .footerContent div p a {
       font-size: 1.8vh;
   }
   /* case study stuff */
-  .caseContent {
+  /* .caseContent {
     margin-left: 15vh;
-  }
-
-  /* case study teleport list */
-  .telePoints {
-    display: block;
-    position: fixed;
-    top: 40%;
-  }
-  .telePoints ul {
-    padding: 0;
-    margin: 0;
-    margin-left: 1.7vh;
-    list-style-type: square;
-  }
-  .telePoints ul a li {
-    font-size: 1.4vh;
-    line-height: 2.5vh;
-    color: #A9A9A9;
-  }
-  .telePoints ul a {
-    text-decoration: none;
-  }
-  .telePoints ul a li:hover {
-    background: -webkit-linear-gradient(#00D1FF, #3300FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 500;
-  }
+  } */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1053,13 +988,74 @@ footer .footerContent div p a {
   /* end of footer stuff */
 
   /* case study stuff */
-  .caseContent {
+  /* .caseContent {
     margin-left: 20vh;
+  } */
+  .telePoints {
+    display: block;
+    position: fixed;
+    top: 40%;
+    margin-left: -20vh;
+  }
+  .teleTitle {
+    font-size: 2vh;
+    font-weight: 500;
   }
   .telePoints ul a li {
     font-size: 1.7vh;
     line-height: 3vh;
     color: #A9A9A9;
+  }
+  .telePoints ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 1.7vh;
+    list-style-type: square;
+  }
+  .telePoints ul a {
+    text-decoration: none;
+  }
+  .telePoints ul a li:hover {
+    background: -webkit-linear-gradient(#00D1FF, #3300FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+  }
+  /* css code for floating back to top button is written by Muhammad Asif */
+  /* https://codeconvey.com/floating-back-to-top-button-html/ */
+  #return-to-top {
+    position: fixed;
+    bottom: 16vh;
+    right: 15vh;
+    background: #FFFFFF;
+    border: 1px solid #303030;
+    width: 8vh;
+    height: 8vh;
+    display: block;
+    text-decoration: none;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  #return-to-top b {
+    background: -webkit-linear-gradient(#00D1FF, #3300FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 100%;
+    margin: 0;
+    position: relative;
+    left: 2.5vh;
+    top: 0.2vh;
+    font-size: 5vh;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
 }
 
