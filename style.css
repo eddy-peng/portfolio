@@ -599,6 +599,7 @@ footer .footerContent div p a {
   clear: both;
 }
 
+
 .modal {
   display: none;
   /* Hidden by default */
@@ -614,7 +615,7 @@ footer .footerContent div p a {
   /* Full width */
   height: 100%;
   /* Full height */
-  overflow: auto;
+  overflow: hidden;
   /* Enable scroll if needed */
   background-color: rgba(242, 242, 242, 0.9);
   /* Black w/ opacity */
@@ -1011,7 +1012,7 @@ footer .footerContent div p a {
   .telePoints ul {
     padding: 0;
     margin: 0;
-    margin-left: 1.5vh;
+    margin-left: 1.7vh;
     list-style-type: square;
   }
   .telePoints ul a li {
