@@ -699,7 +699,7 @@ footer .footerContent div p a {
     text-decoration: none;
     display: inline-block;
     color: #303030;
-    font-size: 2.5vh;
+    font-size: 2vh;
     padding-right: 2vh;
     padding-top: 2.2vh;
   }
@@ -755,6 +755,9 @@ footer .footerContent div p a {
   /* making the two social buttons appear side by side in its social area container */
   .linkedInBox, .emailBox {
     display: inline-block;
+  }
+  .underlined {
+    padding-bottom: 2.8vh;
   }
   .content {
     display: grid;
@@ -832,7 +835,6 @@ footer .footerContent div p a {
   }
 }
 
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
   .button:hover icon:before {
@@ -899,7 +901,7 @@ footer .footerContent div p a {
   .bragFooter {
     text-align: right; 
     margin-top: 2vh;
-    font-size: 2vh;
+    font-size: 1.5vh;
   }
 
   .footerImg {
@@ -912,6 +914,7 @@ footer .footerContent div p a {
     margin: 0;
     margin-left: 1vh;
     text-align: left;
+    font-size: 1.5vh;
   }
   .footerLogoContainer {
     display: block;
@@ -937,19 +940,19 @@ footer .footerContent div p a {
   }
 
   nav a {
-    font-size: 3vh;
-    padding-right: 3vh;
-    padding-top: 3vh;
+    font-size: 2vh;
+    padding-right: 1.5vh;
+    padding-top: 2.5vh;
   }
   .linkedInBox, .emailBox {
-    font-size: 5vh;
-    width: 10vh;
+    width: 8vh;
   }
   .desktopNav, .navTabs, .socialArea, .linkedInBox, .emailBox {
-    height: 10vh;
+    height: 8vh;
   }
   .logo {
-    width: 4.5vh;
+    width: 3.5vh;
+    /* width: 4.5vh; */
   }
   .quickFacts {
     font-size: 1.5vh;
@@ -965,6 +968,7 @@ footer .footerContent div p a {
     margin-left: 15vh;
   } */
 }
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -984,6 +988,27 @@ footer .footerContent div p a {
   }
   .footerLogoContainer {
     margin-left: 15%;
+  }
+  .bragFooter {
+    font-size: 2vh;
+  }
+  .contactMe {
+    font-size: 2vh;
+  }
+
+  nav a {
+    font-size: 3vh;
+    padding-right: 3vh;
+    padding-top: 3vh;
+  }
+  .linkedInBox, .emailBox {
+    width: 10vh;
+  }
+  .desktopNav, .navTabs, .socialArea, .linkedInBox, .emailBox {
+    height: 10vh;
+  }
+  .logo {
+    width: 4.5vh;
   }
   /* end of footer stuff */
 
