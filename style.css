@@ -514,10 +514,6 @@ footer .footerContent div p a {
   height: 80%;
 }
 
-.otherProjects {
-  border-bottom: 1px solid #303030;
-}
-
 .otherProjects h1 {
   padding-top: 2vh;
 }
@@ -525,14 +521,11 @@ footer .footerContent div p a {
 .footerImg {
   margin-top: 1vh;
   width: 95%;
+  border: 1px solid #303030;
 }
 
 .projectFooter .footerContent {
   margin-top: 6vh;
-}
-
-.footerImgSpace {
-  padding-bottom: 4vh;
 }
 
 /* end of footer stuff */
