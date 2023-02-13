@@ -94,7 +94,7 @@ div ul li {
 }
 
 .spaceBelow {
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
 }
 
 .halfSpaceBelow {
@@ -140,7 +140,7 @@ div ul li {
 }
 /* about/summary */
 .context div h2 {
-  font-size: 3.5vh;
+  font-size: 3vh;
   font-weight: 300;
   margin-bottom: 1vh;
 }
@@ -358,7 +358,7 @@ a {
 /* nav ends */
 
 h1 {
-  font-size: 3.5vh;
+  font-size: 3vh;
   font-weight: 300;
 }
 
