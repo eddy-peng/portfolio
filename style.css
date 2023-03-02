@@ -1,3 +1,11 @@
+img {
+  pointer-events: none;
+}
+
+.mobileLogo img {
+  pointer-events: auto;
+}
+
 html {
   max-width: 100%;
   overflow-x: hidden;
