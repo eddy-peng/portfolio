@@ -201,7 +201,7 @@ a {
 }
 
 .logo {
-  padding-top: 0.5vh;
+  margin-top: 0.7vh;
   margin-left: 1vh;
   width: 3.5vh;
   position: fixed;
@@ -637,6 +637,10 @@ footer .footerContent div p a {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+  footer .footerContent div {
+    width: 10vh;
+  }
+
   body {
     margin-left: 5%;
     margin-right: 5%;
@@ -682,7 +686,7 @@ footer .footerContent div p a {
 
   /* logo that is in the large rectangle */
   .desktopLogo {
-    margin-top: 0.6vh;
+    margin-top: 0.8vh;
     float: left;
   }
 
