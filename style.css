@@ -976,22 +976,9 @@ footer .footerContent div p a {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  body {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-
-  /* footer stuff */
-  .footerContent {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-  .otherProjects {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-  .footerLogoContainer {
-    margin-left: 15%;
+  .caseContent {
+    margin-left: 20vh;
+    margin-right: 20vh;
   }
   .bragFooter {
     font-size: 2vh;
@@ -1024,7 +1011,7 @@ footer .footerContent div p a {
     display: block;
     position: fixed;
     top: 40%;
-    margin-left: -20vh;
+    margin-left: -15vh;
   }
   .teleTitle {
     font-size: 2vh;
@@ -1054,8 +1041,8 @@ footer .footerContent div p a {
   /* https://codeconvey.com/floating-back-to-top-button-html/ */
   #return-to-top {
     position: fixed;
-    bottom: 16vh;
-    right: 15vh;
+    bottom: 15vh;
+    right: 8vh;
     background: #FFFFFF;
     border: 1px solid #A9A9A9;
     width: 8vh;
@@ -1094,22 +1081,10 @@ footer .footerContent div p a {
   .myName {
     font-size: 3vh;
   }
-  body {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-
-  /* footer stuff */
-  .footerContent {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  .footerLogoContainer {
-    margin-left: 20%;
-  }
-  /* end of footer stuff */
-
   h1 {
     font-size: 5vh;
+  }
+  #return-to-top {
+    right: 5vh;
   }
 }
