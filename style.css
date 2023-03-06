@@ -1,3 +1,7 @@
+.desktopLogo h1 {
+  display: none;
+}
+
 img {
   pointer-events: none;
 }
@@ -367,7 +371,7 @@ a {
 /* nav ends */
 
 h1 {
-  font-size: 3vh;
+  font-size: 3.5vh;
   font-weight: 300;
 }
 
@@ -972,11 +976,20 @@ footer .footerContent div p a {
     margin-left: 15vh;
     margin-right: 15vh;
   }
+  .desktopLogo h1 {
+    display: inline-block;
+    margin-left: 1vh;
+    float: right;
+    font-size: 2.5vh;
+  }
 }
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .desktopLogo h1 {
+    font-size: 3vh;
+  }
   .caseContent {
     margin-left: 20vh;
     margin-right: 20vh;
@@ -1084,6 +1097,10 @@ footer .footerContent div p a {
   }
   h1 {
     font-size: 5vh;
+  }
+  .desktopLogo h1 {
+    font-size: 3vh;
+    margin-left: 1vh;
   }
   #return-to-top {
     right: 5vh;
