@@ -791,7 +791,7 @@ footer .footerContent div p a {
   }
 
   /* heree */
-  #why, #me, .nextSection {
+  #me, .nextSection {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-column-gap: 20px;
