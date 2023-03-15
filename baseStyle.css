@@ -59,6 +59,7 @@ body {
 .underlinedLink {
   text-decoration: underline;
   text-decoration-color: #303030;
+  color: #303030;
 }
 
 .portImg {
@@ -393,12 +394,6 @@ a {
 
 .tagline {
   font-size: 24px;
-}
-
-.textGrad {
-  background: #303030;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* case study card */
