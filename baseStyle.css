@@ -84,7 +84,7 @@ body {
 }
 
 div ul li {
-  line-height: 2vh;
+  line-height: 3vh;
 }
 
 .musicList li {
@@ -321,7 +321,7 @@ a {
 .icon::before,
 .icon::after {
   width: 5vh;
-  height: 0.5vh;
+  height: 0.3vh;
   background-color: #303030;
   display: inline-block;
 }
@@ -385,7 +385,7 @@ a {
 }
 
 .mobileSelfDesc {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .desktopSelfDesc {

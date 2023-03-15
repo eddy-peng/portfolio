@@ -1,8 +1,5 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
-    .mobileSelfDesc {
-      font-size: 16px;
-    }
     footer .footerContent div {
       width: 10vh;
     }

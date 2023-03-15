@@ -15,7 +15,7 @@
       padding-top: 1vh;
     }
     #return-to-top {
-      right: 5vh;
+      right: 4vh;
     }
     .quickFacts {
       font-size: 24px;
@@ -54,9 +54,6 @@
     }
     .telePoints ul a li {
       font-size: 24px;
-    }
-    #return-to-top b {
-      font-size: 80px;
     }
     .context div h1, .context div h2 {
       font-size: 40px;

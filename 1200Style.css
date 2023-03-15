@@ -73,10 +73,8 @@
     /* https://codeconvey.com/floating-back-to-top-button-html/ */
     #return-to-top {
       position: fixed;
-      bottom: 15vh;
-      right: 7vh;
-      background: #FFFFFF;
-      border: 1px solid #A9A9A9;
+      bottom: 20vh;
+      right: 6vh;
       width: 8vh;
       height: 8vh;
       display: block;
@@ -88,23 +86,11 @@
       -o-transition: all 0.3s ease;
       transition: all 0.3s ease;
       opacity: 100%;
+      z-index: -1;
     }
-  
-    #return-to-top b {
-      background: #A9A9A9;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin: auto;
-      opacity: 100%;
-      position: relative;
-      left: 2vh;
-      top: 0.5vh;
-      font-size: 40px;
-      -webkit-transition: all 0.3s ease;
-      -moz-transition: all 0.3s ease;
-      -ms-transition: all 0.3s ease;
-      -o-transition: all 0.3s ease;
-      transition: all 0.3s ease;
+    #return-to-top img {
+      width: 8vh;
+      height: 8vh;
     }
     .sec h2 {
       font-size: 16px;
