@@ -8,13 +8,17 @@
         <title>Eddy Peng - Gallery</title>
         <link rel="shortcut icon" href="img/universal/favIcon.ico" type="image/x-icon">
 
-        <!-- load style sheet -->
-        <link rel="stylesheet" href="style.css">  
+        <!-- load style sheets -->
+        <link rel="stylesheet" href="baseStyle.css">  
+        <link rel="stylesheet" href="768Style.css">  
+        <link rel="stylesheet" href="992Style.css">  
+        <link rel="stylesheet" href="1200Style.css">  
+        <link rel="stylesheet" href="1980Style.css">  
 
         <!-- font downloads -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
     </head>
 
     <header>
@@ -85,41 +89,35 @@
         </div>
         <div class="galleryRow">
             <div class="galleryColumn">
-                <img class="myImages" id="myImg" src="./img/gallery/sparkling.png" alt="This app lets customers shop for sparkling water!">
+                <img id="myImg" src="./img/gallery/sparkling.png" alt="This app lets customers shop for sparkling water!">
             </div>
             <div class="galleryColumn">
-                <img class="myImages" id="myImg" src="./img/gallery/calculator.png" alt="A modern-looking calculator app!">
+                <img id="myImg" src="./img/gallery/calculator.png" alt="A modern-looking calculator app!">
             </div>
             <div class="galleryColumn">
-                <img class="myImages" id="myImg" src="./img/gallery/coffee.png" alt="My future website for my dark coffee caffè!">
+                <img id="myImg" src="./img/gallery/coffee.png" alt="My future website for my dark coffee caffè!">
             </div>
         </div>
         <div class="galleryRow">
             <div class="galleryColumn">
-                <img class="myImages" id="myImg" src="./img/gallery/giftCard.png" alt="This app helps people manage their gift cards!">
+                <img id="myImg" src="./img/gallery/giftCard.png" alt="This app helps people manage their gift cards!">
             </div>
             <div class="galleryColumn">
-                <img class="myImages" id="myImg" src="./img/gallery/pocketdoc.png" alt="This app lets people receive health recommendations based on daily check-ups, medical records, and health assessments!">
+                <img id="myImg" src="./img/gallery/pocketdoc.png" alt="This app lets people receive health recommendations based on daily check-ups, medical records, and health assessments!">
             </div>
             <div class="galleryColumn">
-                <img class="myImages" id="myImg" src="./img/gallery/music.png" alt="This app lets people view each others' music playlists!">
+                <img id="myImg" src="./img/gallery/music.png" alt="This app lets people view each others' music playlists!">
             </div>
         </div>
         <div class="galleryRow">
             <div class="galleryColumn">
-                <img class="myImages" id="myImg" src="./img/gallery/sidebar.png" alt="Sidebar variants for a team management dashboard product!">
+                <img id="myImg" src="./img/gallery/sidebar.png" alt="Sidebar variants for a team management dashboard product!">
             </div>
             <div class="galleryColumn">
-                <img class="myImages" id="myImg" src="./img/gallery/dashboard.png" alt="A team management dashboard for product people!">
+                <img id="myImg" src="./img/gallery/dashboard.png" alt="A team management dashboard for product people!">
             </div>
         </div>
-          
-
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
+        
 
         <!-- <div class="title">
             <h1>My Other Projects</h1>
@@ -138,7 +136,7 @@
             <a href="./gallery.html"><div class="bigShrink"><p>Gallery</p></div></a>
             <br/>
             <hr/>
-            <p class="contactMe">Get In Touch -> <a href="mailto: eddyp2@uw.edu">eddyp2@uw.edu</a> · <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">LinkedIn</a></p>
+            <p class="contactMe">Get In Touch → <a href="mailto: eddyp2@uw.edu">eddyp2@uw.edu</a> · <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">LinkedIn</a></p>
             <p class="bragFooter">© 2023 version designed & coded by Eddy.</p>
         </div>
     </footer>
@@ -160,31 +158,4 @@
             }, 500);
         });
     </script> -->
-    <script>
-        // create references to the modal...
-        var modal = document.getElementById('myModal');
-        // to all images -- note I'm using a class!
-        var images = document.getElementsByClassName('myImages');
-        // the image in the modal
-        var modalImg = document.getElementById("img01");
-        // and the caption in the modal
-        var captionText = document.getElementById("caption");
-
-        // Go through all of the images with our custom class
-        for (var i = 0; i < images.length; i++) {
-        var img = images[i];
-        // and attach our click listener for this image.
-        img.onclick = function(evt) {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-        }
-
-        var span = document.getElementsByClassName("close")[0];
-
-        span.onclick = function() {
-        modal.style.display = "none";
-        }
-    </script>
 </html>

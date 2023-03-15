@@ -9,8 +9,12 @@
         <title>Eddy Peng - Product Design</title>
         <link rel="shortcut icon" href="img/universal/favIcon.ico" type="image/x-icon">
 
-        <!-- load style sheet -->
-        <link rel="stylesheet" href="style.css">  
+        <!-- load style sheets -->
+        <link rel="stylesheet" href="baseStyle.css">  
+        <link rel="stylesheet" href="768Style.css">  
+        <link rel="stylesheet" href="992Style.css">  
+        <link rel="stylesheet" href="1200Style.css">  
+        <link rel="stylesheet" href="1980Style.css">  
 
         <!-- open graph link preview -->
         <meta property='og:title' content= "Eddy Peng's UX Portfolio" />
@@ -21,7 +25,7 @@
         <!-- font downloads -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
     </head>
 
     <header>
@@ -88,14 +92,14 @@
     
     <body>
         <div class="intro">
-            <p class="myName">Howdy! I'm Eddy!</p>
-            <h1>A <span class="textGrad bold">Product Designer</span> & <span class="textGrad bold">Storytelling Wizard</span> on a mission to amplify peoples' voices.</h1>
+            <p class="myName">Howdy, I'm Eddy!</p>
+            <h1 class="tagline">A <span class="textGrad">Product Designer</span> & <span class="textGrad">Storytelling Wizard</span> on a mission to amplify peoples' voices.</h1>
             <ul class="descList">
                 <li class="mobileSelfDesc">Junior @ the University of Washington</li>
                 <li class="mobileSelfDesc">Informatics Major</li>
-                <li class="mobileSelfDesc">Founder @ <a href="https://www.tunnelvzn.org/" target="_blank" class="textGrad underlinedLink bold">Tunnel_vzn</a></li>
+                <li class="mobileSelfDesc">Founder @ <a href="https://www.tunnelvzn.org/" target="_blank" class="textGrad underlinedLink">Tunnel_vzn</a></li>
             </ul>
-            <p class="desktopSelfDesc">Junior @ the University of Washington    &    Informatics Major    &    Founder @ <a href="https://www.tunnelvzn.org/" target="_blank" class="textGrad underlinedLink bold">Tunnel_vzn</a>
+            <p class="desktopSelfDesc">Junior @ the University of Washington & Informatics Major & Founder @ <a href="https://www.tunnelvzn.org/" target="_blank" class="textGrad underlinedLink">Tunnel_vzn</a>
         </div>
 
         <div class="content">
@@ -124,18 +128,6 @@
                 </div>
             </a>
 
-            <!-- tunnel card -->
-            <a href="./tunnel.html">
-                <div class="card shrink">
-                    <img src="img/universal/tunnelRawCover.png" alt="tunnel_vzn cover image">
-                    <div class="container">
-                        <p class="quickFacts">Start-Up · Founder · Jan 2022 - Present</p>
-                        <p class="cardTitle">Tunnel_vzn - Student Storytelling Site</p>
-                        <p class="cardDes">Telling the stories of University of Washington students' struggles and how to overcome them</p>
-                    </div>
-                </div>
-            </a>
-
             <!-- candy card -->
             <a href="./candy.html">
                 <div class="card shrink">
@@ -159,6 +151,19 @@
                     </div>
                 </div>
             </a>
+
+            <!-- tunnel card -->
+            <!-- add back in a shrink class and remove comingSoon class and put in correct content after dash -->
+            <a href="#" class="comingSoon">
+                <div class="card">
+                    <img src="img/universal/tunnelRawCover.png" alt="tunnel_vzn cover image">
+                    <div class="container">
+                        <p class="quickFacts">Start-Up · Founder · Jan 2022 - Present</p>
+                        <p class="cardTitle">Tunnel_vzn - Storytelling Coming Soon!</p>
+                        <p class="cardDes">Telling the stories of University of Washington students' struggles and how to overcome them</p>
+                    </div>
+                </div>
+            </a>
         </div>
     </body>
     <footer class="spaceTop">
@@ -174,7 +179,7 @@
             <a href="./gallery.html"><div class="bigShrink"><p>Gallery</p></div></a>
             <br/>
             <hr/>
-            <p class="contactMe">Get In Touch -> <a href="mailto: eddyp2@uw.edu">eddyp2@uw.edu</a> · <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">LinkedIn</a></p>
+            <p class="contactMe">Get In Touch → <a href="mailto: eddyp2@uw.edu">eddyp2@uw.edu</a> · <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">LinkedIn</a></p>
             <p class="bragFooter">© 2023 version designed & coded by Eddy.</p>
         </div>
     </footer>

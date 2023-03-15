@@ -1,0 +1,76 @@
+/* omg such big screens */
+@media (min-width: 1980px) {
+    .desktopSelfDesc {
+      font-size: 24px;
+    }
+    .myName {
+      font-size: 24px;
+    }
+    .sec h1 {
+      font-size: 40px;
+    }
+    .desktopLogo h1 {
+      font-size: 40px;
+      margin-left: 1vh;
+      padding-top: 1vh;
+    }
+    #return-to-top {
+      right: 5vh;
+    }
+    .quickFacts {
+      font-size: 24px;
+    }
+    .cardTitle {
+      font-size: 40px;
+    }
+    .cardDes {
+      font-size: 24px;
+    }
+    footer .footerContent div p {
+      font-size: 24px;
+      margin-top: 1.5vh;
+    }
+    .contactMe, .bragFooter {
+      font-size: 24px;
+    }
+    .tagline {
+      font-size: 40px;
+    }
+    nav a {
+      font-size: 40px;
+      padding-top: 3.5vh;
+    }
+    .sec h2 {
+      font-size: 24px;
+    }
+    .sec p {
+      font-size: 24px;
+    }
+    .instaCite, .artCite {
+      font-size: 24px;
+    }
+    .musicList li {
+      font-size: 40px;
+    }
+    .telePoints ul a li {
+      font-size: 24px;
+    }
+    #return-to-top b {
+      font-size: 80px;
+    }
+    .context div h1, .context div h2 {
+      font-size: 40px;
+    }  
+    .otherProjects h1 {
+      font-size: 40px;
+    } 
+    .teleTitle {
+      font-size: 24px;
+    }
+    .underlined {
+      border-bottom: 20px solid #303030;
+    }
+    .listRemove li {
+      font-size: 24px;
+    }
+  }

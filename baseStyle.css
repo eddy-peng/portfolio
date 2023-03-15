@@ -1,0 +1,578 @@
+.comingSoon {
+  pointer-events: none;
+}
+.desktopLogo h1 {
+  display: none;
+}
+
+.myName {
+  font-size: 16px;
+}
+
+img {
+  pointer-events: none;
+}
+
+.mobileLogo img {
+  pointer-events: auto;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Applies to the whole page */
+body {
+    overflow-x: hidden !important;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    z-index: -99;
+    background-size: 100px 100px;
+    background-image:
+      linear-gradient(to right, rgb(250, 250, 250) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(250, 250, 250) 1px, transparent 1px);
+}
+
+/* about stuff */
+
+.aboutPagesSpace, .aboutPagesSpaceBetween, .spaceTop {
+  margin-top: 10vh;
+}
+
+.title {
+  margin-top: 20vh;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.title h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.underlinedLink {
+  text-decoration: underline;
+  text-decoration-color: #303030;
+}
+
+.portImg {
+  width: 100%;
+}
+
+.moreAboutContent div {
+  margin-bottom: 5vh;
+}
+
+.artCite {
+  color: #A9A9A9;
+}
+
+.instaCite {
+  color: #303030;
+}
+
+.instaCite, .artCite {
+  text-align: center;
+  font-size: 12px;
+}
+
+div ul li {
+  line-height: 2vh;
+}
+
+.musicList li {
+  font-size: 16px;
+  line-height: 3.5vh;
+}
+
+/* end of about stuff */
+
+/* start of case story stuff oooooooooo */
+/* images use .portImg */
+
+/* for cover of case study */
+.cover {
+  padding-top: 7vh;
+  margin-top: 3vh;
+  z-index: -1;
+}
+
+/* context */
+.context {
+  margin-bottom: 10vh;
+}
+
+.spaceBelow {
+  margin-bottom: 10vh;
+}
+
+.halfSpaceBelow {
+  margin-bottom: 2.5vh;
+}
+
+.noSpace {
+  padding: 0;
+  margin: 0;
+}
+
+.context div {
+  margin-bottom: 3vh;
+}
+.context div h1 {
+  margin-bottom: 1vh;
+}
+
+.context div p {
+  margin-top: 0;
+  line-height: 3.5vh;
+  font-size: 12px;
+}
+
+.caseLink a {
+  text-decoration: underline;
+  text-decoration-color: #303030;
+} 
+
+/* the list */
+.context div ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: square;
+  margin-left: 2vh;
+}
+.context div ul li {
+  color: #303030;
+  line-height: 3.5vh;
+  font-size: 12px;
+}
+/* about/summary */
+.context div h2 {
+  margin-bottom: 1vh;
+}
+
+.context div h1, .context div h2 {
+  font-size: 24px;
+}
+
+/* sections */
+.sec {
+  margin-bottom: 15vh;
+}
+.sec h2 {
+  font-size: 12px;
+  color: #A9A9A9;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.sec p {
+  line-height: 3.5vh;
+  font-size: 12px;
+}
+
+/* case study teleport list */
+.telePoints {
+  display: none;
+}
+
+/* only in candy researcher case study */
+.listRemove {
+  padding: 0;
+  list-style-type: square;
+  margin-left: 2vh;
+}
+.listRemove li {
+  color: #303030;
+  line-height: 3.5vh;
+  font-size: 12px;
+}
+
+/* end of case story stuff oooooooooooo */
+
+p, h1, h2 {
+  color: #303030;
+} 
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  margin-top: 0.7vh;
+  margin-left: 1vh;
+  /* change logo size */
+  width: 5.5vh;
+  position: fixed;
+}
+
+.navigation {
+  z-index: 99;
+  position: fixed;
+  width: 95%;
+  border: 1px solid #303030;
+  height: 7vh;
+  background: white;
+}
+
+.navBackground {
+  z-index: 99;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  background: white;
+  height: 8.5vh;
+}
+
+.desktopNav {
+  display: none;
+}
+
+/* start */
+
+/* hamburger */
+.checkbox {
+  display: none;
+}
+
+.button {
+  position: relative;
+  background-color: white;
+  height: 7vh;
+  width: 7vh;
+  position: fixed;
+  top: 8px; 
+  right: 8px; 
+  z-index: 2000;
+  text-align: center; 
+  cursor: pointer;
+  border: 1px solid #303030;
+}
+
+.background {
+  height: 7vh;
+  width: 7vh;
+  position: fixed;
+  top: 8px; 
+  right: 8px; 
+  background-color: #FFFFFF;
+  z-index: 1000;
+  border: 1px solid #303030;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -60vw;
+  z-index: 1500;
+  opacity: 0;
+  width: 0;
+  transition: all 0.8s;
+}
+
+.list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style-type: square;
+  margin-left: 25%;
+  width: 100%;
+}
+
+.item {
+  margin: 5vh;
+  font-size: 24px;
+}
+  
+.item a {
+  color: #303030;
+}
+
+/* functionality */
+.checkbox:checked ~ .background {
+  transform: scale(80);
+}
+.checkbox:checked ~ .nav {
+  opacity: 1;
+  width: 100%;
+  right: 0;
+}
+
+/*  */
+/* styling hamb ICON */
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon,
+.icon::before,
+.icon::after {
+  width: 5vh;
+  height: 0.5vh;
+  background-color: #303030;
+  display: inline-block;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.icon::before {
+  top: -0.8rem;
+}
+.icon::after {
+  top: 0.8rem;
+}
+
+.checkbox:checked + .button .icon {
+  background-color: transparent;
+}
+
+.checkbox:checked + .button .icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.checkbox:checked + .button .icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.active {
+  background: #FFFFFF;
+  font-weight: bold;
+}
+
+.underlined {
+  border-bottom: 10px solid #303030;
+  padding-bottom: 2.3vh;
+}
+
+/* nav ends */
+
+.sec h1 {
+  font-size: 24px;
+  margin-top: 1vh;
+}
+
+.intro {
+  margin: 1vh;
+  margin-top: 15vh;
+  margin-bottom: 8vh;
+}
+
+.descList {
+  margin: 0;
+  padding: 0;
+  margin-left: 2vh;
+  list-style-type: square;
+}
+
+.mobileSelfDesc {
+  font-size: 12px;
+}
+
+.desktopSelfDesc {
+  display: none;
+}
+
+.tagline {
+  font-size: 24px;
+}
+
+.textGrad {
+  background: #303030;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* case study card */
+.card {
+    border: 1px solid #303030;
+    transition: 0.3s;
+    margin: 1vh;
+    margin-bottom: 2vh;
+    background-color: #FFF;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  background: white;
+}
+
+.quickFacts {
+    color: #A9A9A9;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.cardTitle {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.cardDes {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.shrink, .bigShrink {
+  transition: all .2s ease-in-out; 
+}
+
+.musicList {
+  padding-left: 0;
+  margin-top: 5vh;
+  margin-left: 3.5vh;
+  list-style-type: square;
+}
+
+/* footer stuff */
+footer {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  left: 0;
+  background-color: #FFF;
+  border-top: 1px solid #303030;
+  text-align: center;
+}
+
+hr {
+  display: none;
+}
+
+footer .footerContent div {
+  background: #FFF;
+  border: 1px solid #303030;
+  width: 9vh;
+  height: 5vh;
+  display: inline-block;
+  text-align: center; 
+  margin-left: 0.5vh;
+  margin-top: 3vh;
+}
+
+footer .footerContent div p {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  margin-top: 1.5vh;
+}
+
+footer .footerContent div p a {
+  text-decoration: none;
+  color: #303030;
+}
+
+.contactMe, .bragFooter {
+  font-size: 12px;
+}
+
+.contactMe a {
+  background: #303030;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+  text-decoration-color: #303030;
+  color:#303030; 
+}
+
+.bragFooter {
+  margin-top: 2vh;
+  text-align: center;
+  color: #A9A9A9;
+}
+
+.footerLogoContainer {
+  display: none;
+}
+
+.projectFooter {
+  height: 80%;
+}
+
+.otherProjects h1 {
+  padding-top: 2vh;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.footerImg {
+  margin-top: 1vh;
+  width: 95%;
+  border: 1px solid #303030;
+}
+
+.projectFooter .footerContent {
+  margin-top: 6vh;
+}
+
+/* end of footer stuff */
+
+
+
+/* Modal Gallery Images */
+
+#myImg {
+  cursor: pointer;
+  transition: all .2s ease-in-out; 
+  width: 100%;
+}
+
+.galleryColumn {
+  float: left;
+  width: 33%;
+  margin-left: 0.1vh;
+  margin-right: 0.1vh;
+}
+
+/* Clear floats after the columns */
+.galleryRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.teleTitle {
+  font-size: 16px;
+}
+
+/* Modal Gallery Images END */
+
+@media screen and (max-width: 600px) {
+  .galleryColumn {
+    width: 100%;
+  }
+}
