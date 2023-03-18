@@ -506,19 +506,19 @@ footer .footerContent div p a {
 }
 
 .projectFooter {
-  height: 80%;
+  height: 50%;
 }
 
-.otherProjects h1 {
-  padding-top: 2vh;
-  font-size: 24px;
-  font-weight: 300;
+.otherProject h1 {
+  padding-top: 5vh;
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 5vh;
 }
 
-.footerImg {
-  margin-top: 1vh;
-  width: 95%;
-  border: 1px solid #303030;
+.otherProject h1 a {
+  text-decoration-color: #303030;
+  color: #303030;
 }
 
 .projectFooter .footerContent {

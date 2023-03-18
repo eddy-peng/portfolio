@@ -41,12 +41,19 @@
       opacity: 0.2;
     }
   
-    .otherProjects {
+    .otherProject {
       margin-left: 10%;
       margin-right: 10%;
       border-bottom: none;
     }
-  
+    .otherProject h1 {
+      font-size: 70px;
+    }
+    .nextHover:hover {
+      -webkit-text-stroke: 1px black;
+      color: white;
+      transition: all 0.2s linear;
+    }
     .footerContent {
       margin-left: 10%;
       margin-right: 10%;
@@ -56,11 +63,6 @@
     .bragFooter {
       text-align: right; 
       margin-top: 2vh;
-    }
-  
-    .footerImg {
-      margin-top: 1vh;
-      width: 100%;
     }
   
     .contactMe {
@@ -77,7 +79,7 @@
       margin-left: 10%;
     }
     .projectFooter .footerLogoContainer {
-      margin-top: 11vh;
+      margin-top: 4vh;
     }
     .projectFooter .footerContent {
       margin-top: 8vh;

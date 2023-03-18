@@ -140,7 +140,7 @@
     }
   
     /* heree */
-    #me, .nextSection {
+    #me {
       display: grid;
       grid-template-columns: 2fr 2fr;
       grid-column-gap: 20px;
@@ -178,6 +178,9 @@
     }
     .projectFooter {
       height: 60%;
+    }
+    .otherProject h1 {
+      font-size: 60px;
     }
     .instaGrid {
       display: grid;

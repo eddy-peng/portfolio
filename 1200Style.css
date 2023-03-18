@@ -110,4 +110,7 @@
     .context div p {
       font-size: 16px;
     }
+    .otherProject h1 {
+      font-size: 80px;
+    } 
 }

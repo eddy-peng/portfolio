@@ -58,9 +58,6 @@
     .context div h1, .context div h2 {
       font-size: 40px;
     }  
-    .otherProjects h1 {
-      font-size: 40px;
-    } 
     .teleTitle {
       font-size: 24px;
     }
@@ -69,5 +66,11 @@
     }
     .listRemove li {
       font-size: 24px;
+    }
+    .otherProject h1 {
+      font-size: 120px;
+    } 
+    .projectFooter .footerLogoContainer {
+      margin-top: 5.5vh;
     }
   }
