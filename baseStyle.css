@@ -87,11 +87,6 @@ div ul li {
   line-height: 3vh;
 }
 
-.musicList li {
-  font-size: 16px;
-  line-height: 3.5vh;
-}
-
 /* end of about stuff */
 
 /* start of case story stuff oooooooooo */
@@ -357,6 +352,7 @@ a {
 .active {
   background: #FFFFFF;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .underlined {
@@ -437,13 +433,6 @@ a {
   transition: all .2s ease-in-out; 
 }
 
-.musicList {
-  padding-left: 0;
-  margin-top: 5vh;
-  margin-left: 3.5vh;
-  list-style-type: square;
-}
-
 /* footer stuff */
 footer {
   width: 100%;
@@ -511,7 +500,7 @@ footer .footerContent div p a {
 
 .otherProject h1 {
   padding-top: 5vh;
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 500;
   padding-bottom: 5vh;
 }

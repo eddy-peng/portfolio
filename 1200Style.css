@@ -73,7 +73,7 @@
     /* https://codeconvey.com/floating-back-to-top-button-html/ */
     #return-to-top {
       position: fixed;
-      bottom: 20vh;
+      bottom: 25vh;
       right: 6vh;
       width: 8vh;
       height: 8vh;
@@ -101,9 +101,6 @@
     .instaCite, .artCite {
       font-size: 16px;
     }
-    .musicList li {
-      font-size: 24px;
-    }
     .context div ul li {
       font-size: 16px;
     }
@@ -112,5 +109,5 @@
     }
     .otherProject h1 {
       font-size: 80px;
-    } 
+    }
 }

@@ -15,11 +15,12 @@
     .shrink:hover { 
       transform: scale(0.95); 
     }
-    
+    .underlined {
+      padding-bottom: 2.2vh;
+    }
     .bigShrink:hover { 
       transform: scale(0.85); 
     }
-    
     body {
       margin-left: 10%;
       margin-right: 10%;
@@ -45,9 +46,6 @@
       margin-left: 10%;
       margin-right: 10%;
       border-bottom: none;
-    }
-    .otherProject h1 {
-      font-size: 70px;
     }
     .nextHover:hover {
       -webkit-text-stroke: 1px black;
@@ -118,7 +116,7 @@
       float: right;
       font-size: 16px;
       font-weight: 300;
-      padding-top: 0.7vh;
+      padding-top: 0.5vh;
     }
     .listRemove li {
       font-size: 16px;

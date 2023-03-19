@@ -126,6 +126,9 @@
     .underlined {
       padding-bottom: 2.5vh;
     }
+    .active {
+      text-decoration: none;
+    }
     .content {
       display: grid;
       grid-template-columns: 2fr 2fr;
@@ -180,7 +183,7 @@
       height: 60%;
     }
     .otherProject h1 {
-      font-size: 60px;
+      font-size: 40px;
     }
     .instaGrid {
       display: grid;
