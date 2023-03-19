@@ -64,7 +64,7 @@
     .listRemove li {
       font-size: 24px;
     }
-    .otherProject h1 {
+    .otherProject h1, .title h1  {
       font-size: 120px;
     } 
     .projectFooter .footerLogoContainer {

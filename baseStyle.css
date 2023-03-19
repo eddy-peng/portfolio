@@ -41,15 +41,15 @@ body {
   margin-top: 10vh;
 }
 
-.title {
-  margin-top: 20vh;
-  text-align: center;
-  margin-bottom: 10vh;
+#caseTitle {
+  margin-top: 5vh;
+  text-align: left;
+  font-weight: 400;
 }
 
-.title h1 {
-  font-size: 40px;
-  font-weight: 300;
+.title {
+  margin-top: 10vh;
+  text-align: center;
 }
 
 .imageContainer {
@@ -351,7 +351,7 @@ a {
 
 .active {
   background: #FFFFFF;
-  font-weight: bold;
+  font-weight: 400;
   text-decoration: underline;
 }
 
@@ -421,7 +421,7 @@ a {
     font-size: 16px;
     margin-top: 5px;
     margin-bottom: 0px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .cardDes {
@@ -498,13 +498,22 @@ footer .footerContent div p a {
   height: 50%;
 }
 
-.otherProject h1 {
+.otherProject h1, .title h1 {
   padding-top: 5vh;
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 400;
   padding-bottom: 5vh;
 }
-
+.otherProject a h1 img {
+  opacity: 0%;
+  position: absolute;
+  width: 40%;
+  z-index: -1;
+  bottom: 1vh;
+  left: 30%;
+  transition: all 0.5s ease; 
+  border: 1px solid #303030;
+}
 .otherProject h1 a {
   text-decoration-color: #303030;
   color: #303030;

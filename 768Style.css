@@ -149,13 +149,9 @@
       grid-column-gap: 20px;
       vertical-align: middle;
     }
-  
-    .title {
-      margin-top: 0;
-      padding-top: 10vh;
-      margin-bottom: 10vh;
+    #caseTitle {
+      text-align: center;
     }
-  
     .values {
       margin-top: 5vh;
       display: grid;
@@ -182,7 +178,7 @@
     .projectFooter {
       height: 60%;
     }
-    .otherProject h1 {
+    .otherProject h1, .title h1  {
       font-size: 40px;
     }
     .instaGrid {
