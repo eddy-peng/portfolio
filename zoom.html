@@ -115,7 +115,7 @@
                 <div>
                     <h2>Overview</h2>
                     <p>
-                        I designed a solution to a problem my classmates and I faced during drop-in office hours in the Zoom waiting room. I researched people and the product to make informed decisions on the prototype screens. I am not associated with Zoom in any way.
+                        I solved a problem my classmates and I faced during drop-in office hours. My research enabled informed UI decisions on the redesign.
                     </p>
                 </div>
                 <div>
@@ -133,104 +133,86 @@
             </div>
             <div class="sec" id="problem">
                 <h2>The Problem</h2>
-                <h1>Designing a tolerable waiting room for Attendees.</h1>
+                <h1>Designing a tolerable waiting room for attendees.</h1>
                 <p>
-                    Recently, I went to a drop-in office hour to get help from a Teaching Assistant (TA). I remember being in the waiting room for a long time. Although other drop-in office hours were open, I was hesitant to leave.                
-                </p>
-                <p>
-                    I convinced myself I was at the front of the line. As such, if I waited longer, I would be admitted. In the end, I waste a lot of time.                
+                    I went to a drop-in office hour for help from a Teaching Assistant (TA). I remember being in the waiting room for a long time. Although other drop-in office hours were open, I was hesitant to leave.
+                    I convinced myself I was at the front of the line. As such, if I waited longer, I would be admitted. In the end, I wasted a lot of time.
                 </p>
             </div>
             <div class="sec">
                 <h2>The Cause</h2>
-                <h1>The current waiting room leaves much to be desired.</h1>
+                <h1>The current waiting room was lackluster.</h1>
                 <p>
-                    How many people before me? How long will I have to wait? These questions are unanswered. So I would sit in limbo for hours.
+                    How many people before me? How long will I have to wait? These questions are unanswered. So, I would sit in limbo for hours.
                 </p>
                 <img src="./img/zoom/origin.png" class="portImg">
             </div>
             <div class="sec" id="research">
                 <h2>User Research</h2>
-                <h1>17 classmates and friends echoed my thoughts.</h1>
+                <h1>Beliefs were echoed by 17 classmates and friends.</h1>
                 <p>
-                    I interviewed 17 people who have been in crowded drop-in office hours. I conducted these thirty-minute interviews over text message as I waited in waiting rooms, putting into perspective the long waiting times.                
+                    I interviewed 17 people who attended crowded drop-in office hours before. I conducted these thirty-minute conversations over text while waiting in the queue!
                 </p>
                 <img src="./img/zoom/zoomResearch.png" class="portImg">
             </div>
             <div class="sec">
                 <h2>Product Research</h2>
-                <h1>I checked for existing solutions within the product.</h1>
+                <h1>An audit for existing solutions within the product was conducted.</h1>
                 <p>
-                    If a solution existed, my objective would shift to making that solution more discoverable. It’s better to take it slow than to jump to conclusions. Spoiler alert: I found none.                
+                    If a solution existed, my objective would shift to making that solution more discoverable. It’s better to take it slow than to jump to conclusions.
                 </p>
                 <img src="./img/zoom/zoomProductExplore.png" class="portImg spaceBelow">
-                <h1>No hidden functions. However, I became more knowledgeable.</h1>
+                <h1>Uncovered UI techniques that would inform design decisions.</h1>
                 <p>
-                    I learned about Zoom's design choices, like brand styles and toggle bars. Toggle bars separated two different functions while allowing easy navigation. If a feature had to be added, using a toggle bar would be the best way to do it because it maintains consistency.
+                    Among colors and fonts, I realized Zoom’s preference for using toggle bars to separate two functions while allowing for easy navigation. If a feature were to be added, using a toggle bar would maintain product consistency.
                 </p>
                 <img src="./img/zoom/zoomStyles.png" class="portImg">
             </div>
             <div class="sec" id="brainstorm">
                 <h2>Solution Brainstorm</h2>
-                <h1>The two ideas I considered were a room chat and a queue.</h1>
-                <p>
-                    An anonymous chat feature will allow attendees to socialize with other people in the waiting room and ease the stress of waiting. However, it may be a distraction. It also doesn’t solve the problem of unknown waiting durations.                
-                </p>
-                <p>
-                    A queue visual will provide attendees with an estimated waiting duration. It will allow people to make decisions on whether to leave or stay. However, the solution doesn’t account for the host’s behavior. A host may admit people in random order, defeating the purpose of having a queue visualization.
-                </p>
-                <div class="instaGrid">
-                    <div>
-                        <img src="./img/zoom/roomChat.svg" class="portImg">
-                    </div>
-                    <div>
-                        <img src="./img/zoom/queueVisual.svg" class="portImg">
-                    </div>
-                </div>
+                <h1>A room chat and a queue were considered.</h1>
+                <img src="./img/zoom/prosCons.png" class="portImg">
             </div>
             <div class="sec" id="solution">
                 <h2>The Solution</h2>
-                <h1>Implement a queue visualization in the waiting room.</h1>
+                <h1>A queue visualization was the most practical.</h1>
                 <p>
-                    The most practical solution is the queue. Although the room chat has its upsides (like making the attendee feel less lonely due to the social aspect), it relies too heavily on the attendees’ participation, which may prove inconsistent.                
+                    Although the room chat had its upsides, it relied heavily on the attendees’ participation, which would be inconsistent. Additionally, there were little downsides with the queue visual, assuming the hosts would be fair and always admit the user who came in first.
                 </p>
                 <img src="./img/zoom/zoomFinalSolution.svg" class="portImg">
             </div>
             <div class="sec">
                 <h2>UI Sketches</h2>
-                <h1>I experimented with the queue visualization layout.</h1>
+                <h1>Queue visual UI experimentation.</h1>
                 <p>
-                    Though the toggle bar was on my mind, I tested other UI elements to ensure that the toggle bar was the best option. Sketching allowed rapid visualization. I also experimented with the anonymous profile displays.                
+                    I examined various UI layouts to ensure the toggle bar was the best option. Additionally, since the purpose of a waiting room is to anonymize attendees, I thought about how to represent an anonymous user.
                 </p>
                 <img src="./img/zoom/zoomSketch.png" class="portImg">
             </div>
             <div class="sec" id="prototype">
                 <h2>Prototype Mocks</h2>
-                <h1>I created the screens with the design language in mind.</h1>
-                <p>
-                    From the toggle bar to the font styles, I closely matched the UI of Zoom. Part of the waiting room's function is to keep attendees anonymous. As such, there are question marks on the profile cubes.                
-                </p>
+                <h1>The redesign was implemented with attention to detail.</h1>
                 <img src="./img/zoom/zoomProtoOne.png" class="portImg spaceBelow">
                 <img src="./img/zoom/zoomProtoTwo.png" class="portImg">
             </div>
             <div class="sec" id="feedback">
                 <h2>User Feedback</h2>
-                <h1>Attendees found the new designs way more helpful.</h1>
+                <h1>7 attendees found the redesign more insightful.</h1>
                 <p>
-                    I handed the screens to 7 waiting room attendees. Although all attendees were thrilled with the new feature, some preferred having the queue visualization on the host messages space.                
+                    Although all were thrilled with the redesign, 2 waiting room attendees preferred having the queue UI on the host messages space so it would be more convenient to view.
                 </p>
                 <p>
-                    Hey, that sounds familiar! I sketched out the idea before (in option #2 of the sketch)! However, it could be an information overload. Maybe I could add a short sentence communicating the attendee’s place in the queue (in option #1 of the sketch). But that would not be consistent with Zoom’s design language.
+                    However, I had thought about the idea and concluded it would be an information overload. Plus, it wouldn’t be too consistent with Zoom’s design language.
                 </p>
             </div>
             <div class="sec" id="reflection">
                 <h2>Reflections</h2>
-                <h1>Understanding a product’s design language goes a long way.</h1>
+                <h1>Understanding a product’s UI goes a long way.</h1>
                 <p>
-                    User research is insufficient because this project adds a feature to an existing product. The product needs to be analyzed because the design language can influence a new feature’s user experience.                
+                    User research alone was insufficient because this project added to an existing product. As such, I analyzed the application to ensure the redesign was consistent.
                 </p>
                 <p>
-                    If I could do this project over again, I would have created the screen with the queue visualization on the host message space and conducted an A/B test on a larger population of waiting room attendees.                
+                    If I could do this project again, I would test out more queue layouts from my sketching phase through A/B testing on a larger population of attendees.
                 </p>
             </div>
         </div>

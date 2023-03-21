@@ -403,6 +403,7 @@ a {
 
 .card img {
   width: 100%;
+  border-bottom: 1px solid #303030;
 }
 
 /* Add some padding inside the card container */
