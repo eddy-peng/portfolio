@@ -13,13 +13,14 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #A9A9A9;
   border: 1px solid #303030;
+  background-image: repeating-linear-gradient(45deg, #303030 0, #303030 1px, transparent 0, transparent 50%);
+  background-size: 10px 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #303030;
+  background-image: repeating-linear-gradient(-45deg, #303030 0, #303030 1px, transparent 0, transparent 50%);
 }
 
 .comingSoon {
