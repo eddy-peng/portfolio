@@ -511,9 +511,6 @@ footer .footerContent div p a {
 }
 
 .contactMe a {
-  background: #303030;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-decoration: underline;
   text-decoration-color: #303030;
   color:#303030; 
@@ -533,12 +530,42 @@ footer .footerContent div p a {
   height: 50%;
 }
 
-.otherProject h1, .title h1 {
+.otherProject h1 {
   padding-top: 5vh;
   font-size: 40px;
   font-weight: 400;
   padding-bottom: 5vh;
 }
+
+#galleryTitle {
+  text-align: left;
+  margin-bottom: 10vh;
+  padding-top: 10vh;
+}
+
+#galleryTitle h1, #galleryTitle p {
+  max-width: 60%;
+}
+
+#galleryTitle h1 {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#moreMe h1 {
+  max-width: 90%;
+  text-align: left;
+}
+
+.title h1 {
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
 .otherProject a h1 img {
   opacity: 0%;
   position: absolute;

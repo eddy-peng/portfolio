@@ -187,4 +187,10 @@
       grid-column-gap: 10px;
       grid-row-gap: 10px;
     }
+    #galleryTitle p {
+      max-width: 50%;
+    }
+    #galleryTitle {
+      padding-top: 0;
+    }
   }
