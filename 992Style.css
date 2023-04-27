@@ -16,18 +16,6 @@
       transform: scale(0.95); 
     }
 
-    /* Change the below classes */
-    .shrink:active {
-      opacity: 70% !important;
-    }
-    .desktopLogo:active h1 {
-      opacity: 70% !important; 
-    }
-    a:active {
-      opacity: 70% !important;
-    }
-    /* Change the above classes */
-
     .card:hover img {
       transform: scale(1.25); 
     }

@@ -24,6 +24,16 @@
   background-image: repeating-linear-gradient(-45deg, #FFFFFF 0, #FFFFFF 1px, transparent 0, transparent 50%);
 }
 
+.shrink:active {
+  opacity: 70% !important;
+}
+.desktopLogo:active h1 {
+  opacity: 70% !important; 
+}
+a:active {
+  opacity: 70% !important;
+}
+
 .comingSoon {
   pointer-events: none;
 }
