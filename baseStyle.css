@@ -171,6 +171,22 @@ div ul li {
   text-decoration-color: #303030;
 } 
 
+
+/* from the star shop */
+.nothing {
+  opacity: 0;
+}
+
+.shopItemDesc {
+  font-size: 12px;
+  max-width: 90%;
+}
+
+.endDisclaimer {
+  font-size: 12px;
+  max-width: 50%;
+}
+
 /* the list */
 .context div ul {
   margin: 0;
@@ -416,7 +432,7 @@ a {
   list-style-type: square;
 }
 
-.mobileSelfDesc {
+.mobileSelfDesc, .listAnywhere {
   font-size: 16px;
 }
 
