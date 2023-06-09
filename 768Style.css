@@ -193,4 +193,26 @@
     #galleryTitle {
       padding-top: 0;
     }
+
+    /* begin animation style */
+    .fadeIn {
+      animation: fadeInUp 0.4s ease-in forwards;
+      overflow: none;
+    }
+
+    @keyframes fadeInUp{
+      0%{transform:translate(0px, 40px); opacity: 0;}
+      100%{transform:translate(0px, 0); opacity: 1;}
+    }
+
+    .fade {
+      animation: fade 0.4s ease-in forwards;
+      overflow: none;
+    }
+
+    @keyframes fade{
+      0%{transform:translate(0px, -20px); opacity: 1;}
+      100%{transform:translate(0px, 0); opacity: 1;}
+    }
+    /* end animation styles */
   }
