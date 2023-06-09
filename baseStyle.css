@@ -183,8 +183,12 @@ div ul li {
 }
 
 .endDisclaimer {
-  font-size: 12px;
+  font-size: 16px;
   max-width: 50%;
+}
+
+.specialNote {
+  font-weight: 400;
 }
 
 /* the list */
