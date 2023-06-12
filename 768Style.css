@@ -215,4 +215,9 @@
       100%{transform:translate(0px, 0); opacity: 1;}
     }
     /* end animation styles */
+
+    .progressBar {
+      position: absolute;
+      right: 0;
+  }
   }
