@@ -681,7 +681,7 @@ footer .footerContent div p a {
 }
 
 @keyframes photoFade {
-    0%{transform:translate(0px, 4px); opacity: 1;}
+    0%{transform:translate(8px, 0); opacity: 1;}
     100%{transform:translate(0px, 0); opacity: 1;}
 }
 
