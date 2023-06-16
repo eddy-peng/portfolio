@@ -19,9 +19,6 @@
     .card:hover img {
       transform: scale(1.25); 
     }
-    .underlined {
-      padding-bottom: 2.2vh;
-    }
     .bigShrink:hover { 
       transform: scale(0.85); 
     }

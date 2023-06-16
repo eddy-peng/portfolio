@@ -124,7 +124,7 @@
       display: inline-block;
     }
     .underlined {
-      padding-bottom: 2.5vh;
+      /* padding-bottom: 2.5vh; */
     }
     .active {
       text-decoration: none;

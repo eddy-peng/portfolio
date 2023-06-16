@@ -408,12 +408,11 @@ a {
 .active {
   background: #FFFFFF;
   font-weight: 400;
-  text-decoration: underline;
+  text-decoration: line-through;
 }
 
 .underlined {
-  border-bottom: 10px solid #303030;
-  padding-bottom: 2.3vh;
+  text-decoration: line-through;
 }
 
 /* nav ends */
