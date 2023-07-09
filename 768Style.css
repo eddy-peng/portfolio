@@ -194,6 +194,10 @@
       padding-top: 0;
     }
 
+    .overflow {
+      overflow: none;
+    }
+
     /* begin animation style */
     .fadeIn {
       animation: fadeInUp 0.4s ease-in forwards;
