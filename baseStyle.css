@@ -559,7 +559,11 @@ footer .footerContent div p a {
   height: 50%;
 }
 
-.otherProject h1 {
+.allProjects h1 {
+  text-align: center;
+}
+
+.otherProject h1, .allProjects h1 {
   padding-top: 5vh;
   font-size: 40px;
   font-weight: 400;

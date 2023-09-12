@@ -178,7 +178,7 @@
     .projectFooter {
       height: 60%;
     }
-    .otherProject h1, .title h1  {
+    .otherProject h1, .title h1, .allProjects h1  {
       font-size: 40px;
     }
     .instaGrid {

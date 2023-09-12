@@ -105,7 +105,7 @@
     .context div p {
       font-size: 16px;
     }
-    .otherProject h1, .title h1  {
+    .otherProject h1, .title h1, .allProjects h1  {
       font-size: 80px;
     }
 }
