@@ -51,13 +51,15 @@
     .desktopLogo {
       margin-top: 0.8vh;
       float: left;
+      position: relative;
+      height: auto;
     }
   
     /* logo size */
     .logo {
       position: relative;
       width: 5.5vh;
-        margin-left: 1.5vh;
+      margin-left: 1.5vh;
     }
   
     /* tabs in the large rectangle */
