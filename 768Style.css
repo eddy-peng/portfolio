@@ -70,9 +70,13 @@
       color: #303030;
       font-size: 16px;
       padding-right: 2vh;
-      padding-top: 2.2vh;
     }
-  
+    
+    .centerNav {
+      height: 8vh;
+      line-height: 8vh;
+    }
+
     /* email social button */
     .emailBox {
       font-size: 3.5vh;

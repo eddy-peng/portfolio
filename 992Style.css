@@ -108,13 +108,16 @@
   
     nav a {
       padding-right: 1.5vh;
-      padding-top: 2.5vh;
     }
     .linkedInBox, .emailBox {
       width: 8vh;
     }
     .desktopNav, .navTabs, .socialArea, .linkedInBox, .emailBox {
       height: 8vh;
+    }
+    .centerNav {
+      height: 8vh;
+      line-height: 8vh;
     }
     .logo {
       width: 5vh;
