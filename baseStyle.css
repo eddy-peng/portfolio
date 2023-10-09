@@ -527,7 +527,8 @@ footer .footerContent div p {
   font-size: 12px;
   margin: 0;
   padding: 0;
-  margin-top: 1.5vh;
+  height: 5vh;
+  line-height: 5vh;
 }
 
 footer .footerContent div p a {
