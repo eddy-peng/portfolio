@@ -116,7 +116,7 @@ body {
 
 .instaCite, .artCite {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 div ul li {
@@ -163,7 +163,7 @@ div ul li {
 .context div p {
   margin-top: 0;
   line-height: 3.5vh;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .caseLink a {
@@ -178,7 +178,7 @@ div ul li {
 }
 
 .shopItemDesc {
-  font-size: 12px;
+  font-size: 14px;
   max-width: 90%;
 }
 
@@ -201,7 +201,7 @@ div ul li {
 .context div ul li {
   color: #303030;
   line-height: 3.5vh;
-  font-size: 12px;
+  font-size: 14px;
 }
 /* about/summary */
 .context div h2 {
@@ -217,7 +217,7 @@ div ul li {
   margin-bottom: 15vh;
 }
 .sec h2 {
-  font-size: 12px;
+  font-size: 14px;
   color: #767676;
   margin-bottom: 0;
   font-weight: 300;
@@ -225,7 +225,7 @@ div ul li {
 
 .sec p {
   line-height: 3.5vh;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* case study teleport list */
@@ -242,7 +242,7 @@ div ul li {
 .listRemove li {
   color: #303030;
   line-height: 3.5vh;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* end of case story stuff oooooooooooo */
@@ -477,7 +477,7 @@ a {
 
 .quickFacts {
     color: #767676;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 0px;
 }
 
@@ -489,7 +489,7 @@ a {
 }
 
 .cardDes {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 10px;
 }
 
@@ -524,7 +524,7 @@ footer .footerContent div {
 }
 
 footer .footerContent div p {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   height: 5vh;
@@ -537,7 +537,7 @@ footer .footerContent div p a {
 }
 
 .contactMe, .bragFooter {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .contactMe a {
