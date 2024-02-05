@@ -120,7 +120,7 @@ body {
 }
 
 div ul li {
-  line-height: 3vh;
+  line-height: 3.5vh;
 }
 
 /* end of about stuff */
@@ -491,6 +491,7 @@ a {
 .cardDes {
     font-size: 14px;
     margin-top: 10px;
+    line-height: 3vh;
 }
 
 .shrink, .bigShrink {
@@ -579,6 +580,10 @@ footer .footerContent div p a {
 
 #galleryTitle h1, #galleryTitle p {
   max-width: 60%;
+}
+
+#galleryTitle p {
+  line-height: 3.5vh;
 }
 
 #galleryTitle h1 {
