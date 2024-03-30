@@ -605,6 +605,14 @@ footer .footerContent div p a {
   padding-bottom: 5vh;
 }
 
+.flipHorizontal {
+  display: inline-block;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+}
+
 .otherProject a h1 img {
   opacity: 0%;
   position: absolute;
