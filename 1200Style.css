@@ -8,7 +8,8 @@
       line-height: 3.5vh;
     }
     .cardTitle {
-      font-size: 24px;
+      font-size: 20px;
+      line-height: 4vh;
     }
 
     .desktopLogo h1 {
@@ -22,7 +23,7 @@
       font-size: 16px;
     }
     nav a {
-      font-size: 24px;
+      font-size: 20px;
       padding-right: 3vh;
     }
     .linkedInBox, .emailBox {
