@@ -445,6 +445,7 @@ a {
 
 .tagline {
   font-size: 24px;
+  line-height: 5vh;
 }
 
 /* case study card */

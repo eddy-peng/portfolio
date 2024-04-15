@@ -1,6 +1,11 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
-    footer .footerContent div {
+  .tagline {
+    font-size: 32px;
+    line-height: 6vh;
+  }  
+  
+  footer .footerContent div {
       width: 10vh;
     }
   

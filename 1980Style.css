@@ -31,7 +31,8 @@
       font-size: 24px;
     }
     .tagline {
-      font-size: 40px;
+      font-size: 80px;
+      line-height: 6vh;
     }
     nav a {
       font-size: 40px;

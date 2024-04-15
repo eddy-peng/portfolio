@@ -1,6 +1,13 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    footer .footerContent div p {
+  /* Tagline */
+  .tagline {
+    font-size: 48px;
+    line-height: 10vh;
+  }
+  
+      /* Footer stuff */
+  footer .footerContent div p {
       font-size: 16px;
     }
     .cardDes {
@@ -42,9 +49,6 @@
     /* end of footer stuff */
   
     /* case study stuff */
-    /* .caseContent {
-      margin-left: 20vh;
-    } */
     .telePoints {
       display: block;
       position: fixed;
@@ -69,6 +73,8 @@
       font-weight: 400;
       color: #303030;
     }
+    /* End of case study stuff */
+
     /* css code for floating back to top button is written by Muhammad Asif */
     /* https://codeconvey.com/floating-back-to-top-button-html/ */
     #return-to-top {
