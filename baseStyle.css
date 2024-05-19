@@ -339,6 +339,7 @@ a {
   list-style-type: square;
   margin-left: 25%;
   width: 100%;
+  list-style: none;
 }
 
 .item {
@@ -428,8 +429,7 @@ a {
 .descList {
   margin: 0;
   padding: 0;
-  margin-left: 2vh;
-  list-style-type: square;
+  list-style-type: none;
 }
 
 .mobileSelfDesc, .listAnywhere {
