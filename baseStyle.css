@@ -745,3 +745,23 @@ footer .footerContent div p a {
     width: 100%;
   }
 }
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: white;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 0.4px solid rgb(250, 250, 250);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 4px;
+  background: #303030;
+  width: 0%;
+}

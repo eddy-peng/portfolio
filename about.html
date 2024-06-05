@@ -49,6 +49,10 @@
         </script>
     </head>
 
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
     <header>
         <div class="navBackground"></div>
         <!-- mobile navigation -->
@@ -232,7 +236,7 @@
             <br/>
             <hr/>
             <p class="contactMe">Get In Touch ➢ <a href="mailto: eddypeng3@gmail.com">eddypeng3@gmail.com</a> ◆ <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">LinkedIn</a></p>
-            <p class="bragFooter">© 2024 version designed & coded by Eddy.</p>
+            <p class="bragFooter">© 2024 version designed & coded by Eddy ✌︎</p>
         </div>
     </footer>
     <!-- html and jQuery code for floating back to top button is written by Muhammad Asif -->
@@ -271,6 +275,17 @@
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " currentPic";
             setTimeout(showSlides, 5000);
+        }
+    </script>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
         }
     </script>
 </html>
