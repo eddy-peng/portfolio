@@ -42,7 +42,7 @@ a:active {
 }
 
 .myName {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 img {
@@ -69,6 +69,23 @@ body {
     background-image:
       linear-gradient(to right, rgb(250, 250, 250) 1px, transparent 1px),
       linear-gradient(to bottom, rgb(250, 250, 250) 1px, transparent 1px);
+}
+
+.loralora {
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+.loraloraNav {
+  font-family: "Lora", serif;
+  font-weight: 100;
+  font-style: italic;
+  color: #767676;
+  font-size: 16px;
+}
+.loraloraNavActive {
+  font-weight: 800;
+  color: #303030;
 }
 
 /* about stuff */
@@ -570,6 +587,9 @@ footer .footerContent div p a {
   font-size: 40px;
   font-weight: 500;
   padding-bottom: 5vh;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 #galleryTitle {
@@ -604,6 +624,9 @@ footer .footerContent div p a {
   font-weight: 400;
   padding-top: 5vh;
   padding-bottom: 5vh;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .flipHorizontal {
