@@ -84,56 +84,44 @@
 
     /* email social button */
     .emailBox {
-      font-size: 3.3vh;
       border: 1px solid #303030;
       background: white;
       width: 8vh;
       height: 8vh;
-      text-align: center; 
-      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-left: 1vh;
     }
   
-    .emailBox img {
-      display: block;
-      margin: 0 auto;
+    .emailBox svg {
       width: 3.5vh;
       height: 3.5vh;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      justify-self: center;
+      display: flex;
     }
   
     /* linkedin social button */
     .linkedInBox {
-      font-size: 3.3vh;
       border: 1px solid #303030;
       background: white;
       width: 8vh;
       height: 8vh;
-      text-align: center; 
-      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-left: 1vh;
     }
-  
-    .linkedInBox img {
-      display: block;
-      margin: 0 auto;
+
+    .linkedInBox svg {
       width: 3.5vh;
       height: 3.5vh;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      justify-self: center;
+      display: flex;
     }
   
     /* making the two social buttons appear side by side in its social area container */
-    .linkedInBox, .emailBox {
+    /* .linkedInBox, .emailBox {
       display: inline-block;
-    }
+    } */
     .underlined {
       /* padding-bottom: 2.5vh; */
     }
@@ -160,8 +148,20 @@
       grid-column-gap: 20px;
       vertical-align: middle;
     }
-    #caseTitle {
+    #caseTitle h1 {
+      padding: 0;
+      margin: 0;
+      padding-top: 48px;
+      font-size: 72px;
       text-align: center;
+      font-weight: 500;
+      font-family: 'Work Sans', sans-serif;
+      font-style: normal;
+    }
+    #caseTitle h2 {
+      font-size: 32px;
+      text-align: center;
+      font-weight: 500;
     }
     .values {
       margin-top: 5vh;
@@ -182,10 +182,8 @@
     }
     .context {
       margin-top: 5vh;
-      display: grid;
-      grid-template-columns: 2fr 2fr;
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
+      display: flex;
+      justify-content: space-between;
     }
     .projectFooter {
       height: 60%;

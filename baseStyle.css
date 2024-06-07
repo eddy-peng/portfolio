@@ -123,7 +123,7 @@ body {
   margin-bottom: 5vh;
 }
 
-.artCite {
+.artCite, .timelineSubtitle {
   color: #767676;
 }
 
@@ -152,9 +152,28 @@ div ul li {
   z-index: -1;
 }
 
+#caseTitle h1 {
+  padding: 0;
+  margin: 0;
+  padding-top: 100px;
+  font-size: 48px;
+  font-weight: 500;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+}
+#caseTitle h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
 /* context */
 .context {
+  margin-top: 10vh;
   margin-bottom: 10vh;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-column-gap: space-between;
+  grid-row-gap: auto;
 }
 
 .spaceBelow {
@@ -187,26 +206,6 @@ div ul li {
   text-decoration: underline;
   text-decoration-color: #303030;
 } 
-
-
-/* from the star shop */
-.nothing {
-  opacity: 0;
-}
-
-.shopItemDesc {
-  font-size: 14px;
-  max-width: 90%;
-}
-
-.endDisclaimer {
-  font-size: 16px;
-  max-width: 50%;
-}
-
-.specialNote {
-  font-weight: 400;
-}
 
 /* the list */
 .context div ul {
@@ -249,8 +248,10 @@ div ul li {
 /* case study teleport list */
 .telePoints {
   display: none;
+  opacity: 0;
+  position: absolute;
+  
 }
-
 /* only in candy researcher case study */
 .listRemove {
   padding: 0;
@@ -749,19 +750,18 @@ footer .footerContent div p a {
 /* The progress container (grey background) */
 .progress-container {
   width: 100%;
-  height: 4px;
+  height: 8px;
   background: white;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   left: 0;
-  border-bottom: 0.4px solid rgb(250, 250, 250);
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 4px;
-  background: #303030;
+  height: 8px;
+  background: linear-gradient(to right, #0965E3, #57B7FD);
   width: 0%;
 }

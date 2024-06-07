@@ -49,6 +49,9 @@
     .telePoints ul a li {
       font-size: 24px;
     }
+    .telePoints p {
+      font-size: 24px;
+    }
     .context div h1, .context div h2 {
       font-size: 40px;
     }  

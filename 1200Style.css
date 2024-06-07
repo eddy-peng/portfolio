@@ -45,6 +45,14 @@
     /* end of footer stuff */
   
     /* case study stuff */
+    #bookmarks {
+      display: none;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
     .telePoints {
       display: block;
       position: fixed;
@@ -55,6 +63,9 @@
       font-size: 12px;
       line-height: 3vh;
       color: #767676;
+    }
+    .telePoints p {
+      font-size: 14px;
     }
     .telePoints ul {
       padding: 0;
@@ -69,7 +80,7 @@
     }
     .telePoints ul a li:hover {
       font-weight: 400;
-      color: #303030;
+      color: #0965E3;
     }
     /* End of case study stuff */
 
@@ -93,7 +104,7 @@
       z-index: -1;
       border: 1px solid #303030;
     }
-    #return-to-top img {
+    #return-to-top svg {
       width: 8vh;
       height: 8vh;
     }

@@ -19,9 +19,35 @@
     .card:hover img {
       transform: scale(1.25); 
     }
-    .bigShrink:hover { 
-      transform: scale(0.85); 
+    .emailBox:hover svg .clr-i-solid-path-1 {
+      fill: #0965E3;
     }
+    
+    .emailBox:hover svg .clr-i-solid-path-2 {
+      fill: #0965E3;
+    }
+    .linkedInBox:hover svg path {
+      fill: #0965E3;
+    }
+    nav a:hover {
+      color: #0965E3;
+    }
+    #return-to-top:hover svg path {
+      fill: #0965E3;
+    }
+    .bigShrink:hover, #return-to-top:hover { 
+      transform: scale(0.85); 
+      border-image: conic-gradient(
+        from var(--angle),
+        #0965E3 0deg 90deg,
+        #FAFAFA 90deg 180deg,
+        #0965E3 180deg 270deg,
+        #FAFAFA 270deg 360deg
+      )
+      1 stretch;
+      background: rgb(255 255 255 / var(--opacity));
+    }
+
     body {
       margin-left: 10%;
       margin-right: 10%;
@@ -57,8 +83,7 @@
     }
     .underlinedLink:hover {
       text-decoration: none;
-      -webkit-text-stroke: 0.5px black;
-      color: white;
+      color: #0965E3;
       transition: all 0.2s linear;
     }
     .footerContent {
@@ -67,14 +92,16 @@
       text-align: right;
       /* margin-top: 10vh; */
     }
+    .footerContent .bigShrink p:hover {
+      color: #0965E3;
+    }
     .bragFooter {
       text-align: right; 
       margin-top: 2vh;
     }
     .contactMe a:hover {
       text-decoration: none;
-      -webkit-text-stroke: 0.5px black;
-      color: white;
+      color: #0965E3;
       transition: all 0.2s linear;
     }
     .contactMe {
@@ -127,6 +154,9 @@
       margin-left: 15vh;
       margin-right: 15vh;
     }
+    .caseStudyBeginning {
+      display: flex;
+    }
     .desktopLogo h1 {
       display: inline-block;
       font-size: 16px;
@@ -145,3 +175,32 @@
       font-size: 16px;
     }
   }
+
+  @supports (background: paint(houdini)) {
+    @property --opacity {
+      syntax: "<number>";
+      initial-value: 0.5;
+      inherits: false;
+    }
+  
+    @property --angle {
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+    }
+  
+    @keyframes opacityChange {
+      to {
+        --opacity: 1;
+      }
+    }
+  
+    @keyframes rotate {
+      to {
+        --angle: 360deg;
+      }
+    }
+  
+    .bigShrink, #return-to-top:hover {
+      animation: rotate 4s linear infinite, opacityChange 3s infinite alternate;
+    } }
