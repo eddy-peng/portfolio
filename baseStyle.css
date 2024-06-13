@@ -27,7 +27,7 @@
 .shrink:active {
   opacity: 70% !important;
 }
-.desktopLogo:active h1 {
+.:active h1 {
   opacity: 70% !important; 
 }
 a:active {
@@ -37,7 +37,7 @@ a:active {
 .comingSoon {
   pointer-events: none;
 }
-.desktopLogo h1 {
+. h1 {
   display: none;
 }
 
@@ -88,6 +88,70 @@ body {
   color: #303030;
 }
 
+.wizardStar {
+  display: inline-block;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  font-style: normal !important;
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+
+.peaceSymbol {
+  display: inline-block;
+  -webkit-animation: rotation 4s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(16deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-16deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+.magicPen {
+  display: inline-block;
+  -webkit-animation: write 1s infinite linear;
+}
+
+@-webkit-keyframes write {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-8deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(8deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
 /* about stuff */
 
 .aboutPagesSpace, .aboutPagesSpaceBetween, .spaceTop {
@@ -117,6 +181,7 @@ body {
 
 .portImg {
   width: 100%;
+  margin-top: 20px;
 }
 
 .moreAboutContent div {
@@ -177,7 +242,7 @@ div ul li {
 }
 
 .spaceBelow {
-  margin-bottom: 10vh;
+  margin-bottom: 20vh;
 }
 
 .halfSpaceBelow {
@@ -202,10 +267,10 @@ div ul li {
   font-size: 14px;
 }
 
-.caseLink a {
+/* .caseLink a {
   text-decoration: underline;
   text-decoration-color: #303030;
-} 
+}  */
 
 /* the list */
 .context div ul {
@@ -559,12 +624,6 @@ footer .footerContent div p a {
   font-size: 14px;
 }
 
-.contactMe a {
-  text-decoration: underline;
-  text-decoration-color: #303030;
-  color:#303030; 
-}
-
 .bragFooter {
   margin-top: 2vh;
   text-align: center;
@@ -764,4 +823,22 @@ footer .footerContent div p a {
   height: 8px;
   background: linear-gradient(to right, #0965E3, #57B7FD);
   width: 0%;
+}
+
+
+.GIFLayoutForApps {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.GIFLayoutForApps img {
+  width: 60%;
+  padding-bottom: 20px;
+}
+
+.GIFLayoutForApps div {
+  flex: 1;
+  max-width: 50%;
 }
