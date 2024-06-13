@@ -81,10 +81,21 @@
       color: white;
       transition: all 0.2s linear;
     }
-    .underlinedLink:hover {
+    .underlinedLink, .contactMe a {
+      color: #303030;
       text-decoration: none;
+      background: 
+      linear-gradient(to right, #303030, #303030),
+      linear-gradient(to right, #0965E3, #57B7FD);
+      background-size: 100% 0.1em, 0 0.1em;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 400ms;
+    }
+
+    .underlinedLink:hover, .contactMe a:hover {
       color: #0965E3;
-      transition: all 0.2s linear;
+      background-size: 0 0.1em, 100% 0.1em;
     }
     .footerContent {
       margin-left: 10%;
@@ -98,11 +109,6 @@
     .bragFooter {
       text-align: right; 
       margin-top: 2vh;
-    }
-    .contactMe a:hover {
-      text-decoration: none;
-      color: #0965E3;
-      transition: all 0.2s linear;
     }
     .contactMe {
       position: absolute;
@@ -126,6 +132,9 @@
     .footerLogo {
       margin-left: 1vh;
       width: 5.5vh;
+    }
+    .footerLogo:hover path {
+      stroke: #0965E3;
     }
   /* end of footer stuff */
   
@@ -163,12 +172,20 @@
       font-weight: 300;
     }
     .centeringName {
+      display: block;
       position: absolute;
       top: 50%;
       left: 200%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       white-space: nowrap;
+    }
+    .desktopLogo:hover .centeringName h1 {
+      color: #0965E3;
+    }
+
+    .desktopLogo:hover .logo path {
+      stroke: #0965E3;
     }
 
     .listRemove li {
@@ -204,3 +221,8 @@
     .bigShrink, #return-to-top:hover {
       animation: rotate 4s linear infinite, opacityChange 3s infinite alternate;
     } }
+
+
+    .GIFLayoutForApps img {
+      width: 30%;
+    }

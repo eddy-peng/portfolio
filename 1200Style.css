@@ -66,6 +66,9 @@
     }
     .telePoints p {
       font-size: 14px;
+      font-family: "Lora", serif;
+      font-weight: 100;
+      font-style: italic; 
     }
     .telePoints ul {
       padding: 0;
