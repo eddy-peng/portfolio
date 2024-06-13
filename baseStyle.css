@@ -624,6 +624,12 @@ footer .footerContent div p a {
   font-size: 14px;
 }
 
+.contactMe a {
+  color: #303030;
+  text-decoration: underline;
+
+}
+
 .bragFooter {
   margin-top: 2vh;
   text-align: center;
