@@ -88,7 +88,11 @@
             <div class="navTabs">
                 <a href="./index.html">
                     <div class="desktopLogo bigShrink">
-                        <img src="img/universal/logoDef.svg" alt="eddy's logo" class="logo">
+                        <svg class="logo" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H26H51H76H101V26V51V76V101H76H51H26H1V76V51V26V1Z" fill="white"/>
+                            <path d="M1 1V26V51M1 1H26H51H76M1 1H76M101 51V26V1H76M101 51V76V101H76M101 51H76M1 51V76V101H26H51H76M1 51L38.5 26M1 51L38.5 76M1 51H76M76 1L38.5 26M76 51L38.5 26M76 51L38.5 76M76 101L38.5 76" stroke="#303030" stroke-width="2"/>
+                        </svg>
+                        
                         <div class="centeringName">
                             <h1>Eddy Peng</h1>
                         </div>
@@ -122,78 +126,209 @@
     </header>
     
     <body>
-        <img src="./img/storalink/storalinkFullCover.png" class="portImg cover fadeIn">
         <div class="title fadeIn" id="caseTitle">
-            <h1>Storalink Link Storage</h1>
+            <h1>Universal Bookmarks</h1>
+            <h2>For Storalink (Passion Project)</h2>
         </div>
-        <!-- <div class="telePoints fadeIn">
-            <p>✍︎ Chapters</p>
+        <img src="./img/storalink/storalinkFullCover.png" class="portImg cover fadeIn">
+        <div href="javascript:" id="bookmarks" class="telePoints fadeIn">
+            <p>Chapters</p>
             <ul>
-                <a href="#"><li>Insert</li></a>
-                <a href="#"><li>Insert</li></a>
-                <a href="#"><li>Insert</li></a>
-                <a href="#"><li>Insert</li></a>
-                <a href="#"><li>Insert</li></a>
+                <a href="#context"><li>Context</li></a>
+                <a href="#role"><li>Role</li></a>
+                <a href="#validation"><li>Validation</li></a>
+                <a href="#initialIdeas"><li>Initial Ideas</li></a>
+                <a href="#userFlow"><li>User Flow</li></a>
+                <a href="#design"><li>Design</li></a>
+                <a href="#designSystem"><li>Design System</li></a>
+                <a href="#critique"><li>UI Critique</li></a>
+                <a href="#reflections"><li>Reflections</li></a>
+                <a href="#nextSteps"><li>Next Steps</li></a>
             </ul>
-        </div> -->
+        </div>
 
         <div class="caseContent fadeIn">
             <div class="context">
                 <div>
-                    <h1>Context</h1>
-                    <ul>
-                        <li>UI Designer</li>
-                        <li>Initiative</li>
-                        <li>Mobile App</li>
-                        <li>Team Of 4</li>
-                    </ul>
+                    <h2>Role</h2>
+                    <p>UI Designer</p>
                 </div>
                 <div>
-                    <h2>Overview</h2>
+                    <h2>Team</h2>
                     <p>
-                        I created UI Designs for a mobile application that organizes hyperlinks. Responsibilities included the design system, responsive landing website, and mobile application.
+                        1 Designer
+                        <br/>
+                        3 Engineers
                     </p>
+                </div>
+                <div>
+                    <h2>Timeline</h2>
+                    <p>
+                        May 2023 – Present
+                        <br/>
+                        <span class="timelineSubtitle">(~1 Year)</span>
+                    </p>
+                </div>
+                <div>
+                    <h2>Media</h2>
                     <p class="caseLink">
-                        <a class="underlinedLink" href="https://www.storalink.com/" target="_blank">www.storalink.com</a>
+                        <a class="underlinedLink" href="https://www.storalink.com/" target="_blank">storalink.com</a>
                     </p>
                 </div>
-                <div>
-                    <h2>Tools</h2>
-                    <p>
-                        Figma
-                    </p>
-                </div>
-                <div>
-                    <h2>Duration</h2>
-                    <p>
-                        May 2023 – Present (10 months)
-                    </p>
-                </div>
+            </div>
+            <div class="sec" id="context">
+                <h2>Context</h2>
+                <h1>
+                    A friend and I had a solution to a mutual problem: misplacing links.
+                </h1>
+                <p>
+                    Existing solutions include keeping links on a Word document or a private social media channel. However, both fell short in terms of convenience and intuitiveness. Thus, we put together a team and started our journey.
+                </p>
+            </div>
+            <div class="sec" id="role">
+                <h2>Role</h2>
+                <h1>
+                    As part of the small team, I led all design aspects.
+                </h1>
+                <p>
+                    From guiding brand identity to establishing a design system and high-fidelity prototype screens, I built the application from 0 to 1. I also worked closely with the engineers, answering questions about usability and making design compromises to keep the project from stalling.
+                </p>
+                <img src="./img/storalink/figmaFileScreenshot.png" class="portImg">
+            </div>
+            <div class="sec" id="validation">
+                <h2>Concept Validation</h2>
+                <h1>
+                    Qualitative research reveals the challenge of managing links on the go for social and personal use cases.
+                </h1>
+                <p>
+                    After conducting interviews with 22 acquaintances, family members, and mutual friends, the need for a method of managing links was clear. I created a heat map to visualize the concept's primary users. Concept validation was limited to one week due to tight scheduling. Subsequently, the number of people available was limited.
+                </p>
+                <img src="./img/storalink/qualitativeResearch.png" class="portImg">
+            </div>
+            <div class="sec" id="initialIdeas">
+                <h2>Initial Ideas</h2>
+                <h1>
+                    I assessed market needs by creating initial mockups.
+                </h1>
+                <p>
+                    Because my team and I had a product idea in mind, it was essential to validate the concept so it solved a problem that existed. To facilitate validation, I illustrated the core concept: how would a user add a link to the solution from a third-party platform?
+                </p>
+                <img src="./img/storalink/initialShots.png" class="portImg">
             </div>
             <div class="sec">
-                <h1>Case Study Coming Soon...</h1>
-            </div>
-            <!-- <div class="sec" id="#">
-                <h2>Insert</h2>
-                <h1>Insert</h1>
+                <h2>Analogous Research</h2>
+                <h1>
+                    I took inspiration from the Google Drive mobile application as I designed the high-fidelity screens.
+                </h1>
                 <p>
-                    Insert
+                    The main difference between Storalink and Google Drive is granularity because Storalink only works with hyperlinks. By incorporating layouts, user flows, and interfaces from Google Drive, I saw that I could take advantage of Jakob’s Law, making it easier for many people experienced in Google Drive to use the solution.
                 </p>
-            </div> -->
+                <img src="./img/storalink/foldersGallery.png" class="portImg spaceBelow">
+                <img src="./img/storalink/folderContents.png" class="portImg spaceBelow">
+                <img src="./img/storalink/sortFolder.png" class="portImg">
+            </div>
+            <div class="sec" id="userFlow">
+                <h2>User Flow</h2>
+                <h1>
+                    The product's information architecture promoted mutual understanding amongst the team.
+                </h1>
+                <p>
+                    During the design process, the engineers were working on the functionality. This dynamic ensured the two parts of the team were on the same page to avoid confusion. Through workshops with the engineering team, I created a user flow to communicate expected functionality and architecture.
+                </p>
+                <iframe class="portImg" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2F8UZmL1NKkvhIruxKuH2goM%2FStoralink-User-Flow%3Fnode-id%3D0-1%26t%3D7e8oGRFKWMeAIj6f-1" allowfullscreen></iframe>
+            </div>
+            <div class="sec" id="design">
+                <h2>Design</h2>
+                <h1>
+                    Prototyped features illustrated interaction concepts and guided implementation.
+                </h1>
+                <div class="GIFLayoutForApps">
+                    <div>
+                        <h1>Homepage And Folder View</h1>
+                        <p>
+                            The homepage gives access to pinned folders, recent folders, recent links, and a universal search bar. Interacting with a folder card reveals the links it contains.
+                        </p>
+                    </div>
+                    <img src="https://i.postimg.cc/T3TbxbRk/home-Folder.gif" class="portImg">
+                </div>
+                <div class="GIFLayoutForApps">
+                    <img src="https://i.postimg.cc/RFZGZ84D/filter-Link.gif" class="portImg">
+                    <div>
+                        <h1>Filters And Links</h1>
+                        <p>
+                            The platform provides many options for filtering through the folder's contents. Interacting with a specified link card reveals a carousel layout where the user can flip through all links in that folder with descriptive information.
+                        </p>
+                    </div>
+                </div>
+                <div class="GIFLayoutForApps">
+                    <div>
+                        <h1>Add Links Externally</h1>
+                        <p>
+                            A third-party platform's "share to" functionality facilitates convenient media insertion into the application. Users can control the folder location of the new addition. 
+                        </p>
+                    </div>
+                    <img src="https://i.postimg.cc/pTQ93VwN/external-Add.gif" class="portImg">
+                </div>
+            </div>
+            <div class="sec" id="designSystem">
+                <h2>Design System</h2>
+                <h1>
+                    I documented styles and components throughout the application to guide development and maintain consistency.
+                </h1>
+                <p>
+                    I sorted components by their type, such as input boxes, cards, and popups, into specific boards to make them easier for engineers to find during development. Additionally, I included assets like default images and layout grids for reference.
+                </p>
+                <iframe class="portImg" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2FsOOXVgWc0xnk8EqN4NQlQO%2FStoralink-Design-System%3Fnode-id%3D0-1%26t%3DifLqg4TOZXphSjdo-1" allowfullscreen></iframe>
+            </div>
+            <div class="sec" id="critique">
+                <h2>UI Critique</h2>
+                <h1>
+                    Each of the three rounds of UI critique on the application's Beta version, pushed the design closer to the Figma design.
+                </h1>
+                <p>
+                    The application's UI required refinements to match the Figma design. Over several days, I reviewed Storalink's beta version and compiled a list of necessary changes for the engineers.  The UI improved significantly after three rounds of modifications, but further refinements are still needed.
+                </p>
+                <img src="./img/storalink/critiques.png" class="portImg">
+            </div>
+            <div class="sec" id="reflections">
+                <h2>Reflections</h2>
+                <h1>
+                    Finding a balance between allowing freeform user input and restricting content length required careful consideration.
+                </h1>
+                <p>
+                    The platform depends on user-generated content such as links, descriptions, and names. I considered imposing a maximum character length on various fields to keep the application tidy. Alternatively, I contemplated allowing users to adjust their input if it interfered with usability. Ultimately, I decided to strike a balance between both approaches.
+                </p>
+                <img src="./img/storalink/reflections.png" class="portImg">
+            </div>
+            <div class="sec" id="nextSteps">
+                <h2>Next Steps</h2>
+                <h1>
+                    Using user feedback, my team and I will continue refining the Figma designs and the live application.
+                </h1>
+                <p>
+                    To identify pain points in the design, I will conduct usability and A/B testing. Also, during UI critiques, I noticed that some design system components need adjustments for better sizing, spacing, and layout.
+                </p>
+                <p>
+                    On the engineering side, challenges with cloud syncing led to the initial app store version releasing without the sharing feature, which is a crucial part of the concept. The live application will receive monthly updates, including new features and usability improvements.
+                </p>
+            </div>
         </div>
     </body>
     <footer class="projectFooter">
 
         <div class="otherProject">
-            <a href="./westmonroe-energy.html">
-                <h1 class="shrink nextHover">Regional Energy Provider ➢
-                    <img src="./img/universal/westmonroeenergyRawCover.png"/>
+            <a href="./westmonroe-dental.html">
+                <h1 class="shrink nextHover"><span class="wizardStar">✧</span> ML Data Output ➢
+                    <img src="./img/universal/westmonroedentalRawCover.png"/>
                 </h1>
             </a>
         </div>
         <a href="./index.html">
             <div class="footerLogoContainer bigShrink">
-                <img src="img/universal/logoDef.svg" alt="eddy's logo" class="footerLogo">
+                <svg class="footerLogo" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1H26H51H76H101V26V51V76V101H76H51H26H1V76V51V26V1Z" fill="white"/>
+                    <path d="M1 1V26V51M1 1H26H51H76M1 1H76M101 51V26V1H76M101 51V76V101H76M101 51H76M1 51V76V101H26H51H76M1 51L38.5 26M1 51L38.5 76M1 51H76M76 1L38.5 26M76 51L38.5 26M76 51L38.5 76M76 101L38.5 76" stroke="#303030" stroke-width="2"/>
+                </svg>
             </div>
         </a>
         <div class="footerContent">
@@ -227,6 +362,15 @@
             $('body,html').animate({
                 scrollTop : 0
             }, 500);
+        });
+    </script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 300) {
+                $('#bookmarks').fadeIn(200);
+            } else {
+                $('#bookmarks').fadeOut(200);
+            }
         });
     </script>
     <script>
