@@ -312,10 +312,9 @@ div ul li {
 
 /* case study teleport list */
 .telePoints {
-  display: none;
+  display: none !important;
   opacity: 0;
   position: absolute;
-  
 }
 /* only in candy researcher case study */
 .listRemove {
