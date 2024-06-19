@@ -1,5 +1,12 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
+
+  .googleGradient {
+    border: 12px solid;
+    background-image: linear-gradient(to right, #4285F4, #D6C8FF);
+    border-image: linear-gradient(45deg, #4285F4, #D6C8FF) 1;
+  }
+
     .button:hover icon:before {
       top: -1rem;
     }
