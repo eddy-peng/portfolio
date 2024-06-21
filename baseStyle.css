@@ -24,6 +24,18 @@
   background-image: repeating-linear-gradient(-45deg, #FFFFFF 0, #FFFFFF 1px, transparent 0, transparent 50%);
 } */
 
+
+.googleFrame {
+  background-color: rgb(233, 233, 233);
+  padding: 8px;
+  border-radius: 8px;
+}
+.googleFrame .portImg {
+  padding: 0px;
+  margin: 0px;
+  border-radius: 4px;
+}
+
 .shrink:active {
   opacity: 70% !important;
 }
