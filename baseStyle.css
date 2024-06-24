@@ -233,7 +233,7 @@ body {
 }
 
 div ul li {
-  line-height: 3.5vh;
+  line-height: 4vh;
 }
 
 /* end of about stuff */
@@ -548,6 +548,7 @@ a {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
 }
 
 .mobileSelfDesc, .listAnywhere {
@@ -559,7 +560,7 @@ a {
 }
 
 .tagline {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 5vh;
   font-weight: 500;
 }
@@ -588,7 +589,7 @@ a {
 
 /* Add some padding inside the card container */
 .container {
-  padding: 2px 16px;
+  padding: 2px 12px;
   background: white;
 }
 
@@ -599,8 +600,8 @@ a {
 }
 
 .cardTitle {
-    font-size: 20px;
-    line-height: 3.5vh;
+    font-size: 24px;
+    line-height: 4.5vh;
     margin-top: 5px;
     margin-bottom: 0px;
     font-weight: 400;
@@ -638,7 +639,7 @@ footer .footerContent div {
   height: 5vh;
   display: inline-block;
   text-align: center; 
-  margin-left: 0.5vh;
+  margin-left: 1vh;
   margin-top: 3vh;
 }
 
@@ -662,11 +663,11 @@ footer .footerContent div p a {
 .contactMe a {
   color: #303030;
   text-decoration: underline;
-
 }
 
 .bragFooter {
   margin-top: 2vh;
+  padding-bottom: 8vh;
   text-align: center;
   color: #767676;
 }
@@ -781,6 +782,11 @@ footer .footerContent div p a {
 .galleryRow {
   margin-left: 16px;
   margin-right: 16px;
+}
+
+.moreMeGallery {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* Clear floats after the columns */

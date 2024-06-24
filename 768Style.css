@@ -1,12 +1,13 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
+
   .tagline {
     font-size: 32px;
     line-height: 6vh;
   }  
 
   .cardDes {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 3vh;
   }
 
@@ -17,7 +18,7 @@
   
   footer .footerContent div {
       width: 10vh;
-    }
+}
   
     body {
       margin-left: 5%;

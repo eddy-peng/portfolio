@@ -1,6 +1,13 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
 
+  .container {
+    padding: 2px 16px;
+  }
+
+  .bragFooter {
+    padding-bottom: 0;
+  }
 
     .googleFrame {
       padding: 12px;
