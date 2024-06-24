@@ -4,6 +4,16 @@
     font-size: 32px;
     line-height: 6vh;
   }  
+
+  .cardDes {
+    font-size: 14px;
+    line-height: 3vh;
+  }
+
+.cardTitle {
+  font-size: 16px;
+  line-height: 3vh;
+}
   
   footer .footerContent div {
       width: 10vh;
@@ -12,6 +22,10 @@
     body {
       margin-left: 5%;
       margin-right: 5%;
+    }
+
+    .aboutPagesSpace {
+      margin-top: 10vh;
     }
   
     .intro {
@@ -143,6 +157,15 @@
       margin-left: 5vh;
       margin-right: 5vh;
     }
+
+    .content, .cloudPhotoGrid {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    .galleryRow {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
   
     /* heree */
     #me {
@@ -150,6 +173,10 @@
       grid-template-columns: 2fr 2fr;
       grid-column-gap: 20px;
       vertical-align: middle;
+    }
+    #caseTitle,.sec {
+      margin-left: 0px;
+      margin-right: 0px;
     }
     #caseTitle h1 {
       padding: 0;
@@ -205,6 +232,8 @@
     }
     #galleryTitle {
       padding-top: 0;
+      margin-right: 0px;
+      margin-left: 0px;
     }
 
     .progressBar {

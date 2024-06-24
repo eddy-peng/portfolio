@@ -1,6 +1,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
 
+
     .googleFrame {
       padding: 12px;
     }

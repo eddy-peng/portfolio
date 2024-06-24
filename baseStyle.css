@@ -24,6 +24,11 @@
   background-image: repeating-linear-gradient(-45deg, #FFFFFF 0, #FFFFFF 1px, transparent 0, transparent 50%);
 } */
 
+.content {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
 
 .googleFrame {
   background-color: rgb(233, 233, 233);
@@ -34,6 +39,14 @@
   padding: 0px;
   margin: 0px;
   border-radius: 4px;
+}
+
+.googleFrameSpacing {
+  margin-bottom: 36px;
+}
+
+.googleGrid {
+  padding-top: 20px;
 }
 
 .shrink:active {
@@ -166,7 +179,11 @@ body {
 
 /* about stuff */
 
-.aboutPagesSpace, .aboutPagesSpaceBetween, .spaceTop {
+.aboutPagesSpace {
+  margin-top: 20vh;
+}
+
+.aboutPagesSpaceBetween, .spaceTop {
   margin-top: 10vh;
 }
 
@@ -174,6 +191,8 @@ body {
   margin-top: 5vh;
   text-align: left;
   font-weight: 400;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .title {
@@ -246,6 +265,8 @@ div ul li {
 /* context */
 .context {
   margin-top: 10vh;
+  margin-left: 16px;
+  margin-right: 16px;
   margin-bottom: 10vh;
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -309,6 +330,8 @@ div ul li {
 /* sections */
 .sec {
   margin-bottom: 15vh;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 .sec h2 {
   font-size: 14px;
@@ -319,7 +342,7 @@ div ul li {
 
 .sec p {
   line-height: 3.5vh;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* case study teleport list */
@@ -427,11 +450,10 @@ a {
 
 .list {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   list-style-type: square;
-  margin-left: 25%;
   width: 100%;
   list-style: none;
 }
@@ -518,6 +540,8 @@ a {
   margin: 1vh;
   margin-top: 15vh;
   margin-bottom: 8vh;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 .descList {
@@ -571,21 +595,21 @@ a {
 .quickFacts {
     color: #767676;
     font-size: 14px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .cardTitle {
-    font-size: 16px;
-    line-height: 3vh;
+    font-size: 20px;
+    line-height: 3.5vh;
     margin-top: 5px;
     margin-bottom: 0px;
     font-weight: 400;
 }
 
 .cardDes {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 10px;
-    line-height: 3vh;
+    line-height: 3.5vh;
 }
 
 .shrink, .bigShrink {
@@ -673,6 +697,8 @@ footer .footerContent div p a {
   text-align: left;
   margin-bottom: 10vh;
   padding-top: 10vh;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 #galleryTitle h1, #galleryTitle p {
@@ -752,6 +778,11 @@ footer .footerContent div p a {
   margin-right: 0.1vh;
 }
 
+.galleryRow {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
 /* Clear floats after the columns */
 .galleryRow:after {
   content: "";
@@ -787,6 +818,11 @@ footer .footerContent div p a {
   border: 1px solid #303030;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+.cloudPhotoGrid {
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .currentPic {
