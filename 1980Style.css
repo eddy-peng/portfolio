@@ -1,13 +1,14 @@
 /* omg such big screens */
 @media (min-width: 1980px) {
     .desktopSelfDesc {
-      font-size: 24px;
-    }
-    .myName {
       font-size: 32px;
     }
+    .myName {
+      font-size: 48px;
+    }
     .sec h1 {
-      font-size: 40px;
+      font-size: 48px;
+      line-height: 4vh;
     }
     .desktopLogo h1 {
       font-size: 40px;
@@ -19,38 +20,39 @@
       font-size: 24px;
     }
     .cardTitle {
-      font-size: 40px;
+      font-size: 48px;
     }
     .cardDes {
-      font-size: 24px;
+      font-size: 32px;
     }
     footer .footerContent div p {
-      font-size: 24px;
+      font-size: 32px;
     }
     .contactMe, .bragFooter {
-      font-size: 24px;
+      font-size: 32px;
     }
     .tagline {
-      font-size: 80px;
-      line-height: 6vh;
+      font-size: 100px;
+      line-height: 8vh;
     }
     nav a {
       font-size: 40px;
     }
     .sec h2 {
-      font-size: 24px;
+      font-size: 32px;
     }
     .sec p {
-      font-size: 24px;
+      font-size: 32px;
     }
     .instaCite, .artCite {
       font-size: 24px;
     }
     .telePoints ul a li {
-      font-size: 24px;
+      font-size: 32px;
+      line-height: 4vh;
     }
     .telePoints p {
-      font-size: 24px;
+      font-size: 32px;
     }
     .context div h1, .context div h2 {
       font-size: 40px;
@@ -66,5 +68,21 @@
     } 
     .projectFooter .footerLogoContainer {
       margin-top: 5.5vh;
+    }
+    .context div p {
+      font-size: 32px;
+      line-height: 4vh;
+    }
+    #caseTitle h1 {
+      font-size: 120px;
+    }
+    #caseTitle h2 {
+      font-size: 48px;
+    }
+    .container {
+      padding: 2px 24px;
+    }
+    #galleryTitle p {
+      font-size: 32px;
     }
   }
