@@ -13,6 +13,10 @@
   left: 0;
 }
 
+.spaceBelow {
+  margin-bottom: 12vh;
+}
+
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 8px;

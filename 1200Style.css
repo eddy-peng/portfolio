@@ -1,6 +1,10 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
+  .spaceBelow {
+    margin-bottom: 20vh;
+  }
+
   /* Tagline */
   .tagline {
     font-size: 48px;

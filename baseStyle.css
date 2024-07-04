@@ -275,7 +275,7 @@ div ul li {
 }
 
 .spaceBelow {
-  margin-bottom: 20vh;
+  margin-bottom: 4vh;
 }
 
 .halfSpaceBelow {
@@ -757,6 +757,11 @@ footer .footerContent div p a {
 
 .projectFooter .footerContent {
   margin-top: 6vh;
+}
+
+.otherProject {
+  margin-left: 48px;
+  margin-right: 48px;
 }
 
 /* end of footer stuff */
