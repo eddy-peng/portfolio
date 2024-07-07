@@ -886,3 +886,7 @@ footer .footerContent div p a {
   flex: 1;
   max-width: 50%;
 }
+
+.coupontooltip p {
+  display: none;
+}

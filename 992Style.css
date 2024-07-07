@@ -1,6 +1,39 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
 
+  .couponcode:hover .coupontooltip {
+    display: block;
+  }
+  
+  .couponcode:hover {
+    cursor: help;
+  }
+  
+  .coupontooltip {
+    display: none;
+    background: #FFFFFF;
+    margin-left: 24px;
+    padding: 12px;
+    position: absolute;
+    z-index: 1000;
+    width: 180px;
+    height: fit-content;
+    border: 1px solid #303030;
+  }
+  
+  .coupontooltip p {
+    line-height: 3.5vh;
+    font-family: 'Work Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 400;
+    display: block;
+  }
+  
+  .tooltipDate {
+    color: #767676;
+  }
+
   .container {
     padding: 2px 16px;
   }
