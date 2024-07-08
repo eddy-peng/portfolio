@@ -33,6 +33,10 @@
     font-weight: 400;
     display: block;
   }
+
+  .caseStudyCardtooltip p span {
+    color: #0965E3;
+  }
   
   .tooltipDate {
     color: #767676;
