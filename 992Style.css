@@ -1,15 +1,19 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
 
-  .couponcode:hover .coupontooltip {
+  .caseStudyCardCode:hover .caseStudyCardtooltip, .galleryCode:hover .gallerytooltip {
     display: block;
   }
   
-  .couponcode:hover {
+  .caseStudyCardCode:hover {
+    cursor: pointer;
+  }
+
+  .galleryCode:hover {
     cursor: help;
   }
   
-  .coupontooltip {
+  .caseStudyCardtooltip, .gallerytooltip {
     display: none;
     background: #FFFFFF;
     margin-left: 24px;
@@ -21,7 +25,7 @@
     border: 1px solid #303030;
   }
   
-  .coupontooltip p {
+  .caseStudyCardtooltip p, .gallerytooltip p {
     line-height: 3.5vh;
     font-family: 'Work Sans', sans-serif;
     padding: 0px;

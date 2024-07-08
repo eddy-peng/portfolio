@@ -887,6 +887,6 @@ footer .footerContent div p a {
   max-width: 50%;
 }
 
-.coupontooltip p {
+.caseStudyCardtooltip p, .gallerytooltip p {
   display: none;
 }
