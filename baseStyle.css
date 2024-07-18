@@ -533,6 +533,7 @@ a {
 .sec h1 {
   font-size: 24px;
   font-weight: 400;
+  line-height: 5vh;
 }
 
 .intro {
