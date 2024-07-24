@@ -69,7 +69,7 @@
     .shrink:hover { 
       transform: scale(0.95); 
     }
-
+    
     .card:hover img {
       transform: scale(1.25); 
     }

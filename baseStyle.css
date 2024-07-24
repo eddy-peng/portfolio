@@ -24,10 +24,10 @@
   background-image: repeating-linear-gradient(-45deg, #FFFFFF 0, #FFFFFF 1px, transparent 0, transparent 50%);
 } */
 
-.content {
+/* .content {
   margin-right: 16px;
   margin-left: 16px;
-}
+} */
 
 
 .googleFrame {
@@ -568,7 +568,6 @@ a {
 /* case study card */
 .card {
   border: 1px solid #303030;
-  margin: 1vh;
   margin-bottom: 2vh;
   background-color: #FFFFFF;
   overflow: hidden;
