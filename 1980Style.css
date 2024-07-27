@@ -1,5 +1,9 @@
 /* omg such big screens */
 @media (min-width: 1980px) {
+    .caseContent {
+      margin-left: 25vh;
+      margin-right: 25vh;
+    }
     .desktopSelfDesc {
       font-size: 32px;
     }
@@ -7,8 +11,8 @@
       font-size: 48px;
     }
     .sec h1 {
-      font-size: 48px;
-      line-height: 5vh;
+      font-size: 32px;
+      line-height: 4vh;
     }
     .desktopLogo h1 {
       font-size: 40px;
@@ -26,10 +30,10 @@
       font-size: 32px;
     }
     footer .footerContent div p {
-      font-size: 32px;
+      font-size: 24px;
     }
     .contactMe, .bragFooter {
-      font-size: 32px;
+      font-size: 24px;
     }
     .tagline {
       font-size: 100px;
@@ -48,23 +52,24 @@
       font-size: 40px;
     }
     .sec h2 {
-      font-size: 32px;
+      font-size: 24px;
     }
     .sec p {
-      font-size: 32px;
+      font-size: 24px;
+      line-height: 3.5vh;
     }
     .instaCite, .artCite {
       font-size: 24px;
     }
     .telePoints ul a li {
-      font-size: 32px;
-      line-height: 4vh;
+      font-size: 24px;
+      line-height: 3.5vh;
     }
     .telePoints p {
       font-size: 32px;
     }
     .context div h1, .context div h2 {
-      font-size: 40px;
+      font-size: 32px;
     }  
     .teleTitle {
       font-size: 24px;
@@ -79,8 +84,8 @@
       margin-top: 5.5vh;
     }
     .context div p {
-      font-size: 32px;
-      line-height: 4vh;
+      font-size: 24px;
+      line-height: 3.5vh;
     }
     #caseTitle h1 {
       font-size: 120px;
