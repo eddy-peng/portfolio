@@ -17,12 +17,20 @@
     display: none;
     background: #FFFFFF;
     margin-left: 24px;
-    padding: 12px;
+    padding: 14px;
     position: absolute;
     z-index: 1000;
-    width: 180px;
+    width: auto;
     height: fit-content;
     border: 1px solid #303030;
+  }
+  .gallerytooltip {
+    width: 180px;
+  }
+
+  .figJamEmbed {
+    width: 800;
+    height: 600px;
   }
   
   .caseStudyCardtooltip p, .gallerytooltip p {
@@ -32,6 +40,7 @@
     margin: 0px;
     font-weight: 400;
     display: block;
+    font-size: 16px;
   }
 
   .caseStudyCardtooltip p span {

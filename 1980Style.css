@@ -33,7 +33,16 @@
     }
     .tagline {
       font-size: 100px;
-      line-height: 8vh;
+      line-height: auto;
+    }
+    .caseStudyCardtooltip, .gallerytooltip {
+      padding: 24px;
+    }
+    .gallerytooltip {
+      width: 380px;
+    }
+    .caseStudyCardtooltip p, .gallerytooltip p {
+      font-size: 32px;
     }
     nav a {
       font-size: 40px;
@@ -84,5 +93,9 @@
     }
     #galleryTitle p {
       font-size: 32px;
+    }
+    .figJamEmbed {
+      width: 800;
+      height: 800px;
     }
   }

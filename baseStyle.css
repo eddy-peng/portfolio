@@ -177,6 +177,12 @@ body {
   }
 }
 
+.figJamEmbed {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 800;
+  height: 300px;
+}
+
 /* about stuff */
 
 .aboutPagesSpace {
@@ -889,4 +895,27 @@ footer .footerContent div p a {
 
 .caseStudyCardtooltip p, .gallerytooltip p {
   display: none;
+}
+
+.processContain {
+  padding-top: 20px;
+  display: flex;
+  gap: 24px;
+  overflow-x: scroll;
+}
+
+.processCard {
+  border: 1px solid #303030;
+  padding: 24px;
+  min-width: 200px;
+  height: 200px;
+  align-content: end;
+}
+.processCard p {
+  color: #767676;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.processCard h1 {
+  margin-bottom: 2px;
 }
