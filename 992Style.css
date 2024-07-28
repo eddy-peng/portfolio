@@ -10,7 +10,7 @@
   }
 
   .galleryCode:hover {
-    cursor: help;
+    cursor: zoom-in;
   }
   
   .caseStudyCardtooltip, .gallerytooltip {
@@ -203,6 +203,9 @@
   
     label {
       display: none;
+    }
+    .onHoverZoomIn {
+      cursor: zoom-in;
     }
   
     nav a {
