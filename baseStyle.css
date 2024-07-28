@@ -225,17 +225,11 @@ body {
   margin-bottom: 5vh;
 }
 
-.artCite, .timelineSubtitle {
-  color: #767676;
-}
-
-.instaCite {
-  color: #303030;
-}
-
-.instaCite, .artCite {
+.caption {
   text-align: center;
   font-size: 14px;
+  color: #767676;
+  font-family: "Lora", serif;
 }
 
 div ul li {
@@ -260,7 +254,8 @@ div ul li {
   padding-top: 100px;
   font-size: 48px;
   font-weight: 500;
-  font-family: 'Work Sans', sans-serif;
+  /* font-family: 'Work Sans', sans-serif; */
+  font-family: "Lora", serif;
   font-style: normal;
 }
 #caseTitle h2 {

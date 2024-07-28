@@ -22,7 +22,7 @@
     z-index: 1000;
     width: auto;
     height: fit-content;
-    border: 1px solid #303030;
+    border: 1px solid #0965E3;
   }
   .gallerytooltip {
     width: 180px;
@@ -35,7 +35,7 @@
   
   .caseStudyCardtooltip p, .gallerytooltip p {
     line-height: 3.5vh;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Lora", serif;
     padding: 0px;
     margin: 0px;
     font-weight: 400;
@@ -43,7 +43,7 @@
     font-size: 16px;
   }
 
-  .caseStudyCardtooltip p span {
+  .caseStudyCardtooltip p span, .caseStudyCardtooltip p {
     color: #0965E3;
   }
   
