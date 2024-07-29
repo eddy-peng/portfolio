@@ -31,7 +31,7 @@
 
 
 .googleFrame {
-  background-color: rgb(233, 233, 233);
+  background-image: linear-gradient(to right, #4285F4, #D6C8FF);
   padding: 8px;
   border-radius: 8px;
 }
@@ -227,7 +227,7 @@ body {
 
 .caption {
   text-align: center;
-  font-size: 14px;
+  font-size: 12px !important;
   color: #767676;
   font-family: "Lora", serif;
 }

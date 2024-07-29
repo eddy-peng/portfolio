@@ -22,8 +22,16 @@
     z-index: 1000;
     width: auto;
     height: fit-content;
+  }
+
+  .caseStudyCardtooltip {
     border: 1px solid #0965E3;
   }
+
+  .gallerytooltip {
+    border: 1px solid #303030;
+  }
+
   .gallerytooltip {
     width: 180px;
   }
