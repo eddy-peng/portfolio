@@ -198,7 +198,7 @@
                 <!-- Add more to Role: Describe my biggest impacts-->
                 <h2>Role</h2>
                 <h1>
-                    Though I was a Product Designer and the Project Manager, I also fulfilled other technical roles to keep the project on track.
+                    Although my primary roles were Product Designer and Project Manager, I also took on technical responsibilities to ensure the project stayed on track.
                 </h1>
                 <p>
                     As a product designer, I contributed to quantitative and qualitative research and led design sessions. I was also the project manager, managing tasks, deadlines, and stakeholder communications. Lastly, I took on additional responsibilities like front-end implementation and AI prompt engineering to give the engineers more time to work on the data and back-end.
@@ -234,10 +234,12 @@
                 <p>
                     The form ensures that submissions are well-structured and contain the necessary information. Bug reporters must invest considerable time in submitting high-quality reports to receive rewards. Unfortunately, the form does not notify reporters that their report is a duplicate submission during filing; only Android Security Analysts discover the report is a duplicate later. This results in wasted time for everyone involved.
                 </p>
-                <div class="googleFrame">
-                    <img src="./img/google/currentVRP.png" class="portImg">
-                </div>
-                <p class="caption">Current bug reporting form: highest user input section.</p>
+                <a href="./img/google/currentVRP.png" target="_blank">
+                    <div class="onHoverZoomIn">
+                        <img src="./img/google/currentVRP.png" class="portImg">
+                    </div>
+                </a>  
+                <p class="caption">The current bug reporting form has five pages, with most of the reporter information provided in "the Problem" section.</p>
             </div>
             <div class="sec" id="solution">
                 <h2>Solution</h2>
@@ -248,55 +250,67 @@
                     From ideation and wireframing to validation and engineering, I built a solution with my team that harnesses ChatGPT 3.5 Turbo to calculate bug report similarity data based on the user's input and other Bug Reporters' submitted reports. The AI-driven feature is incorporated into the original VRP userflow and thus follows the VRP's design style.
                 </p>
                 <img src="./img/google/userflow.png" class="portImg">
-                <p class="caption">How the solution integrates into the existing bug reporting form's userflow.</p>
+                <p class="caption">My team's approach to solving the problem is integrating AI into the original user flow.</p>
             </div>
             <div class="sec">
+                <h2>Form Sidebar Modification</h2>
                 <h1>
                     The form's sidebar now offers real-time user input similarity notifications to alert Reporters to the likelihood of a duplicate.
                 </h1>
                 <p class="googleFrameSpacing">
                     The AI cross-references the reporter's current form input and outputs a total report similarity score in real-time. If that score crosses a threshold, a toast popup will appear on the sidebar to inform the reporter. Additionally, more granular scores are displayed on the sidebar based on the portions of the form that have input areas (due to more content for analysis).
                 </p>
-                <div class="googleFrame">
-                    <img src="./img/google/form.png" class="portImg">
-                </div>
+                <a href="./img/google/form.png" target="_blank">
+                    <div class="onHoverZoomIn">
+                        <img src="./img/google/form.png" class="portImg">
+                    </div>
+                </a>  
                 <p class="caption">A sidebar modification that allows Bug Reporters to get real-time updates on their report's similarity.</p>
             </div>
             <div class="sec">
+                <h2>Similarity Score Guide</h2>
                 <h1>
-                    To promote understanding and transparency, a similarity score guide is provided that outlines the 4 thresholds of report duplicate likelihood.
+                    A short documentation PDF promotes understanding and transparency by breaking down similarity scoring methodology.
                 </h1>
                 <p class="googleFrameSpacing">
                     Bug Reporters can learn more about the similarity scoring system by accessing the similarity score documentation in the sidebar's help button. The PDF document guides Reporters through the four similarity thresholds, highlights the most impactful parts of the form on the score, and outlines the steps to follow if their report is a likely duplicate.
                 </p>
-                <div class="googleFrame">
-                    <img src="./img/google/guide.png" class="portImg">
-                </div>
-                <p class="caption">A detailed guide that walks Bug Reporters through the similarity scoring system.</p>
+                <a href="./img/google/guide.png" target="_blank">
+                    <div class="onHoverZoomIn">
+                        <img src="./img/google/guide.png" class="portImg">
+                    </div>
+                </a>  
+                <p class="caption">A similarity scoring system guide enhances Bug Reporters' understanding.</p>
             </div>
             <div class="sec">
+                <h2>Report Similarity Table</h2>
                 <h1>
                     The report similarity table displays the similarity of the reporter's input to other reports, revealing the ones most similar to the reporter's.
                 </h1>
                 <p class="googleFrameSpacing">
                     By clicking on the "View Reports" link in the sidebar, a popup appears containing a table with reports similar to the one they are currently filing. Each row has metadata and similarity scores of two granularity levels based on the user's current input and the other report's contents as a whole or by the sections of the form with input areas.
                 </p>
-                <div class="googleFrame">
-                    <img src="./img/google/table.png" class="portImg">
-                </div>
-                <p class="caption">A modal that compares the similarity of the Bug Reporter's inputs to other reports filed by others.</p>
+                <a href="./img/google/table.png" target="_blank">
+                    <div class="onHoverZoomIn">
+                        <img src="./img/google/table.png" class="portImg">
+                    </div>
+                </a>   
+                <p class="caption">A modal displays the similarity of the Bug Reporters' inputs to reports submitted by others.</p>
             </div>
             <div class="sec">
+                <h2>Individual Report Comparison</h2>
                 <h1>
                     The individual report comparison provides input to input similarity breakdowns, allowing Reporters to assess which portions of their report have similarities.
                 </h1>
                 <p class="googleFrameSpacing">
                     Upon clicking a table row, the Bug Reporter can see which parts of their input are similar to another report. These similarities are highlighted based on three cybersecurity attributes that drive the solution's similarity scoring system. Additionally, the Reporter can view and download the other report for independent analysis.
                 </p>
-                <div class="googleFrame">
-                    <img src="./img/google/comparison.png" class="portImg">
-                </div>
-                <p class="caption">A similarity breakdown between the user's input and another report.</p>
+                <a href="./img/google/comparison.png" target="_blank">
+                    <div class="onHoverZoomIn">
+                        <img src="./img/google/comparison.png" class="portImg">
+                    </div>
+                </a>    
+                <p class="caption">A comparison screen displays the similarities between the user's input and a report submitted by another Bug Reporter.</p>
             </div>
             <div class="sec" id="results">
                 <h2>Results</h2>
@@ -304,7 +318,7 @@
                     The solution turned heads at Google, won academic awards, and surpassed set benchmarks for deduplication accuracy, speed, and analyst agreement.
                 </h1>
                 <p>
-                    I collaborated on presentation material and presented to 40 Google Employees (who learned from our project), managing project resources and documentation. My team and I were acknowledged by the iSchool, winning the undergraduate innovation award (1/175 teams), finishing as a finalist for the undergraduate research award (2/175 teams), and receiving a featured article. The solution also surpassed all benchmarks during AI testing.
+                    I collaborated on presentation material and presented it to 40 Google employees (who learned from our project). My team and I were acknowledged by the iSchool, winning the undergraduate innovation award (1/175 teams), finishing as a finalist for the undergraduate research award (2/175 teams), and receiving a featured article. The solution also surpassed all benchmarks during AI testing.
                 </p>
                 <img src="./img/google/results.png" class="portImg">
             </div>
@@ -334,17 +348,17 @@
             <div class="sec">
                 <h2>Research: Stakeholder Discussions</h2>
                 <h1>
-                    After discussions with Google, the project scope focused on eliminating duplicates and improving report quality on Android’s bug-hunting portal.
+                    After discussions with Google, the project scope focused on eliminating duplicates and improving report quality on Android's bug-hunting portal.
                 </h1>
                 <p>
-                    Through 4 discussions with Android Security team members, my team and I learned their vulnerability triaging systems, goals, and pain points. Prior research on human-AI collaboration enabled me and my team to engage with Google's challenges. Afterward, I worked with my team to uncover themes like using automation to streamline manual processes and the importance of improving bug report quality.
+                    Through 4 discussions with Android Security team members, my team and I learned their vulnerability triaging systems, goals, and pain points. Prior research on human-AI collaboration enabled my team and me to engage with Google's challenges. Afterward, I worked with my team to uncover themes like using automation to streamline manual processes and the importance of improving bug report quality.
                 </p>
                 <a href="./img/google/affinityMapping.png" target="_blank">
                     <div class="onHoverZoomIn">
                         <img src="./img/google/affinityMapping.png" class="portImg">
                     </div>
                 </a>        
-                <p class="caption">The notes from the discussions with Android team members were grouped into themes after summarization.</p>       
+                <p class="caption">The team and I organized the Android team discussion notes into themes.</p>       
             </div>
             <div class="sec" id="ideation">
                 <h2>Ideation: Generation</h2>
@@ -388,7 +402,6 @@
             </div>
             <div class="sec">
                 <h2>Ideation: Scope</h2>
-                <!-- Redo this section and Put some of the content in design's scoping section -->
                 <h1>
                     Although my team had a short list of features, I focused only on automated duplicate report checking due to time constraints and imminent need.
                 </h1>
@@ -401,7 +414,6 @@
                     </div>
                 </a>     
                 <p class="caption">Further prioritization of the top features resulted in "must haves," "should haves," and "nice to haves."</p>       
-                <!-- In image above, select both must haves above and the template card -->
             </div>
             <!-- <div class="sec" id="design">
                 <h2>Design: Lo-Fi Wireframes</h2>
@@ -411,27 +423,17 @@
                 <p>
                     Placeholder
                 </p>
-                <img src="./img/google/" class="portImg" alt="Duplicate Checking + Form Suggestions & Templates Bird's Eye View">
+                <img src="./img/google/" class="portImg" alt="Duplicate Checking Bird's Eye View">
             </div>
             <div class="sec">
                 <h2>Design: Mid-Fi Wireframes</h2>
                 <h1>
-                    Duplicate Checking + Form Suggestions & Templates
+                    Duplicate Checking
                 </h1>
                 <p>
                     Placeholder
                 </p>
-                <img src="./img/google/" class="portImg" alt="Duplicate Checking + Form Suggestions & Templates With User Stories Mapped onto the Sides">
-            </div>
-            <div class="sec">
-                <h2>Design: Scoping</h2>
-                <h1>
-                    Duplicate Checking + Form Suggestions & Templates
-                </h1>
-                <p>
-                    Placeholder
-                </p>
-                <img src="./img/google/" class="portImg" alt="Two sections side by side: Duplicate checking & Form Suggestions & Templates. Select Duplicate checking. Gray out Form suggestions and templates cards">
+                <img src="./img/google/" class="portImg" alt="Duplicate Checking With User Stories Mapped onto the Sides">
             </div>
             <div class="sec">
                 <h2>Design: Hi-Fi Wireframes</h2>
