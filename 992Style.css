@@ -9,6 +9,10 @@
     cursor: pointer;
   }
 
+  .caseStudyLocked:hover {
+    cursor: not-allowed;
+  }
+
   .galleryCode:hover {
     cursor: zoom-in;
   }
