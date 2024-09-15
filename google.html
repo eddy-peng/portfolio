@@ -134,11 +134,11 @@
         <div href="javascript:" id="bookmarks" class="telePoints fadeIn">
             <p>Chapters</p>
             <ul>
-                <a href="#context"><li>Context</li></a>
                 <a href="#problem"><li>Problem</li></a>
                 <a href="#solution"><li>Solution</li></a>
                 <a href="#results"><li>Results</li></a>
                 <a href="#contribution"><li>Contribution</li></a>
+                <a href="#constraints"><li>Constraints</li></a>
                 <a href="#research"><li>Research</li></a>
                 <a href="#ideation"><li>Ideation</li></a>
                 <a href="#design"><li>Design</li></a>
@@ -184,7 +184,7 @@
                     </p>
                 </div>
             </div>
-            <div class="sec" id="context">
+            <div class="sec">
                 <h2>Context</h2>
                 <h1>
                     I collaborated with Google's Android Security through the UW iSchool. 
@@ -231,7 +231,7 @@
                 <p class="caption">The current bug reporting form has five pages, with most of the reporter information provided in "the Problem" section.</p>
             </div>
             <div class="sec" id="solution">
-                <h2>Solution</h2>
+                <h2>Solution: Userflow</h2>
                 <h1>
                     After an iterative process, my team and I proposed a client-facing AI-driven feature that integrates into the VRP userflow while following its design style.
                 </h1>
@@ -242,7 +242,7 @@
                 <p class="caption">My team's approach to solving the problem is integrating AI into the original user flow.</p>
             </div>
             <div class="sec">
-                <h2>Form Sidebar Modification</h2>
+                <h2>Solution: Form Sidebar Modification</h2>
                 <h1>
                     The form's sidebar now offers real-time user input similarity notifications to alert Reporters to the likelihood of a duplicate.
                 </h1>
@@ -257,7 +257,7 @@
                 <p class="caption">A sidebar modification that allows Bug Reporters to get real-time updates on their report's similarity.</p>
             </div>
             <div class="sec">
-                <h2>Similarity Score Guide</h2>
+                <h2>Solution: Similarity Score Guide</h2>
                 <h1>
                     A short documentation PDF promotes understanding and transparency by breaking down similarity scoring methodology.
                 </h1>
@@ -272,7 +272,7 @@
                 <p class="caption">A similarity scoring system guide enhances Bug Reporters' understanding.</p>
             </div>
             <div class="sec">
-                <h2>Report Similarity Table</h2>
+                <h2>Solution: Report Similarity Table</h2>
                 <h1>
                     The report similarity table displays the similarity of the reporter's input to other reports, revealing the ones most similar to the reporter's.
                 </h1>
@@ -287,7 +287,7 @@
                 <p class="caption">A modal displays the similarity of the Bug Reporters' inputs to reports submitted by others.</p>
             </div>
             <div class="sec">
-                <h2>Individual Report Comparison</h2>
+                <h2>Solution: Individual Report Comparison</h2>
                 <h1>
                     The individual report comparison provides input to input similarity breakdowns, allowing Reporters to assess which portions of their report have similarities.
                 </h1>
@@ -380,6 +380,28 @@
                 <p>
                     With the deadline approaching, my team and I faced challenges controlling ChatGPT's output formats. After days of inconsistent results, I realized the prompts were too complex. By letting the code handle some tasks, the AI could focus on calculating bug report similarity scores to reduce duplicates. After discussing the idea with my engineering lead, my team and I implemented the strategy, getting much more improved results.
                 </p>
+            </div>
+            <div class="sec" id="constraints">
+                <h2>Constraints: Primary Users</h2>
+                <h1>
+                    Bug Reporters were out of scope. Collaboration only occurred with Google.
+                </h1>
+                <p>
+                    Throughout the adventure, my team and I worked with Google employees (specifically engineers and managers from the Android Security Team) and experts in the cybersecurity and AI industries. Contact with Bug Reporters was considered out of scope because of timelines and coordination challenges.
+                </p>
+                <img src="./img/google/internal.png" class="portImg">
+                <p class="caption">The project focused on Google's processes and the advice of other cybersecurity experts.</p>  
+            </div>
+            <div class="sec">
+                <h2>Constraints: Data Usage</h2>
+                <h1>
+                    Restrictions prevented my team and I from using Android bug reports.
+                </h1>
+                <p>
+                    Android bug reports are not released publically. As such, my team and I used Chromium bug reports because they were open-source and related to the security of Google products. Chromium reports don't follow the same formatting structures as Android reports. Nevertheless, the solution works off Android's reporting portal and uses Chromium report data for AI training with steps in the handoff documentation for switching to Android's reports.
+                </p>
+                <img src="./img/google/chromium.png" class="portImg">
+                <p class="caption">The project used open-sourced Chromium data to ensure project feasibility.</p>
             </div>
             <div class="sec" id="research">
                 <h2>Research: Literature Review</h2>
@@ -552,16 +574,22 @@
                 <p class="caption">I created a report presenting the process of calculating agreement between human reviewers and the AI model.</p>  
             </div>
             <div class="sec" id="reflections">
-                <h2>Reflections</h2>
-                <!-- Challenges: Data considerations/Restrictions & Scope & AI Solution Building -->
+                <h2>Reflections: Documentation</h2>
                 <h1>
-                    With my team, I pushed the boundaries of AI in cybersecurity, where vagueness was guaranteed and documentation was vital.
+                    Project documentation is essential for hand-off and reflection.
                 </h1>
                 <p>
-                    Throughout the project, I learned to leverage my teammates' strengths and weaknesses to effectively cover for each other in the fast-paced and (at times) high-pressure environment. By slowing down and discussing with my teammates, I overcame the challenges and had fun doing so.
+                    By starting the documentation early, my team and I thoroughly examined the project and effectively summarized our process and insights in an easy-to-understand format. Writing the document gave me a retrospective of the journey and milestones, allowing me to reflect on what I did, what to take away from the project, and how to move forward into other future projects.
                 </p>
+                <img src="./img/google/documentation.png" class="portImg">
+            </div>
+            <div class="sec">
+                <h2>Reflections: Team Dynamic</h2>
+                <h1>
+                    Working hard doesn't come at the cost of fun and living in the moment.
+                </h1>
                 <p>
-                    Since Google will take over the project after the hand-off, thorough documentation is essential. Starting the documentation early in the project was crucial, as it allowed my team and me to synthesize and condense our process and insights into a digestible format. Our documentation impressed the iSchool and earned high praise from Google.
+                    Throughout the project, I learned to leverage my teammates' strengths and weaknesses to effectively cover for each other in a fast-paced and high-pressure environment. Team bonding activities and authenticity lifted our spirits even in the most challenging times. We solved complex problems while having the time of our lives.
                 </p>
                 <div class="instaGrid googleGrid">
                     <div>
