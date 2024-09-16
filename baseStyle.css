@@ -70,9 +70,9 @@ a:active {
   font-size: 20px;
 }
 
-/* img {
+img {
   pointer-events: none;
-} */
+}
 
 .mobileLogo img {
   pointer-events: auto;
@@ -926,6 +926,7 @@ footer .footerContent div p a {
   overflow-x: scroll;
 }
 .column img {
+  pointer-events: auto !important;
   cursor: pointer;
   filter: grayscale(100%);
   width: 60px;
