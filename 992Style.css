@@ -55,7 +55,7 @@
   }
   
   .caseStudyCardtooltip p, .gallerytooltip p {
-    line-height: 3.5vh;
+    line-height: 1.4;
     font-family: "Lora", serif;
     padding: 0px;
     margin: 0px;
@@ -142,6 +142,7 @@
     .desktopSelfDesc {
       display: block;
       font-size: 16px;
+      line-height: 1.4;
     }
   
     /* footer stuff */

@@ -233,7 +233,7 @@ body {
 }
 
 div ul li {
-  line-height: 4vh;
+  line-height: 2;
 }
 
 /* end of about stuff */
@@ -297,7 +297,7 @@ div ul li {
 
 .context div p {
   margin-top: 0;
-  line-height: 4vh;
+  line-height: 2;
   font-size: 18px;
 }
 
@@ -315,7 +315,7 @@ div ul li {
 }
 .context div ul li {
   color: #303030;
-  line-height: 3.5vh;
+  line-height: 2;
   font-size: 14px;
 }
 /* about/summary */
@@ -342,7 +342,7 @@ div ul li {
 }
 
 .sec p {
-  line-height: 4vh;
+  line-height: 1.5;
   font-size: 18px;
 }
 
@@ -360,7 +360,6 @@ div ul li {
 }
 .listRemove li {
   color: #303030;
-  line-height: 3.5vh;
   font-size: 14px;
 }
 
@@ -460,8 +459,12 @@ a {
 }
 
 .item {
-  margin: 5vh;
+  margin: 2vh;
   font-size: 24px;
+}
+
+.catto {
+  display: none !important;
 }
   
 .item a {
@@ -534,7 +537,6 @@ a {
 .sec h1 {
   font-size: 24px;
   font-weight: 400;
-  line-height: 5vh;
 }
 
 .intro {
@@ -562,7 +564,6 @@ a {
 
 .tagline {
   font-size: 28px;
-  line-height: 5vh;
   font-weight: 500;
 }
 
@@ -601,7 +602,7 @@ a {
 
 .cardTitle {
     font-size: 24px;
-    line-height: 4.5vh;
+    line-height: 1.4;
     margin-top: 5px;
     margin-bottom: 0px;
     font-weight: 400;
@@ -610,7 +611,7 @@ a {
 .cardDes {
     font-size: 16px;
     margin-top: 10px;
-    line-height: 3.5vh;
+    line-height: 1.4;
 }
 
 .shrink, .bigShrink {
@@ -707,7 +708,7 @@ footer .footerContent div p a {
 }
 
 #galleryTitle p {
-  line-height: 3.5vh;
+  line-height: 1.4;
 }
 
 #galleryTitle h1 {
@@ -982,7 +983,7 @@ footer .footerContent div p a {
 
 .attributed p {
   margin: 0px;
-  line-height: 24px;
+  line-height: 1.4;
 }
 .attributed p:first-child {
   font-size: 20px;

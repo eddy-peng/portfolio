@@ -12,7 +12,7 @@
     }
     .sec h1 {
       font-size: 32px;
-      line-height: 4vh;
+      line-height: 2;
     }
     .desktopLogo h1 {
       font-size: 40px;
@@ -37,7 +37,6 @@
     }
     .tagline {
       font-size: 100px;
-      line-height: auto;
     }
     .caseStudyCardtooltip, .gallerytooltip {
       padding: 24px;
@@ -56,11 +55,11 @@
     }
     .sec p {
       font-size: 24px;
-      line-height: 3.5vh;
+      line-height: 2;
     }
     .telePoints ul a li {
       font-size: 24px;
-      line-height: 3.5vh;
+      line-height: 2;
     }
     .telePoints p {
       font-size: 32px;
@@ -82,7 +81,7 @@
     }
     .context div p {
       font-size: 24px;
-      line-height: 3.5vh;
+      line-height: 2;
     }
     #caseTitle h1 {
       font-size: 120px;
