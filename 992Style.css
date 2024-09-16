@@ -1,6 +1,15 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media (min-width: 992px) {
 
+  .column img:hover {
+    transform: scale(0.85); 
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
   .caseStudyCardCode:hover .caseStudyCardtooltip, .galleryCode:hover .gallerytooltip {
     display: block;
   }

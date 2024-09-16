@@ -70,9 +70,9 @@ a:active {
   font-size: 20px;
 }
 
-img {
+/* img {
   pointer-events: none;
-}
+} */
 
 .mobileLogo img {
   pointer-events: auto;
@@ -914,6 +914,93 @@ footer .footerContent div p a {
 .processCard h1 {
   margin-bottom: 2px;
 }
+
+
+/* Styling for the thumbnails */
+.column {
+  float: left;
+  width: 60px;
+  padding-right: 12px;
+}
+
+.column img {
+  cursor: pointer;
+  max-width: 100%; /* Prevent images from overflowing */
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Add styles for the active thumbnail */
+.activeThumb img {
+  border: 1px solid #303030;; /* Add a border or other style */
+}
+
+.quoteCard {
+  display: none; /* Hide all quote cards except the first */
+  border: 1px solid #303030;
+  padding: 24px;
+  margin-top: 20px;
+}
+
+#quote1 {
+  display: block; /* Show the first quote by default */
+}
+
+.active {
+  display: block; /* Show the active quote card */
+}
+
+.quoteIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.whoSaid {
+  display: flex;
+  padding-top: 12px;
+  align-items: center;
+}
+
+.whoSaid img {
+  width: 80px;
+  height: 80px;
+  padding-right: 8px;
+}
+
+.attributed {
+  display: block;
+}
+
+.attributed p {
+  margin: 0px;
+  line-height: 24px;
+}
+.attributed p:first-child {
+  font-size: 20px;
+  font-weight: 400;
+}
+.attributed p:last-child {
+  color: #767676;
+  font-size: 14px;
+} 
+
+/* General container styling */
+.quoteContainer {
+  max-width: 100%;
+  overflow: hidden; /* Prevent any potential overflow */
+}
+
+/* Prevent any potential overflow from the row of thumbnails */
+.row {
+  max-width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling on the thumbnail row */
+}
+
+
+
 
 /* Moving Logos */
 
