@@ -297,8 +297,8 @@ div ul li {
 
 .context div p {
   margin-top: 0;
-  line-height: 2;
-  font-size: 18px;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
 /* .caseLink a {
@@ -324,7 +324,7 @@ div ul li {
 }
 
 .context div h1, .context div h2 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -335,15 +335,19 @@ div ul li {
   margin-right: 16px;
 }
 .sec h2 {
-  font-size: 18px;
+  font-size: 16px;
   color: #767676;
   margin-bottom: 0;
   font-weight: 300;
 }
 
+.sec h1 {
+  line-height: 1.8;
+}
+
 .sec p {
-  line-height: 1.5;
-  font-size: 18px;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
 /* case study teleport list */
@@ -565,6 +569,7 @@ a {
 .tagline {
   font-size: 28px;
   font-weight: 500;
+  line-height: 1.8;
 }
 
 /* case study card */
@@ -602,7 +607,7 @@ a {
 
 .cardTitle {
     font-size: 24px;
-    line-height: 1.4;
+    line-height: 1.8;
     margin-top: 5px;
     margin-bottom: 0px;
     font-weight: 400;
@@ -611,7 +616,7 @@ a {
 .cardDes {
     font-size: 16px;
     margin-top: 10px;
-    line-height: 1.4;
+    line-height: 1.8;
 }
 
 .shrink, .bigShrink {
