@@ -106,7 +106,7 @@
     .logo {
       position: relative;
       width: 5.5vh;
-      margin-left: 1.5vh;
+      padding-right: 4px;
     }
   
     /* tabs in the large rectangle */

@@ -257,7 +257,8 @@
     .desktopLogo h1 {
       display: inline-block;
       font-size: 16px;
-      font-weight: 300;
+      font-weight: 400;
+      font-family: "Lora", serif;
     }
     .centeringName {
       display: block;
