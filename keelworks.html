@@ -7,7 +7,7 @@
         <meta name="title" content="Eddy Peng">
         <meta name="description" content="The website portfolio of a product designer, storyteller, and self-proclaimed art historian named Eddy Peng.">
         <meta name="keywords" content="Eddy, Peng, Designer, Userexperience, Productdesign, Eddypeng">
-        <title>Eddy Peng - Product Design</title>
+        <title>Eddy Peng - KeelWorks</title>
         <link rel="shortcut icon" href="img/universal/favIcon.ico" type="image/x-icon">
 
         <!-- load style sheets -->
@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="768Style.css">  
         <link rel="stylesheet" href="992Style.css">  
         <link rel="stylesheet" href="1200Style.css">  
-        <link rel="stylesheet" href="1980Style.css">  
+        <link rel="stylesheet" href="1980Style.css">   
 
         <!-- open graph link preview -->
         <meta name='title' property="og:title" content= "Eddy Peng" />
@@ -49,7 +49,11 @@
         </script>
     </head>
 
-    <header class="fade">
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <header>
         <div class="navBackground"></div>
         <!-- mobile navigation -->
         <div class="navigation">
@@ -122,117 +126,149 @@
     </header>
     
     <body>
-        <div class="intro fadeIn">
-            <p class="myName">Howdy, I'm Eddy!</p>
-            <h1 class="tagline">A <span class="loralora">Product Designer</span> <span class="magicPen">✎</span> and <span class="loralora">Storytelling Wizard</span> <span class="wizardStar">✳︎</span> on a mission to <span class="loralora">amplify</span> <span class="peaceSymbol">✌︎</span> peoples' voices.</h1>
-            <ul class="descList">
-                <li class="mobileSelfDesc">◆ Building <a href="https://www.numaira.org/" target="_blank" class="underlinedLink">Numaira</a></li>
-                <li class="mobileSelfDesc">◆ Previously @ <a href="https://bughunters.google.com/" target="_blank" class="underlinedLink">Google</a> and <a href="https://www.westmonroe.com/" target="_blank" class="underlinedLink">West Monroe</a></li>
-                <li class="mobileSelfDesc">◆ Informatics (HCI) Major</li>
-                <li class="mobileSelfDesc">◆ University of Washington, Seattle '24</li>
+        <div class="title fadeIn" id="caseTitle">
+            <h1>People Management</h1>
+            <h2>For KeelWorks (Non-profit)</h2>
+        </div>
+        <img src="./img/keelworks/keelworksFullCover.png" class="portImg cover fadeIn">
+        <div href="javascript:" id="bookmarks" class="telePoints fadeIn">
+            <p>Chapters</p>
+            <ul>
+                <a href="#context"><li>Context</li></a>
+                <a href="#role"><li>Role</li></a>
+                <a href="#design"><li>Design</li></a>
+                <a href="#results"><li>Results</li></a>
+                <a href="#chat"><li>Let's Chat</li></a>
             </ul>
-            <p class="desktopSelfDesc">Building <a href="https://www.numaira.org/" target="_blank" class="underlinedLink">Numaira</a> ◆ Previously @ <a href="https://bughunters.google.com/" target="_blank" class="underlinedLink">Google</a> and <a href="https://www.westmonroe.com/" target="_blank" class="underlinedLink">West Monroe</a> ◆ Informatics (HCI) Major ◆ University of Washington, Seattle '24</p>
         </div>
 
-        <div class="content">
-
-            <!-- google card -->
-            <a href="./google.html" class="caseStudyCardCode">
-                <div class="card shrink fadeIn">
-                    <div class="imgContain">
-                        <img src="img/universal/googleRawCover.png" alt="google cover image">
-                    </div>
-                    <div class="container animated animatedFadeInUp fadeInUp">
-                        <p class="quickFacts">Product Designer ▪︎ Jan 2024 – Jun 2024</p>
-                        <p class="cardTitle">Google - Bug Report Deduplication</p>
-                        <p class="cardDes">Integrating AI into Android's Vulnerability Reward Program to reduce duplicate bug and threat reports</p>
-                    </div>
+        <div class="caseContent fadeIn">
+            <div class="context">
+                <div>
+                    <h2>Role</h2>
+                    <p>
+                        Design Lead
+                        <br/>
+                        UI Designer
+                    </p>
                 </div>
-                <span class="caseStudyCardtooltip"><p><span class="wizardStar">✳︎</span> Experience The Journey</p></span>
-            </a>
-
-            <!-- west monroe energy card -->
-            <a href="./westmonroe-energy.html" class="caseStudyCardCode">
-                <div class="card shrink fadeIn">
-                    <div class="imgContain">
-                        <img src="img/universal/westmonroeenergyRawCover.png" alt="westmonroe energy cover image">
-                    </div>
-                    <div class="container animated animatedFadeInUp fadeInUp">
-                        <p class="quickFacts">Product Design Intern ▪︎ Jun 2023 – Aug 2023</p>
-                        <p class="cardTitle">West Monroe - Material Tracker</p>
-                        <p class="cardDes">Envisioning an internal tool for an energy client whose warehouse orders and materials disappear</p>
-                    </div>
+                <div>
+                    <h2>Team</h2>
+                    <p>
+                        6 Designers
+                        <br/>
+                        18 Engineers
+                        <br/>
+                        4 PMs
+                    </p>
                 </div>
-                <span class="caseStudyCardtooltip"><p><span class="wizardStar">✳︎</span> Overpower The Vagueness</p></span>
-            </a>
-
-            <!-- west monroe healthcare card -->
-            <a href="./westmonroe-dental.html" class="caseStudyCardCode">
-                <div class="card shrink fadeIn">
-                    <div class="imgContain">
-                        <img src="img/universal/westmonroedentalRawCover.png" alt="west monroe dental cover image">
-                    </div>
-                    <div class="container animated animatedFadeInUp fadeInUp">
-                        <p class="quickFacts">Product Design Intern ▪︎ Jun 2023 – Aug 2023</p>
-                        <p class="cardTitle">West Monroe - ML Data Output</p>
-                        <p class="cardDes">Adapting to changes on a short timeline while delivering a dashboard for a dental service provider</p>
-                    </div>
+                <div>
+                    <h2>Timeline</h2>
+                    <p>
+                        Jan 2024 – Present
+                        <br/>
+                        <span class="timelineSubtitle">(9+ Months)</span>
+                    </p>
                 </div>
-                <span class="caseStudyCardtooltip"><p><span class="wizardStar">✳︎</span> Relive The Unexpected</p></span>
-            </a>
-
-            <!-- storalink card -->
-            <a href="./storalink.html" class="caseStudyCardCode">
-                <div class="card shrink fadeIn">
-                    <div class="imgContain">
-                        <img src="img/universal/storalinkRawCover.png" alt="storalink cover image">
-                    </div>
-                    <div class="container animated animatedFadeInUp fadeInUp">
-                        <p class="quickFacts">UI Designer ▪︎ May 2023 – Jun 2024</p>
-                        <p class="cardTitle">Storalink - Universal Bookmarks</p>
-                        <p class="cardDes">Providing people with a cross-platform solution for saving and sharing noteworthy online resource links</p>
-                    </div>
+                <div>
+                    <h2>Media</h2>
+                    <p class="caseLink">
+                        <a class="underlinedLink" href="https://www.keelworks.org/" target="_blank">Company Website</a>
+                    </p>
                 </div>
-                <span class="caseStudyCardtooltip"><p><span class="wizardStar">✳︎</span> Ignite The Passion</p></span>
-            </a>
-
-            <!-- numaira card -->
-            <a href="./numaira.html" class="caseStudyCardCode">
-                <div class="card shrink fadeIn">
-                    <div class="imgContain">
-                        <img src="img/universal/numairaRawCover.png" alt="numaira cover image">
+            </div>
+            <div class="sec" id="context">
+                <h2>Context</h2>
+                <h1>
+                    A non-profit organization needed a better way to manage its volunteers.
+                </h1>
+                <p>
+                    The KeelWorks Foundation supports upward mobility, especially for the economically disadvantaged. It offers coaching services to hundreds of young professionals in career development. Due to the absence of a formal management platform, admins, human resources, and project managers rely on loose Excel sheets and documents, impacting organizational efficiency and growth. Thus, a centralized platform is needed to streamline volunteer management functions.
+                </p>
+            </div>
+            <div class="sec" id="role">
+                <h2>Role</h2>
+                <h1>
+                    I lead the design team for the volunteer management platform.
+                </h1>
+                <p>
+                    I began the volunteer management project as a UI Designer, where I spearheaded the development of a user flow and revamped the design system to enhance cohesion and efficiency. 
+                    Following my promotion to Design Lead, I became the go-to expert for UX best practices as other project teams started adopting my project's design system.
+                </p>
+                <p>
+                    In my leadership role, I manage a team of five designers, delegating tasks, running meetings, mentoring junior talent, and setting a high standard for quality work. I also prioritize creating opportunities for my teammates to excel. 
+                    Additionally, I collaborate closely with cross-functional team leads to align design direction with project goals, ensuring the team meets MVP launch dates and organizational objectives.
+                </p>
+            </div>
+            <div class="sec" id="design">
+                <h2>Design As Of 09/24/2024</h2>
+                <h1>
+                    The desktop-only platform caters to multiple organizational stakeholders.
+                </h1>
+                <p>
+                    In addition to meeting the needs of its future users, the platform holds security in high esteem. The web application has varying levels of functionality access. Admins have access to all the platform's features, while human resources, project managers, and volunteers have restrictions on what they can view or do.
+                </p>
+                <a href="./img/keelworks/home.png" target="_blank">
+                    <div class="onHoverZoomIn">
+                        <img src="./img/keelworks/home.png" class="portImg">
                     </div>
-                    <div class="container animated animatedFadeInUp fadeInUp">
-                        <p class="quickFacts">Product Designer ▪︎ Jun 2024 – Present</p>
-                        <p class="cardTitle">Numaira - AI Data Population</p>
-                        <p class="cardDes">Building a SaaS solution that uses AI to automate and scale financial auditors’ document workflows</p>
+                </a>  
+                <p class="caption spaceBelow">The Admin/HR homepage allows for the approval of tasks and monitoring of organizational growth.</p>
+                <a href="./img/keelworks/tasks.png" target="_blank">
+                    <div class="onHoverZoomIn">
+                        <img src="./img/keelworks/tasks.png" class="portImg">
                     </div>
-                </div>
-                <span class="caseStudyCardtooltip"><p><span class="wizardStar">✳︎</span> Catch A Glimpse</p></span>
-            </a>
-
-            <!-- keelworks card -->
-            <a href="./keelworks.html" class="caseStudyCardCode">
-                <div class="card shrink fadeIn">
-                    <div class="imgContain">
-                        <img src="img/universal/keelworksRawCover.png" alt="keelworks cover image">
+                </a>  
+                <p class="caption spaceBelow">The task screen keeps track of out-going and in-progress volunteer onboarding tasks.</p>
+                <a href="./img/keelworks/workflow.png" target="_blank">
+                    <div class="onHoverZoomIn">
+                        <img src="./img/keelworks/workflow.png" class="portImg">
                     </div>
-                    <div class="container animated animatedFadeInUp fadeInUp">
-                        <p class="quickFacts">Design Lead ▪︎ Jan 2024 – Present</p>
-                        <p class="cardTitle">KeelWorks - People Management</p>
-                        <p class="cardDes">Directing the design of an internal management system that streamlines volunteer onboarding tasks</p>
+                </a>  
+                <p class="caption spaceBelow">The workflow screen allows admins and human resources to modify the task list given to volunteers.</p>
+                <a href="./img/keelworks/volunteer.png" target="_blank">
+                    <div class="onHoverZoomIn">
+                        <img src="./img/keelworks/volunteer.png" class="portImg">
                     </div>
-                </div>
-                <span class="caseStudyCardtooltip"><p><span class="wizardStar">✳︎</span> Steal A Glance</p></span>
-            </a>
+                </a>  
+                <p class="caption spaceBelow">I worked on the volunteer management userflow extensively before my promotion to lead.</p>
+                <a href="./img/keelworks/roles.png" target="_blank">
+                    <div class="onHoverZoomIn">
+                        <img src="./img/keelworks/roles.png" class="portImg">
+                    </div>
+                </a>  
+                <p class="caption spaceBelow">The Admin is the only type of user who can manage other user's levels of access to ensure the organization's security.</p>
+            </div>
+            <div class="sec" id="results">
+                <h2>Results</h2>
+                <h1>
+                    My leadership allowed the design team to deliver the user flows to the engineering team, keeping the project on track and ahead of schedule.
+                </h1>
+                <p>
+                    Feature prioritization and coordination with other team leads made way for unstoppable progress in the face of changing external stakeholder demands. Ultimately, my team and I delivered many design system-compliant wireframes that were on point with the over 400-page product requirement document, paving the way for a successful MVP launch and testing phase in the coming months.
+                </p>
+                <img src="./img/keelworks/results.png" class="portImg">
+            </div>
+            <div class="sec" id="chat">
+                <h2>Let's Chat</h2>
+                <h1>
+                    Because the story is ongoing, the end has not come! However, if one wishes to inquire more about the specifics of my experience, I'll be happy to chat!
+                </h1>
+                <p>
+                    In the meantime, feel free to indulge in my other adventures and stories!
+                </p>
+            </div>
         </div>
-        <div class="allProjects caseStudyCardCode">
-            <a href="./allProjects.html"><h1 class="shrink nextHover">All Projects<sup>12</sup> ➢</h1></a>
-            <span class="caseStudyCardtooltip"><p><span class="peaceSymbol">✌︎</span> My Many Stories</p></span>
-        </div>
-        
     </body>
-    <footer class="spaceTop">
+    <footer class="projectFooter">
+
+        <div class="otherProject">
+            <a href="./google.html">
+                <h1 class="shrink nextHover"><span class="wizardStar">✳︎</span> Bug Report Deduplication ➢
+                    <img src="./img/universal/googleRawCover.png"/>
+                </h1>
+            </a>
+        </div>
         <a href="./index.html">
             <div class="footerLogoContainer bigShrink">
                 <svg class="footerLogo" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -252,21 +288,13 @@
             <p class="bragFooter">© 2024 version designed & coded by Eddy ✌︎</p>
         </div>
     </footer>
-    <script>
-        var tooltip = document.querySelectorAll('.caseStudyCardtooltip');
-
-        document.addEventListener('mousemove', fn, false);
-
-        function fn(e) {
-            for (var i=tooltip.length; i--;) {
-                tooltip[i].style.left = e.pageX + 'px';
-                tooltip[i].style.top = e.pageY + 'px';
-            }
-        }
-    </script>
     <!-- html and jQuery code for floating back to top button is written by Muhammad Asif -->
     <!-- https://codeconvey.com/floating-back-to-top-button-html/ -->
-    <!-- <a href="javascript:" id="return-to-top"><b>↑</b></a>
+    <a href="javascript:" id="return-to-top">
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.0933 53.0027L25.2107 48.2987C29.1929 45.8596 32.6276 43.4951 35.5147 41.2053C38.4516 38.9156 41.0649 36.5511 43.3547 34.112C45.6444 31.6729 47.7849 29.0596 49.776 26.272H50.224C52.2649 29.0596 54.4053 31.6729 56.6453 34.112C58.9351 36.5511 61.5484 38.9156 64.4853 41.2053C67.4222 43.4951 70.8569 45.8596 74.7893 48.2987L70.9067 53.0027C67.7707 50.9618 64.9333 48.9209 62.3947 46.88C59.9058 44.7893 57.7156 42.7236 55.824 40.6827C53.9324 38.6418 52.3893 36.6507 51.1947 34.7093C50 32.768 49.1787 30.9013 48.7307 29.1093H51.2693C50.8213 30.9013 50 32.768 48.8053 34.7093C47.6107 36.6507 46.0676 38.6418 44.176 40.6827C42.2844 42.7236 40.0693 44.7893 37.5307 46.88C35.0418 48.9209 32.2293 50.9618 29.0933 53.0027ZM47.0133 76V49.4933C47.0133 46.3573 47.088 43.6196 47.2373 41.28C47.3867 38.8907 47.5609 36.7751 47.76 34.9333L50 30.4533L52.24 34.9333C52.4391 36.7751 52.6133 38.8907 52.7627 41.28C52.912 43.6196 52.9867 46.3573 52.9867 49.4933V76H47.0133Z" fill="#303030"/>
+        </svg>
+    </a>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script>
         $(window).scroll(function() {
@@ -281,5 +309,25 @@
                 scrollTop : 0
             }, 500);
         });
-    </script> -->
+    </script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 300) {
+                $('#bookmarks').fadeIn(200);
+            } else {
+                $('#bookmarks').fadeOut(200);
+            }
+        });
+    </script>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
 </html>
