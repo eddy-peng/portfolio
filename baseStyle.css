@@ -574,7 +574,6 @@ a {
 
 /* case study card */
 .card {
-  border: 1px solid #303030;
   margin-bottom: 2vh;
   background-color: #FFFFFF;
   overflow: hidden;
@@ -588,14 +587,12 @@ a {
 }
 
 .card .imgContain {
-  border-bottom: 1px solid #303030;
+  border: 1px solid #303030;
   overflow: hidden;
-  width: 100%;
 }
 
 /* Add some padding inside the card container */
 .container {
-  padding: 2px 12px;
   background: white;
 }
 
@@ -610,7 +607,7 @@ a {
     line-height: 1.8;
     margin-top: 5px;
     margin-bottom: 0px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .cardDes {
