@@ -66,10 +66,6 @@ a:active {
   display: none;
 }
 
-.myName {
-  font-size: 20px;
-}
-
 img {
   pointer-events: none;
 }
@@ -543,6 +539,11 @@ a {
   font-weight: 400;
 }
 
+.myName {
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .intro {
   margin: 1vh;
   margin-top: 15vh;
@@ -569,7 +570,9 @@ a {
 .tagline {
   font-size: 28px;
   font-weight: 500;
-  line-height: 1.8;
+  line-height: 1.4;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 /* case study card */
@@ -599,19 +602,21 @@ a {
 .quickFacts {
     color: #767676;
     font-size: 14px;
+    margin-top: 24px;
+    margin-bottom: 2px;
 }
 
 .cardTitle {
     font-size: 24px;
     line-height: 1.8;
-    margin-top: 12px;
-    margin-bottom: 0px;
+    margin-top: 8px;
+    margin-bottom: 2px;
     font-weight: 500;
 }
 
 .cardDes {
     font-size: 16px;
-    margin-top: 8px;
+    margin-top: 2px;
     line-height: 1.8;
 }
 
