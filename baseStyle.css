@@ -709,10 +709,6 @@ footer .footerContent div p a {
   margin-left: 16px;
 }
 
-#galleryTitle h1, #galleryTitle p {
-  max-width: 60%;
-}
-
 #galleryTitle p {
   line-height: 1.4;
 }
