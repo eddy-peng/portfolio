@@ -138,11 +138,11 @@
                 <a href="#solution"><li>Solution</li></a>
                 <a href="#results"><li>Results</li></a>
                 <a href="#contribution"><li>Contribution</li></a>
-                <a href="#constraints"><li>Constraints</li></a>
                 <a href="#research"><li>Research</li></a>
                 <a href="#ideation"><li>Ideation</li></a>
                 <a href="#design"><li>Design</li></a>
                 <a href="#validation"><li>Validation</li></a>
+                <a href="#constraints"><li>Constraints</li></a>
                 <a href="#reflections"><li>Reflections</li></a>
             </ul>
         </div>
@@ -381,28 +381,6 @@
                     With the deadline approaching, my team and I faced challenges controlling ChatGPT's output formats. After days of inconsistent results, I realized the prompts were too complex. By letting the code handle some tasks, the AI could focus on calculating bug report similarity scores to reduce duplicates. After discussing the idea with my engineering lead, my team and I implemented the strategy, getting much more improved results.
                 </p>
             </div>
-            <div class="sec" id="constraints">
-                <h2>Constraints: Primary Users</h2>
-                <h1>
-                    Bug Reporters were out of scope. Collaboration only occurred with Google.
-                </h1>
-                <p>
-                    Throughout the adventure, my team and I worked with Google employees (specifically engineers and managers from the Android Security Team) and experts in the cybersecurity and AI industries. Contact with Bug Reporters was considered out of scope because of timelines and coordination challenges.
-                </p>
-                <img src="./img/google/internal.png" class="portImg">
-                <p class="caption">The project focused on Google's processes and the advice of other cybersecurity experts.</p>  
-            </div>
-            <div class="sec">
-                <h2>Constraints: Data Usage</h2>
-                <h1>
-                    Restrictions prevented my team and I from using Android bug reports.
-                </h1>
-                <p>
-                    Android bug reports are not released publically. As such, my team and I used Chromium bug reports because they were open-source and related to the security of Google products. Chromium reports don't follow the same formatting structures as Android reports. Nevertheless, the solution works off Android's reporting portal and uses Chromium report data for AI training with steps in the handoff documentation for switching to Android's reports.
-                </p>
-                <img src="./img/google/chromium.png" class="portImg">
-                <p class="caption">The project used open-sourced Chromium data to ensure project feasibility.</p>
-            </div>
             <div class="sec" id="research">
                 <h2>Research: Literature Review</h2>
                 <h1>
@@ -583,6 +561,28 @@
                     </div>
                 </a>     
                 <p class="caption">I created a report presenting the process of calculating agreement between human reviewers and the AI model.</p>  
+            </div>
+            <div class="sec" id="constraints">
+                <h2>Constraints: Primary Users</h2>
+                <h1>
+                    Bug Reporters were out of scope. Collaboration only occurred with Google.
+                </h1>
+                <p>
+                    Throughout the adventure, my team and I worked with Google employees (specifically engineers and managers from the Android Security Team) and experts in the cybersecurity and AI industries. Contact with Bug Reporters was considered out of scope because of timelines and coordination challenges.
+                </p>
+                <img src="./img/google/internal.png" class="portImg">
+                <p class="caption">The project focused on Google's processes and the advice of other cybersecurity experts.</p>  
+            </div>
+            <div class="sec">
+                <h2>Constraints: Data Usage</h2>
+                <h1>
+                    Restrictions prevented my team and I from using Android bug reports.
+                </h1>
+                <p>
+                    Android bug reports are not released publically. As such, my team and I used Chromium bug reports because they were open-source and related to the security of Google products. Chromium reports don't follow the same formatting structures as Android reports. Nevertheless, the solution works off Android's reporting portal and uses Chromium report data for AI training with steps in the handoff documentation for switching to Android's reports.
+                </p>
+                <img src="./img/google/chromium.png" class="portImg">
+                <p class="caption">The project used open-sourced Chromium data to ensure project feasibility.</p>
             </div>
             <div class="sec" id="reflections">
                 <h2>Reflections: Documentation</h2>
