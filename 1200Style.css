@@ -1,6 +1,39 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
+
+  .desktopLogo h1 {
+    font-size: 24px;
+  }
+
+  nav a {
+    font-size: 20px;
+    padding-right: 3vh;
+  }
+  .linkedInBox, .emailBox {
+    width: 10vh;
+  }
+  .desktopNav, .navTabs, .socialArea, .linkedInBox, .emailBox {
+    height: 10vh;
+    /* background-color: red; */
+  }
+  .centerNav {
+    height: 10vh;
+    line-height: 10vh;
+  }
+  .logo {
+    width: 7vh;
+  }
+
+
+  /* END OF NAVIGATION CODE */
+
+
+
+
+
+  
+
   .spaceBelow {
     margin-bottom: 20vh;
   }
@@ -20,29 +53,8 @@
     .cardTitle {
       font-size: 24px;
     }
-
-    .desktopLogo h1 {
-      font-size: 24px;
-    }
     .contactMe, .bragFooter {
       font-size: 16px;
-    }
-    nav a {
-      font-size: 20px;
-      padding-right: 3vh;
-    }
-    .linkedInBox, .emailBox {
-      width: 10vh;
-    }
-    .desktopNav, .navTabs, .socialArea, .linkedInBox, .emailBox {
-      height: 10vh;
-    }
-    .centerNav {
-      height: 10vh;
-      line-height: 10vh;
-    }
-    .logo {
-      width: 7vh;
     }
     /* end of footer stuff */
   

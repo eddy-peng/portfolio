@@ -1,69 +1,6 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
 
-/* The progress container (grey background) */
-.progress-container {
-  width: 100%;
-  height: 8px;
-  background: white;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  left: 0;
-}
-
-.spaceBelow {
-  margin-bottom: 12vh;
-}
-
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 8px;
-  background: linear-gradient(to right, #0965E3, #57B7FD);
-  width: 0%;
-}
-
-  .tagline {
-    font-size: 32px;
-  }  
-
-  .card {
-    margin: 1vh;
-  }
-
-  .cardDes {
-    font-size: 16px;
-  }
-
-.cardTitle {
-  font-size: 16px;
-}
-  
-  footer .footerContent div {
-      width: 10vh;
-}
-  
-    body {
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-
-    .aboutPagesSpace {
-      margin-top: 10vh;
-    }
-  
-    .intro {
-      margin: 1vh;
-      margin-top: 12vh;
-      margin-bottom: 12vh;
-    }
-  
-    .descList li {
-      margin-top: -2vh;
-      margin-bottom: -2vh;
-    }
-  
     /* get rid of mobile nav */
     .navigation, .navBackground {
       display: none;
@@ -75,6 +12,7 @@
       height: 8vh;
       padding-top: 5vh;
       width: 100%;
+      /* background-color: blue; */
     }
   
     /* the larger rectangle */
@@ -159,17 +97,86 @@
       height: 3.5vh;
       display: flex;
     }
-  
-    /* making the two social buttons appear side by side in its social area container */
-    /* .linkedInBox, .emailBox {
-      display: inline-block;
-    } */
-    .underlined {
-      /* padding-bottom: 2.5vh; */
-    }
+
     .active {
       text-decoration: none;
     }
+
+    /* END OF NAVIGATION CODE */
+
+
+
+
+
+
+
+
+    
+
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: white;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.spaceBelow {
+  margin-bottom: 12vh;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: linear-gradient(to right, #0965E3, #57B7FD);
+  width: 0%;
+}
+
+  .tagline {
+    font-size: 32px;
+  }  
+
+  .card {
+    margin: 1vh;
+  }
+
+  .cardDes {
+    font-size: 16px;
+  }
+
+.cardTitle {
+  font-size: 16px;
+}
+  
+  footer .footerContent div {
+      width: 10vh;
+}
+  
+    body {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .aboutPagesSpace {
+      margin-top: 10vh;
+    }
+  
+    .intro {
+      margin: 1vh;
+      margin-top: 12vh;
+      margin-bottom: 12vh;
+    }
+  
+    .descList li {
+      margin-top: -2vh;
+      margin-bottom: -2vh;
+    }
+
     .content {
       display: grid;
       grid-template-columns: 2fr 2fr;
