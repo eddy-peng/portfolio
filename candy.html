@@ -403,4 +403,24 @@
         });
         });
     </script>
+    <script>
+        /* When the user scrolls down, hide the navbar and nav background. When the user scrolls up, show them */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            var navigation = document.querySelector(".navigation");
+            var navBackground = document.querySelector(".navBackground");
+
+            if (prevScrollpos > currentScrollPos) {
+                // Show the navbar and background
+                navigation.style.top = "8px";
+                navBackground.style.top = "0px";
+            } else {
+                // Hide the navbar and background
+                navigation.style.top = "-58px"; // Adjust to navbar height
+                navBackground.style.top = "-58px"; // Same adjustment for background
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </html>

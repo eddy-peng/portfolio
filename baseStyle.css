@@ -24,6 +24,7 @@ body.no-scroll {
   position: fixed;
   width: calc(100vw - 16px);
   z-index: 99;
+  transition: top 0.4s;
 }
 
 .logoSpace {
