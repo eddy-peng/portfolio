@@ -1,28 +1,38 @@
-.logo {
-  margin-top: 0.7vh;
-  margin-left: 1vh;
-  /* change logo size */
-  width: 5.5vh;
-  position: fixed;
+body.no-scroll {
+  overflow: hidden;
 }
 
-.navigation {
-  z-index: 99;
-  position: fixed;
-  width: 95%;
-  border: 1px solid #303030;
-  height: 7vh;
-  background: white;
+.logo {
+  width: 40px;
+  padding-top: 4px;
 }
 
 .navBackground {
-  z-index: 99;
+  display: block;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100vw;
+  z-index: 90;
+  height: 58px;
+  background-color: white;
+}
+
+.navigation {
+  display: flex;
+  gap: 4px;
   position: fixed;
-  width: 100%;
+  width: calc(100vw - 16px);
+  z-index: 99;
+}
+
+.logoSpace {
+  z-index: 99;
+  border: 1px solid #303030;
   background: white;
-  height: 8.5vh;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 100%;
 }
 
 .desktopNav {
@@ -37,25 +47,25 @@
 }
 
 .button {
-  position: relative;
-  background-color: white;
-  height: 7vh;
-  width: 7vh;
-  position: fixed;
-  top: 8px; 
-  right: 8px; 
   z-index: 2000;
-  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 48px;
+  height: 48px;
   cursor: pointer;
   border: 1px solid #303030;
+  position: relative;
 }
 
 .background {
-  height: 7vh;
-  width: 7vh;
-  position: fixed;
-  top: 8px; 
-  right: 8px; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  margin: 0px;
   background-color: #FFFFFF;
   z-index: 1000;
   border: 1px solid #0965E3;
@@ -102,37 +112,31 @@
   right: 0;
 }
 
-/*  */
+
 /* styling hamb ICON */
 .icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.icon,
-.icon::before,
-.icon::after {
-  width: 5vh;
-  height: 0.3vh;
+  position: relative;
+  width: 24px;
+  height: 2px;
   background-color: #303030;
-  display: inline-block;
 }
 
 .icon::before,
 .icon::after {
   content: "";
   position: absolute;
-  left: 0;
-  transition: all 0.2s;
+  width: 24px;
+  height: 2px;
+  background-color: #303030;
+  transition: all 0.2s ease-in-out;
 }
 
 .icon::before {
-  top: -0.8rem;
+  top: -8px;
 }
+
 .icon::after {
-  top: 0.8rem;
+  top: 8px;
 }
 
 .checkbox:checked + .button .icon {

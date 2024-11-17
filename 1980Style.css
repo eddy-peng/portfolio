@@ -1,12 +1,26 @@
 /* omg such big screens */
 @media (min-width: 1980px) {
-    .desktopLogo h1 {
+    .desktopLogo h1, nav a {
       font-size: 40px;
+    }
+    .logo {
+      width: 80px;
     }
 
-    nav a {
-      font-size: 40px;
+    .emailBox svg, .linkedInBox svg {
+      width: 40px;
+      height: 40px;
     }
+
+    .linkedInBox, .emailBox {
+      padding: 40px;
+    }
+
+    .navTabs {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
 
     /* END OF NAVIGATION CODE */
 

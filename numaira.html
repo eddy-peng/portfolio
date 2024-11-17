@@ -57,30 +57,35 @@
         <div class="navBackground"></div>
         <!-- mobile navigation -->
         <div class="navigation">
-            <a href="./index.html">
-                <div class="mobileLogo">
-                    <img src="img/universal/logoDef.svg" alt="eddy's logo" class="logo">
-                </div>
-            </a>
 
-            <!-- hamburger -->
-            <input type="checkbox" id="navi-toggle" class="checkbox" />
-                <label for="navi-toggle" class="button">
-                    <span class="icon">&nbsp;</span>
-                </label>
-            <div class="background">&nbsp;</div>
+            <div class="logoSpace">
+                <a href="./index.html">
+                    <div class="mobileLogo">
+                        <img src="img/universal/logoDef.svg" alt="eddy's logo" class="logo">
+                    </div>
+                </a>
+            </div>
 
-            <!-- nav -->
-            <nav class="nav">
-                <ul class="list">
-                    <li class="item shrink"><a href="./index.html" class="active"><span class="loraloraNav loraloraNavActive">01</span> Projects</a></li>
-                    <li class="item shrink"><a href="./about.html"><span class="loraloraNav">02</span> About</a></li>
-                    <li class="item shrink"><a href="https://drive.google.com/file/d/19tvkHtJTKz_nkRqsr7o69IpBjHKVI0qo/view?usp=drive_link" target="_blank"><span class="loraloraNav">03</span> Resume</a></li>
-                    <li class="item shrink"><a href="./gallery.html"><span class="loraloraNav">04</span> Gallery</a></li>
-                    <li class="item shrink"><a href="mailto: eddypeng3@gmail.com"><span class="loraloraNav">05</span> Email</a></li>
-                    <li class="item shrink"><a href="https://www.linkedin.com/in/eddy-peng/" target="_blank"><span class="loraloraNav">06</span> LinkedIn</a></li>
-                </ul>
-            </nav>
+            <div class="menu">
+                <!-- hamburger -->
+                <input type="checkbox" id="navi-toggle" class="checkbox" />
+                    <label for="navi-toggle" class="button">
+                        <span class="icon"></span>
+                    </label>
+                <div class="background">&nbsp;</div>
+
+                <!-- nav -->
+                <nav class="nav">
+                    <ul class="list">
+                        <li class="item shrink"><a href="./index.html" class="active"><span class="loraloraNav loraloraNavActive">01</span> Projects</a></li>
+                        <li class="item shrink"><a href="./gallery.html"><span class="loraloraNav">02</span> Gallery</a></li>
+                        <li class="item shrink"><a href="./about.html"><span class="loraloraNav">03</span> About</a></li>
+                        <li class="item shrink"><a href="https://drive.google.com/file/d/19tvkHtJTKz_nkRqsr7o69IpBjHKVI0qo/view?usp=drive_link" target="_blank"><span class="loraloraNav">04</span> Resume</a></li>
+                        <li class="item shrink"><a href="mailto: eddypeng3@gmail.com"><span class="loraloraNav">05</span> Email</a></li>
+                        <li class="item shrink"><a href="https://www.linkedin.com/in/eddy-peng/" target="_blank"><span class="loraloraNav">06</span> LinkedIn</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
         <!-- desktop navigation -->
@@ -99,10 +104,10 @@
                     </div>
                 </a>
                 <nav class="centerNav">
-                    <a href="./gallery.html" class="bigShrink">Gallery</a>
-                    <a href="https://drive.google.com/file/d/19tvkHtJTKz_nkRqsr7o69IpBjHKVI0qo/view?usp=drive_link" target="_blank" class="bigShrink">Resume</a>
-                    <a href="./about.html" class="bigShrink">About</a>
                     <a href="./index.html" class="active"><span class="underlined">Projects</span></a>
+                    <a href="./gallery.html" class="bigShrink">Gallery</a>
+                    <a href="./about.html" class="bigShrink">About</a>
+                    <a href="https://drive.google.com/file/d/19tvkHtJTKz_nkRqsr7o69IpBjHKVI0qo/view?usp=drive_link" target="_blank" class="bigShrink">Resume</a>
                 </nav>
             </div>
             <div class="socialArea">
@@ -336,7 +341,7 @@
             <br/>
             <hr/>
             <p class="contactMe">Get In Touch ➢ <a href="mailto: eddypeng3@gmail.com">eddypeng3@gmail.com</a> ▪︎ <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">LinkedIn</a></p>
-            <p class="bragFooter">© 2024 version designed & coded by Eddy ✌︎</p>
+            <p class="bragFooter">© 2024 version designed & developed by Eddy ✌︎</p>
         </div>
     </footer>
     <!-- html and jQuery code for floating back to top button is written by Muhammad Asif -->
@@ -380,5 +385,19 @@
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
         }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const checkbox = document.querySelector(".checkbox");
+        const body = document.body;
+
+        checkbox.addEventListener("change", () => {
+            if (checkbox.checked) {
+            body.classList.add("no-scroll");
+            } else {
+            body.classList.remove("no-scroll");
+            }
+        });
+        });
     </script>
 </html>

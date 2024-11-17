@@ -17,35 +17,31 @@
   nav a {
     padding-right: 1.5vh;
   }
-  .linkedInBox, .emailBox {
-    width: 8vh;
+
+  .logo {
+    padding-top: 0px;
   }
-  .desktopNav, .navTabs, .socialArea, .linkedInBox, .emailBox {
-    height: 8vh;
+
+  .centerNav {
+    gap: 12px;
+  }
+
+  .desktopNav {
     /* background-color: green; */
   }
-  .centerNav {
-    height: 8vh;
-    line-height: 8vh;
-  }
-  .logo {
-    width: 5vh;
+
+  .desktopLogo {
+    display: flex;
+    gap: 8px;
   }
 
   .desktopLogo h1 {
     display: inline-block;
     font-size: 16px;
-    font-weight: 400;
-    font-family: "Lora", serif;
+    font-weight: 500;
   }
   .centeringName {
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 200%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
   }
   .desktopLogo:hover .centeringName h1 {
     color: #0965E3;
