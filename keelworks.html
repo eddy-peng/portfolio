@@ -254,6 +254,61 @@
                 </p>
                 <img src="./img/keelworks/results.png" class="portImg">
             </div>
+            <div class="sec">
+                <h2>Recommendations</h2>
+                <h1>
+                    My teammates had amazing words to say about me!
+                </h1>
+                <div id="recommenders">
+                    <div class="row" id="optionThumbs">
+                        <div class="column" id="thumb1">
+                            <img src="img/aboutMe/sanjana.jpg" alt="Quote 1" onclick="showQuote('quote1', 'thumb1');">
+                        </div>
+                        <div class="column" id="thumb2">
+                          <img src="img/aboutMe/sabrina.jpg" alt="Quote 2" onclick="showQuote('quote2', 'thumb2');">
+                        </div>
+                    </div>
+                </div>
+                <div class="quoteContainer">
+                    <div id="quote1" class="quoteCard">
+                        <img src="img/aboutMe/quote.svg" class="quoteIcon">
+                        <p>
+                            I have had the pleasure of working with Eddy for the past five months, during which he has proven to be an exceptional Design Manager. His leadership skills are evident in how effectively he has guided the team through complex design implementations, ensuring seamless communication across product managers, engineers, developers, stakeholders, and designers. Eddy’s ability to deliver high-fidelity designs, coupled with his knack for problem-solving, has been instrumental in driving our projects to success.
+                        </p>
+                        <p>
+                            Eddy’s dedication to his work, attention to detail, and ability to manage multiple tasks simultaneously have made him a reliable and valued team member. His collaborative approach fosters innovation and teamwork, creating a productive environment that benefits everyone involved. I highly recommend Eddy for any leadership role in design, as his consistent performance and leadership qualities have made a significant impact on our team.
+                        </p>
+                        <div class="whoSaid">
+                        <img src="img/aboutMe/sanjana.jpg">
+                        <div class="attributed">
+                            <p>Sanjana Pachipulusu</p>
+                            <p>UX Designer</p>
+                            <p>Teammate @ KeelWorks Foundation</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="quote2" class="quoteCard">
+                        <img src="img/aboutMe/quote.svg" class="quoteIcon">
+                        <p>
+                            It’s not often that I get to work with someone whose attention to detail is as remarkable as Eddy’s. His eagle-eyed vision significantly enhanced the intricacies and cohesiveness of the project he leads, which I have the pleasure of being part of. Eddy is not only exceptionally skilled at refining the finer points of design and team dynamics but also at approaching projects holistically, ensuring every element aligns with the overall vision. He excelled in leading design reviews, offering actionable feedback, and was always open to collaboration when facing challenges.
+                        </p>
+                        <p>
+                            Eddy’s ability to communicate effectively with stakeholders is another of his standout qualities. He consistently brought valuable insights to the design team, fostering a collaborative environment where everyone felt heard and appreciated. His professionalism, dedication, and passion for design have left a lasting impression on me, and I feel incredibly fortunate to have had the opportunity to learn from and work alongside him.
+                        </p>
+                        <div class="whoSaid">
+                        <img src="img/aboutMe/sabrina.jpg">
+                        <div class="attributed">
+                            <p>Sabrina Settle</p>
+                            <p>UX Designer</p>
+                            <p>Teammate @ KeelWorks Foundation</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    See what other people are saying about me <a href="./about.html#testimonials" class="underlinedLink">here</a>.
+                </p>
+            </div>
             <div class="sec" id="chat">
                 <h2>Let's Chat</h2>
                 <h1>
@@ -333,6 +388,27 @@
         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         var scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+    <script>
+        function showQuote(quoteId, thumbId) {
+        // Hide all quote cards
+        var quotes = document.getElementsByClassName('quoteCard');
+        for (var i = 0; i < quotes.length; i++) {
+            quotes[i].style.display = 'none';
+        }
+    
+        // Show the selected quote card
+        document.getElementById(quoteId).style.display = 'block';
+    
+        // Remove 'activeThumb' class from all thumbnails
+        var thumbs = document.getElementsByClassName('column');
+        for (var i = 0; i < thumbs.length; i++) {
+            thumbs[i].classList.remove('activeThumb');
+        }
+    
+        // Add 'activeThumb' class to the clicked thumbnail
+        document.getElementById(thumbId).classList.add('activeThumb');
         }
     </script>
     <script>

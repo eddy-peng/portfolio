@@ -922,6 +922,12 @@ footer .footerContent div p a {
   margin: 0px;
 }
 
+.individualQuoteCard {
+  border: 1px solid #303030;
+  padding: 24px;
+  margin-top: 20px;
+}
+
 /* Add styles for the active thumbnail */
 .activeThumb img {
   filter: none;

@@ -216,6 +216,53 @@
                 </p>
                 <img src="./img/zivolve/results.png" class="portImg"/>
             </div>
+            <div class="sec">
+                <h2>Recommendations</h2>
+                <h1>
+                    My teammates had nice words to say about me!
+                </h1>
+                <div id="recommenders">
+                    <div class="row" id="optionThumbs">
+                        <div class="column" id="thumb1">
+                            <img src="img/aboutMe/ivy.jpg" alt="Quote 1" onclick="showQuote('quote1', 'thumb1');">
+                        </div>
+                        <div class="column" id="thumb2">
+                            <img src="img/aboutMe/sia.jpg" alt="Quote 2" onclick="showQuote('quote2', 'thumb2');">
+                        </div>
+                    </div>
+                </div>
+                <div id="quote1" class="quoteCard">
+                    <img src="img/aboutMe/quote.svg" class="quoteIcon">
+                    <p>
+                        Eddy has been an essential partner while we were interns in Ziggurat. He was amazing at time-management and team working. He always make 100% sure that everything worked correctly and proposed great solutions for problems. He always makes time to help others no matter how busy is and is someone I can always depend on.
+                    </p>
+                    <div class="whoSaid">
+                    <img src="img/aboutMe/ivy.jpg">
+                    <div class="attributed">
+                        <p>Ivy Jin</p>
+                        <p>Product Designer</p>
+                        <p>Teammate @ Ziggurat Technologies</p>
+                    </div>
+                    </div>
+                </div>
+                <div id="quote2" class="quoteCard">
+                    <img src="img/aboutMe/quote.svg" class="quoteIcon">
+                    <p>
+                        Eddy was a rockstar during his UI/UX internship at Ziggurat! His impeccable precision and work quality and ethics are superlative. I highly recommend him to any future prospective employer and colleagues to work with. 
+                    </p>
+                    <div class="whoSaid">
+                    <img src="img/aboutMe/sia.jpg">
+                    <div class="attributed">
+                        <p>Sia Nazari</p>
+                        <p>Entrepreneur</p>
+                        <p>CEO @ Ziggurat Technologies</p>
+                    </div>
+                    </div>
+                </div>
+                <p>
+                    See what other people are saying about me <a href="./about.html#testimonials" class="underlinedLink">here</a>.
+                </p>
+            </div>
             <div class="sec" id="reflect">
                 <h2>Reflections</h2>
                 <h1>Simplifying complexities is significant in UX.</h1>
@@ -284,6 +331,27 @@
                 scrollTop : 0
             }, 500);
         });
+    </script>
+    <script>
+        function showQuote(quoteId, thumbId) {
+        // Hide all quote cards
+        var quotes = document.getElementsByClassName('quoteCard');
+        for (var i = 0; i < quotes.length; i++) {
+            quotes[i].style.display = 'none';
+        }
+    
+        // Show the selected quote card
+        document.getElementById(quoteId).style.display = 'block';
+    
+        // Remove 'activeThumb' class from all thumbnails
+        var thumbs = document.getElementsByClassName('column');
+        for (var i = 0; i < thumbs.length; i++) {
+            thumbs[i].classList.remove('activeThumb');
+        }
+    
+        // Add 'activeThumb' class to the clicked thumbnail
+        document.getElementById(thumbId).classList.add('activeThumb');
+        }
     </script>
     <script>
         $(window).scroll(function() {
