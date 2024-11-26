@@ -126,145 +126,221 @@
   width: 0%;
 }
 
-  .tagline {
-    font-size: 32px;
-  }  
+.tagline {
+  font-size: 32px;
+}  
 
-  .card {
-    margin: 1vh;
-  }
+.card {
+  margin: 1vh;
+}
 
-  .cardDes {
-    font-size: 16px;
-  }
+.cardDes {
+  font-size: 16px;
+}
 
 .cardTitle {
   font-size: 16px;
 }
   
-  footer .footerContent div {
-      width: 10vh;
+body {
+  margin-left: 5%;
+  margin-right: 5%;
 }
-  
-    body {
-      margin-left: 5%;
-      margin-right: 5%;
-    }
 
-    .aboutPagesSpace {
-      margin-top: 10vh;
-    }
-  
-    .intro {
-      margin: 1vh;
-      margin-top: 12vh;
-      margin-bottom: 12vh;
-    }
-  
-    .descList li {
-      margin-top: -2vh;
-      margin-bottom: -2vh;
-    }
+.aboutPagesSpace {
+  margin-top: 10vh;
+}
 
-    .content {
-      display: grid;
-      grid-template-columns: 2fr 2fr;
-      grid-column-gap: 12px;
-      grid-row-gap: 24px;
-    }
-  
-    /* about stuff */
-    .aboutContent, .moreAboutContent {
-      margin-left: 5vh;
-      margin-right: 5vh;
-    }
+.intro {
+  margin: 1vh;
+  margin-top: 12vh;
+  margin-bottom: 12vh;
+}
 
-    .content, .cloudPhotoGrid {
-      margin-right: 0px;
-      margin-left: 0px;
-    }
-    .galleryRow {
-      margin-right: 0px;
-      margin-left: 0px;
-    }
-  
-    /* heree */
-    #me {
-      display: grid;
-      grid-template-columns: 2fr 2fr;
-      grid-column-gap: 20px;
-      vertical-align: middle;
-    }
-    #caseTitle,.sec {
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-    #caseTitle h1 {
-      padding: 0;
-      margin: 0;
-      padding-top: 48px;
-      font-size: 72px;
-      text-align: center;
-      font-weight: 500;
-      font-style: normal;
-    }
-    #caseTitle h2 {
-      font-size: 32px;
-      text-align: center;
-      font-weight: 500;
-    }
-    .values {
-      margin-top: 5vh;
-      display: grid;
-      grid-template-columns: 2fr 2fr;
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
-    }
-  
-    div ul li {
-      line-height: 3;
-    }
+.descList li {
+  margin-top: -2vh;
+  margin-bottom: -2vh;
+}
 
-    /* Case study stuff */
-    .cover {
-      padding-top: 10vh;
-      margin-top: 0;
-    }
-    .context {
-      margin-top: 5vh;
-      display: flex;
-      justify-content: space-between;
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-    .projectFooter {
-      height: 60%;
-    }
-    .otherProject h1, .title h1, .allProjects h1  {
-      font-size: 40px;
-    }
-    .instaGrid {
-      display: grid;
-      grid-template-columns: 2fr 2fr;
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
-    }
-    #galleryTitle {
-      padding-top: 0;
-      margin-right: 0px;
-      margin-left: 0px;
-    }
+.content {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-column-gap: 12px;
+  grid-row-gap: 24px;
+}
 
-    #galleryTitle h1, #galleryTitle p {
-      max-width: 50%;
-    }
+/* about stuff */
+.aboutContent, .moreAboutContent {
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
 
-    .progressBar {
-      position: absolute;
-      right: 0;
-    }
-    .figJamEmbed {
-      width: 800;
-      height: 500px;
-    }
+.content, .cloudPhotoGrid {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.galleryRow {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* heree */
+#me {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-column-gap: 20px;
+  vertical-align: middle;
+}
+#caseTitle,.sec {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#caseTitle h1 {
+  padding: 0;
+  margin: 0;
+  padding-top: 48px;
+  font-size: 72px;
+  text-align: center;
+  font-weight: 500;
+  font-style: normal;
+}
+#caseTitle h2 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+}
+.values {
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+div ul li {
+  line-height: 3;
+}
+
+/* Case study stuff */
+.cover {
+  padding-top: 10vh;
+  margin-top: 0;
+}
+.context {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.title h1, .allProjects h1  {
+  font-size: 40px;
+}
+.otherProject h1 {
+  font-size: 60px;
+}
+.instaGrid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+#galleryTitle {
+  padding-top: 0;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+#galleryTitle h1, #galleryTitle p {
+  max-width: 50%;
+}
+
+.progressBar {
+  position: absolute;
+  right: 0;
+}
+.figJamEmbed {
+  width: 800;
+  height: 500px;
+}
+
+
+/* Beginning of Footer Stuffs */
+footer {
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 600px;
+}
+.callToAction {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.contactLinks {
+  gap: 48px;
+}
+.labelContent {
+  font-size: 16px;
+}
+.footerButtons {
+  margin-top: 48px;
+}
+.footerButtons p {
+  font-size: 16px;
+  padding: 12px 14px;
+}
+.footerLabelContainer {
+  display: flex;
+  gap: 48px;
+}
+.footerLabels {
+  font-size: 14px;
+}
+.footerMetaData {
+  display: block;
+  margin-bottom: 24px;
+}
+.footerMetaData div p {
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.status {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.diamond {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(to right, #0965E3, #57B7FD);
+  padding: 0px;
+  margin: 0px;
+  transform:rotate(45deg);
+}
+.blink {
+  animation: blink 1s linear infinite;
+}
+@keyframes blink {
+  25% {
+    opacity: 0.5;
   }
+  55% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+}
+@keyframes thinking {50% { color: transparent }}
+.loader__dot { animation: 1s blink infinite }
+.loader__dot:nth-child(2) { animation-delay: 250ms }
+.loader__dot:nth-child(3) { animation-delay: 500ms }
+.secretText {
+  display: block;
+  color: white;
+  text-align: right;
+}
+.bragFooter {
+  padding-top: 12px;
+  font-size: 16px;
+}
+}

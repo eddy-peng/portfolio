@@ -38,21 +38,12 @@
   .tagline {
     font-size: 48px;
   }
-  
-      /* Footer stuff */
-  footer .footerContent div p {
-      font-size: 16px;
-    }
-    .cardDes {
-      font-size: 16px;
-    }
-    .cardTitle {
-      font-size: 24px;
-    }
-    .contactMe, .bragFooter {
-      font-size: 16px;
-    }
-    /* end of footer stuff */
+  .cardDes {
+    font-size: 16px;
+  }
+  .cardTitle {
+    font-size: 24px;
+  }
   
     /* case study stuff */
     #bookmarks {
@@ -141,6 +132,7 @@
       border: 1px solid #303030;
     }
     #return-to-top svg {
+      display: block;
       width: 8vh;
       height: 8vh;
     }
@@ -158,5 +150,24 @@
     }
     .otherProject h1, .title h1, .allProjects h1  {
       font-size: 80px;
+    }
+
+
+
+
+    /* Footer stuff */
+    footer {
+      height: 500px;
+    }
+    .footerContent {
+      display: flex;
+      justify-content: space-between;
+    }
+    .footerMetaDataContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+    .bragFooter {
+      padding-top: 0px;
     }
 }

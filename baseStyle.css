@@ -604,78 +604,30 @@ a {
   transition: all .2s ease-in-out; 
 }
 
-/* footer stuff */
-footer {
-  width: 100%;
-  height: 20%;
-  position: absolute;
-  left: 0;
-  background-color: #FFFFFF;
-  border-top: 1px solid #303030;
-  text-align: center;
-}
-
-hr {
-  display: none;
-}
-
-footer .footerContent div {
-  background: #FFFFFF;
-  border: 1px solid #303030;
-  width: 10vh;
-  height: 5vh;
-  display: inline-block;
-  text-align: center; 
-  margin-left: 1vh;
-  margin-top: 3vh;
-}
-
-footer .footerContent div p {
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-  height: 5vh;
-  line-height: 5vh;
-}
-
-footer .footerContent div p a {
-  text-decoration: none;
-  color: #303030;
-}
-
-.contactMe, .bragFooter {
-  font-size: 14px;
-}
-
-.contactMe a {
-  color: #303030;
-  text-decoration: underline;
-}
-
-.bragFooter {
-  margin-top: 2vh;
-  padding-bottom: 8vh;
-  text-align: center;
-  color: #767676;
-}
-
-.footerLogoContainer {
-  display: none;
-}
-
-.projectFooter {
-  height: 50%;
-}
-
 .allProjects h1 {
   text-align: center;
 }
 
-.otherProject h1, .allProjects h1 {
+.allProjects h1 {
   padding-top: 5vh;
   font-size: 40px;
   font-weight: 500;
   padding-bottom: 5vh;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.otherProject p {
+  color: #767676;
+  font-size: 16px;
+}
+
+.otherProject h1 {
+  padding-top: 140px;
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 140px;
   font-family: "Lora", serif;
   font-weight: 400;
   font-style: italic;
@@ -727,10 +679,10 @@ footer .footerContent div p a {
 .otherProject a h1 img {
   opacity: 0%;
   position: absolute;
-  width: 40%;
+  width: 50%;
   z-index: -1;
   bottom: 1vh;
-  left: 30%;
+  left: 25%;
   transition: all 0.5s ease; 
   border: 1px solid #303030;
 }
@@ -739,13 +691,12 @@ footer .footerContent div p a {
   color: #303030;
 }
 
-.projectFooter .footerContent {
-  margin-top: 6vh;
+.otherProject {
+  text-align: center;
 }
 
-.otherProject {
-  margin-left: 48px;
-  margin-right: 48px;
+#return-to-top svg {
+  display: none;
 }
 
 /* end of footer stuff */
@@ -1063,6 +1014,87 @@ footer .footerContent div p a {
     inset-inline-start: calc(var(--marquee-item-width) * -1);
   }
 }
+
+
+
+
+
+
+
+
+/* footer stuff */
+footer {
+  background-color: #FFFFFF;
+  border-top: 1px solid #303030;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.callToAction {
+  font-size: 24px;
+}
+.footerLabels {
+  color: #767676;
+  font-size: 12px;
+}
+.labelContent {
+  font-size: 14px;
+}
+.contactLinks {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+
+}
+.contactLinks div p {
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+.footerButtons {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+.footerButtons div {
+  background: #FFFFFF;
+  border: 1px solid #303030;
+  display: inline-block;
+}
+.footerButtons p {
+  font-size: 14px;
+  margin: 0px;
+  padding: 8px 12px;
+}
+.footerButtons a {
+  text-decoration: none;
+  color: #303030;
+}
+.footerLabelContainer {
+  display: none;
+}
+.secretText {
+  display: none;
+}
+.bragFooter {
+  color: #767676;
+  padding-top: 0px;
+}
+.bragFooter {
+  font-size: 14px;
+}
+hr {
+  color: #ededed;
+  opacity: 0.2;
+}
+
+
+
 
 
 /* width */

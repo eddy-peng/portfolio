@@ -193,84 +193,6 @@
       line-height: 1.8;
     }
   
-    /* footer stuff */
-    hr {
-      display: block;
-      margin-top: 3vh;
-      margin-bottom: 3vh;
-      color: #ededed;
-      opacity: 0.2;
-    }
-    .otherProject {
-      margin-left: 10%;
-      margin-right: 10%;
-      border-bottom: none;
-    }
-    .otherProject a h1:hover img {
-      opacity: 100%;
-    }
-    .nextHover:hover {
-      -webkit-text-stroke: 0.5px black;
-      color: white;
-      transition: all 0.2s linear;
-    }
-    .underlinedLink, .contactMe a {
-      color: #303030;
-      text-decoration: none;
-      background: 
-      linear-gradient(to right, #303030, #303030),
-      linear-gradient(to right, #0965E3, #57B7FD);
-      background-size: 100% 0.1em, 0 0.1em;
-      background-position: 100% 100%, 0 100%;
-      background-repeat: no-repeat;
-      transition: background-size 400ms;
-    }
-
-    .underlinedLink:hover, .contactMe a:hover {
-      color: #0965E3;
-      background-size: 0 0.1em, 100% 0.1em;
-    }
-    .footerContent {
-      margin-left: 10%;
-      margin-right: 10%;
-      text-align: right;
-      /* margin-top: 10vh; */
-    }
-    .footerContent .bigShrink p:hover {
-      color: #0965E3;
-    }
-    .bragFooter {
-      text-align: right; 
-      margin-top: 2vh;
-    }
-    .contactMe {
-      position: absolute;
-      margin: 0;
-      margin-left: 1vh;
-      text-align: left;
-    }
-    .footerLogoContainer {
-      display: block;
-      position: absolute;
-      margin-top: 3vh;
-      text-align: left;
-      margin-left: 10%;
-    }
-    .projectFooter .footerLogoContainer {
-      margin-top: 4vh;
-    }
-    .projectFooter .footerContent {
-      margin-top: 8vh;
-    }
-    .footerLogo {
-      margin-left: 1vh;
-      width: 5.5vh;
-    }
-    .footerLogo:hover path {
-      stroke: #0965E3;
-    }
-  /* end of footer stuff */
-  
     label {
       display: none;
     }
@@ -290,6 +212,57 @@
     .listRemove li {
       font-size: 16px;
     }
+
+        
+    .otherProject {
+      border-bottom: none;
+    }
+    .otherProject h1 {
+      font-size: 60px;
+    }
+    .otherProject a h1:hover img {
+      opacity: 100%;
+    }
+    .nextHover:hover {
+      -webkit-text-stroke: 0.5px black;
+      color: white;
+      transition: all 0.2s linear;
+    }
+
+
+
+
+    
+    /* footer stuff */
+    .footerContent .bigShrink p:hover {
+      color: #0965E3;
+    }
+    .callToAction {
+      font-size: 40px;
+    }
+    .footerButtons p {
+      font-size: 20px;
+      padding: 12px 16px;
+    }
+
+    .underlinedLink, .contactMe a {
+      color: #303030;
+      text-decoration: none;
+      background: 
+      linear-gradient(to right, #303030, #303030),
+      linear-gradient(to right, #0965E3, #57B7FD);
+      background-size: 100% 0.1em, 0 0.1em;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 400ms;
+    }
+
+    .underlinedLink:hover, .contactMe a:hover {
+      color: #0965E3;
+      background-size: 0 0.1em, 100% 0.1em;
+    }
+  /* end of footer stuff */
+
   }
 
   @supports (background: paint(houdini)) {

@@ -236,26 +236,103 @@
         </div>
         
     </body>
+    
+
+    <!-- Footer -->
     <footer class="spaceTop">
-        <a href="./index.html">
-            <div class="footerLogoContainer bigShrink">
-                <svg class="footerLogo" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1H26H51H76H101V26V51V76V101H76H51H26H1V76V51V26V1Z" fill="white"/>
-                    <path d="M1 1V26V51M1 1H26H51H76M1 1H76M101 51V26V1H76M101 51V76V101H76M101 51H76M1 51V76V101H26H51H76M1 51L38.5 26M1 51L38.5 76M1 51H76M76 1L38.5 26M76 51L38.5 26M76 51L38.5 76M76 101L38.5 76" stroke="#303030" stroke-width="2"/>
-                </svg>
-            </div>
-        </a>
         <div class="footerContent">
-            <a href="./index.html"><div class="bigShrink"><p>Projects</p></div></a>
-            <a href="./about.html"><div class="bigShrink"><p>About</p></div></a>
-            <a href="https://drive.google.com/file/d/19tvkHtJTKz_nkRqsr7o69IpBjHKVI0qo/view?usp=drive_link" target="_blank"><div class="bigShrink"><p>Resume</p></div></a>
-            <a href="./gallery.html"><div class="bigShrink"><p>Gallery</p></div></a>
-            <br/>
+            <div class="contactInfo">
+                <p class="loralora callToAction">Let's tell a story together!</p>
+                <div class="contactLinks">
+                    <!-- Email -->
+                    <div>
+                        <p class="footerLabels">Email</p>
+                        <p><a href="mailto: eddypeng3@gmail.com" class="underlinedLink labelContent">eddypeng3@gmail.com</a></p>
+                    </div> 
+
+                    <!-- LinkedIn -->
+                    <div>
+                        <p class="footerLabels">LinkedIn</p>
+                        <p><a href="https://www.linkedin.com/in/eddy-peng/" class="underlinedLink labelContent" target="_blank">in/eddy-peng</a></p>
+                    </div>
+
+                    <!-- Phone -->
+                    <div>
+                        <p class="footerLabels">Phone</p>
+                        <p class="labelContent">+1 (206) 765-7450</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="footerButtons">
+                <a href="./index.html"><div class="bigShrink"><p>Projects</p></div></a>
+                <a href="./gallery.html"><div class="bigShrink"><p>Gallery</p></div></a>
+                <a href="./about.html"><div class="bigShrink"><p>About</p></div></a>
+                <a href="https://drive.google.com/file/d/19tvkHtJTKz_nkRqsr7o69IpBjHKVI0qo/view?usp=drive_link" target="_blank"><div class="bigShrink"><p>Resume</p></div></a>
+            </div>
+        </div>
+        <div class="footerMetaData">
             <hr/>
-            <p class="contactMe">Get In Touch ➢ <a href="mailto: eddypeng3@gmail.com">eddypeng3@gmail.com</a> ▪︎ <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">LinkedIn</a></p>
-            <p class="bragFooter">© 2024 version designed & developed by Eddy ✌︎</p>
+            <div class="footerMetaDataContainer">
+                <div class="footerLabelContainer">
+                    <div>
+                        <p class="footerLabels">Status</p>
+                        <div class="status">
+                            <p class="labelContent blink diamond"></p>
+                            <p class="labelContent">
+                                <span class="loader">Innovating<span 
+                                    class="loader__dot">.</span><span 
+                                    class="loader__dot">.</span><span 
+                                    class="loader__dot">.</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="footerLabels">Updated</p>
+                        <p class="labelContent">11/24/2024</p>
+                    </div>
+                    <div>
+                        <p class="footerLabels">Location</p>
+                        <p class="labelContent">Seattle, WA, US</p>
+                    </div>
+                    <div>
+                        <p class="footerLabels">Time</p>
+                        <p class="labelContent" id="time">clock</p>
+                    </div> 
+                </div>
+                <div class="bragArea">
+                    <p class="footerLabels secretText">Never gonna give you up...</p>
+                    <p class="bragFooter">© 2024 version designed & developed by Eddy ✌︎</p>
+                </div>
+            </div>
         </div>
     </footer>
+    <script>
+        const options = {
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+            hour12: true, // Use 12-hour format with AM/PM
+            timeZone: 'America/Los_Angeles' // Display Pacific Time
+        };
+    
+        const isDaylightSavingTime = (date) => {
+            const january = new Date(date.getFullYear(), 0, 1).getTimezoneOffset();
+            const july = new Date(date.getFullYear(), 6, 1).getTimezoneOffset();
+            return date.getTimezoneOffset() < Math.max(january, july);
+        };
+    
+        const clock = () => {
+            const now = new Date();
+            const timeZoneSuffix = isDaylightSavingTime(now) ? "PDT" : "PST";
+            time.innerText = new Intl.DateTimeFormat('en-US', options).format(now) + ` ${timeZoneSuffix}`;
+        };
+    
+        clock();
+        setInterval(clock, 1000);
+    </script>
+
+
     <script>
         var tooltip = document.querySelectorAll('.caseStudyCardtooltip');
 
@@ -302,6 +379,7 @@
             prevScrollpos = currentScrollPos;
         }
     </script>
+    
 
     
     <!-- html and jQuery code for floating back to top button is written by Muhammad Asif -->
