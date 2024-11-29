@@ -622,6 +622,59 @@
                     </div>
                 </div>
             </div>
+            <div class="sec">
+                <h2>Testimonials</h2>
+                <h1>
+                    My teammates had nice words to say about me!
+                </h1>
+                <div id="recommenders">
+                    <div class="row" id="optionThumbs">
+                        <div class="column" id="thumb1">
+                            <img src="img/aboutMe/kyle.jpg" alt="Quote 1" onclick="showQuote('quote1', 'thumb1');">
+                        </div>
+                        <div class="column" id="thumb2">
+                            <img src="img/aboutMe/harold.jpg" alt="Quote 2" onclick="showQuote('quote2', 'thumb2');">
+                        </div>
+                    </div>
+                </div>
+                <div id="quote1" class="quoteCard">
+                    <img src="img/aboutMe/quote.svg" class="quoteIcon">
+                    <p>
+                        I had the pleasure of working with Eddy on a contracted project with Google's Android Security team. Eddy played a pivotal role as the Product Designer and Project Manager - creating timelines, leading standups, and establishing communication norms. He showed immense amount of thought when designing, implementing, and collaborating on the project, emphasizing ideation and iteration throughout all stages of development. I would love to have the chance to work with Eddy again in the future, I know that he will be an asset to wherever he ends up.
+                    </p>
+                    <div class="whoSaid">
+                    <img src="img/aboutMe/kyle.jpg">
+                    <div class="attributed">
+                        <p>Kyle Raychel</p>
+                        <p>Data Engineer (Contract)</p>
+                        <p>Google</p>
+                    </div>
+                    </div>
+                </div>
+                <div id="quote2" class="quoteCard">
+                    <img src="img/aboutMe/quote.svg" class="quoteIcon">
+                    <p>
+                        Working with Eddy on the Google-sponsored contract was delightful. As our project manager and product designer, Eddy has proven to be an organized and reliable leader willing to get his hands dirty wherever possible. As an outspoken opportunist, Eddy will always gather information about his surroundings and plan for the betterment of the current task, or if needed guide the production with a critical lens towards the bigger picture. 
+                    </p>
+                    <p>
+                        There was a key moment in the work that was pivotal to us winning the innovation award, and it was thanks to Eddy who could help steer us in this direction. When we were speaking with our sponsor about the project details, it had been decided that the product would be backend-oriented, thus there was no need to focus on the presentation or frontend development of the product. This, however, meant that the project would not be presentable in any easily understood fashion. Eddy, the outspoken opportunist he is, suggested a presentable version of this in-progress product. For 1 month, part of the team alongside Eddy focused on this development, and by the end of this deadline had created a public-friendly website and demo of the product at hand, carefully crafted to be easily digested by the public while also in line with the Google's theme and standards. 
+                    </p>
+                    <p>
+                        With this presentable version of the product, the project attracted more interest in the form of interviews and Q&A sessions. The public was able to understand the project, many questions were asked and new opportunities were made in the AI cybersecurity space because the product was presentable and indicated its meaning clearly. This could not have been done without a strong understanding of design, and the management skills needed to take any work in the direction it needs. Wherever Eddy goes and whatever he does in the future, in the end he will find ways toward success.
+                    </p>
+                    <div class="whoSaid">
+                    <img src="img/aboutMe/harold.jpg">
+                    <div class="attributed">
+                        <p>Harold Pham</p>
+                        <p>Back-end Engineer (Contract)</p>
+                        <p>Google</p>
+                    </div>
+                    </div>
+                </div>
+                <p>
+                    See what other people are saying about me <a href="./about.html#testimonials" class="underlinedLink">here</a>.
+                </p>
+            </div>
         </div>
         <hr/>
         <div class="otherProject">
@@ -685,7 +738,7 @@
                     </div>
                     <div>
                         <p class="footerLabels">Updated</p>
-                        <p class="labelContent">11/24/2024</p>
+                        <p class="labelContent">11/28/2024</p>
                     </div>
                     <div>
                         <p class="footerLabels">Location</p>
@@ -749,6 +802,27 @@
                 scrollTop : 0
             }, 500);
         });
+    </script>
+    <script>
+        function showQuote(quoteId, thumbId) {
+        // Hide all quote cards
+        var quotes = document.getElementsByClassName('quoteCard');
+        for (var i = 0; i < quotes.length; i++) {
+            quotes[i].style.display = 'none';
+        }
+    
+        // Show the selected quote card
+        document.getElementById(quoteId).style.display = 'block';
+    
+        // Remove 'activeThumb' class from all thumbnails
+        var thumbs = document.getElementsByClassName('column');
+        for (var i = 0; i < thumbs.length; i++) {
+            thumbs[i].classList.remove('activeThumb');
+        }
+    
+        // Add 'activeThumb' class to the clicked thumbnail
+        document.getElementById(thumbId).classList.add('activeThumb');
+        }
     </script>
     <script>
         $(window).scroll(function() {
