@@ -320,6 +320,11 @@ body {
   height: 300px;
 }
 
+.content {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
 /* about stuff */
 
 .aboutPagesSpace {
@@ -1148,9 +1153,4 @@ hr {
 /* ::-webkit-scrollbar-thumb:hover {
   background-color: #303030;
   background-image: repeating-linear-gradient(-45deg, #FFFFFF 0, #FFFFFF 1px, transparent 0, transparent 50%);
-} */
-
-/* .content {
-  margin-right: 16px;
-  margin-left: 16px;
 } */
