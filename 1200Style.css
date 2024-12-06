@@ -25,7 +25,10 @@
   /* END OF NAVIGATION CODE */
 
 
-
+  .mobileGhostColumn {
+    display: table-cell;
+  }
+  
 
 
   

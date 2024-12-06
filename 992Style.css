@@ -199,6 +199,10 @@
     .onHoverZoomIn {
       cursor: zoom-in;
     }
+
+    .person:hover p {
+      color: #0965E3;
+    }
   
     /* case study stuff */
     .caseContent {
@@ -212,7 +216,6 @@
     .listRemove li {
       font-size: 16px;
     }
-
         
     .otherProject {
       border-bottom: none;
