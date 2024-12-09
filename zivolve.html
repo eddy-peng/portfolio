@@ -49,10 +49,6 @@
         </script>
     </head>
 
-    <div class="progress-container">
-        <div class="progress-bar" id="myBar"></div>
-    </div>
-
     <header>
         <div class="navBackground"></div>
         <!-- mobile navigation -->
@@ -131,6 +127,9 @@
     </header>
     
     <body>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
         <div class="title fadeIn" id="caseTitle">
             <h1>Stock Trading App</h1>
             <h2>For Ziggurat (FinTech Startup)</h2>
@@ -331,7 +330,7 @@
                     <div>
                         <p class="footerLabels">Status</p>
                         <div class="status">
-                            <p class="labelContent blink diamond"></p>
+                            <p class="labelContent spinSpokes">✳︎</p>
                             <p class="labelContent">
                                 <span class="loader">Adapting<span 
                                     class="loader__dot">.</span><span 
@@ -343,7 +342,7 @@
                     </div>
                     <div>
                         <p class="footerLabels">Updated</p>
-                        <p class="labelContent">12.05.2024</p>
+                        <p class="labelContent">12.08.2024</p>
                     </div>
                     <div>
                         <p class="footerLabels">Location</p>
@@ -356,7 +355,7 @@
                 </div>
                 <div class="bragArea">
                     <p class="footerLabels secretText">Never gonna give you up...</p>
-                    <p class="bragFooter">© 2024 version designed & developed by Eddy ✌︎</p>
+                    <p class="bragFooter">© 2024 version designed & coded by Eddy <span class="peaceSymbol">✌︎</span></p>
                 </div>
             </div>
         </div>
@@ -439,17 +438,6 @@
         });
     </script>
     <script>
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        function myFunction() {
-        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        var scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
-        }
-    </script>
-    <script>
         document.addEventListener("DOMContentLoaded", () => {
         const checkbox = document.querySelector(".checkbox");
         const body = document.body;
@@ -464,23 +452,51 @@
         });
     </script>
     <script>
-        /* When the user scrolls down, hide the navbar and nav background. When the user scrolls up, show them */
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            var navigation = document.querySelector(".navigation");
-            var navBackground = document.querySelector(".navBackground");
-
-            if (prevScrollpos > currentScrollPos) {
-                // Show the navbar and background
-                navigation.style.top = "8px";
-                navBackground.style.top = "0px";
-            } else {
-                // Hide the navbar and background
-                navigation.style.top = "-58px"; // Adjust to navbar height
-                navBackground.style.top = "-58px"; // Same adjustment for background
-            }
-            prevScrollpos = currentScrollPos;
+        // Define the media query
+        const mediaQuery = window.matchMedia("(min-width: 768px)");
+    
+        // First script function
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
         }
+    
+        // Second script function
+        function toggleNavigation() {
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                var navigation = document.querySelector(".navigation");
+                var navBackground = document.querySelector(".navBackground");
+    
+                if (prevScrollpos > currentScrollPos) {
+                    navigation.style.top = "8px";
+                    navBackground.style.top = "0px";
+                } else {
+                    navigation.style.top = "-58px";
+                    navBackground.style.top = "-58px";
+                }
+                prevScrollpos = currentScrollPos;
+            };
+        }
+    
+        // Function to switch scripts based on screen width
+        function applyScript(e) {
+            if (e.matches) {
+                // Screen is 768px or wider
+                window.onscroll = myFunction;
+            } else {
+                // Screen is less than 768px
+                toggleNavigation();
+            }
+        }
+    
+        // Listen for changes in screen width
+        mediaQuery.addEventListener("change", applyScript);
+    
+        // Initialize the correct script on page load
+        applyScript(mediaQuery);
     </script>
 </html>

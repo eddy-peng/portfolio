@@ -212,10 +212,6 @@
     .caseStudyBeginning {
       display: flex;
     }
-
-    .listRemove li {
-      font-size: 16px;
-    }
         
     .otherProject {
       border-bottom: none;
