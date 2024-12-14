@@ -387,7 +387,7 @@
                         <div class="status">
                             <p class="labelContent spinSpokes">✳︎</p>
                             <p class="labelContent">
-                                <span class="loader">Adapting<span 
+                                <span class="loader">Building<span 
                                     class="loader__dot">.</span><span 
                                     class="loader__dot">.</span><span 
                                     class="loader__dot">.</span>
@@ -397,7 +397,7 @@
                     </div>
                     <div>
                         <p class="footerLabels">Updated</p>
-                        <p class="labelContent">12.09.2024</p>
+                        <p class="labelContent">12.14.2024</p>
                     </div>
                     <div>
                         <p class="footerLabels">Location</p>
@@ -452,20 +452,8 @@
             }
         }
     </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-        const checkbox = document.querySelector(".checkbox");
-        const body = document.body;
 
-        checkbox.addEventListener("change", () => {
-            if (checkbox.checked) {
-            body.classList.add("no-scroll");
-            } else {
-            body.classList.remove("no-scroll");
-            }
-        });
-        });
-    </script>
+
     <script>
         // Define the media query
         const mediaQuery = window.matchMedia("(min-width: 768px)");
