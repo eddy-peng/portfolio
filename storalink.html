@@ -64,7 +64,7 @@
 
             <div class="menu">
                 <!-- hamburger -->
-                <input type="checkbox" id="navi-toggle" class="checkbox" />
+                <input type="checkbox" id="navi-toggle" class="checkbox" onchange="toggleScrollLock()" />
                     <label for="navi-toggle" class="button">
                         <span class="icon"></span>
                     </label>
@@ -471,6 +471,18 @@
         });
     </script>
 
+    <script>
+        function toggleScrollLock() {
+            const checkbox = document.getElementById("navi-toggle");
+            const body = document.body;
+
+            if (checkbox.checked) {
+                body.classList.add("no-scroll");
+            } else {
+                body.classList.remove("no-scroll");
+            }
+        }
+    </script>
 
     <script>
         // Define the media query
@@ -487,11 +499,15 @@
         // Second script function
         function toggleNavigation() {
             var prevScrollpos = window.pageYOffset;
+
             window.onscroll = function() {
+                const checkbox = document.getElementById("navi-toggle");
+                if (checkbox.checked) return; // Prevent hiding navigation when menu is open.
+
                 var currentScrollPos = window.pageYOffset;
                 var navigation = document.querySelector(".navigation");
                 var navBackground = document.querySelector(".navBackground");
-    
+
                 if (prevScrollpos > currentScrollPos) {
                     navigation.style.top = "8px";
                     navBackground.style.top = "0px";
