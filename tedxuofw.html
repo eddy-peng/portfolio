@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Eddy Peng">
+        <meta name="title" content="Eddy Peng">
+        <meta name="description" content="The website portfolio of a product designer, storyteller, and self-proclaimed art historian named Eddy Peng.">
+        <meta name="keywords" content="Eddy, Peng, Designer, Userexperience, Productdesign, Eddypeng">
+        <title>Eddy Peng - TEDxUofW</title>
+        <link rel="shortcut icon" href="img/universal/favIcon.ico" type="image/x-icon">
+
+        <!-- load style sheets -->
+        <link rel="stylesheet" href="baseStyle.css">  
+        <link rel="stylesheet" href="768Style.css">  
+        <link rel="stylesheet" href="992Style.css">  
+        <link rel="stylesheet" href="1200Style.css">  
+        <link rel="stylesheet" href="1980Style.css">   
+
+        <!-- open graph link preview -->
+        <meta name='title' property="og:title" content= "Eddy Peng" />
+        <meta name='image' property="og:image" content= "https://i.postimg.cc/nrdFDnCH/metaimg.png" />
+        <meta name='type' property="og:type" content='website' />
+        <meta name='description' property="og:description" content= "The website portfolio of a product designer, storyteller, and self-proclaimed art historian named Eddy Peng." />
+        <meta name='url' property="og:url" content= "www.eddypeng.com" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="" />
+        <meta name="twitter:title" content="Eddy Peng" />
+        <meta name="twitter:description" content="The website portfolio of a product designer, storyteller, and self-proclaimed art historian named Eddy Peng." />
+        <meta name="twitter:image" content="https://i.postimg.cc/nrdFDnCH/metaimg.png" />
+
+        <!-- font downloads -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+        <!-- Hotjar Tracking Code for Site 4943231 (name missing) -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:4943231,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+    </head>
+
+    <header>
+        <div class="navBackground"></div>
+        <!-- mobile navigation -->
+        <div class="navigation">
+
+            <div class="logoSpace">
+                <a href="./index.html">
+                    <div class="mobileLogo">
+                        <img src="img/universal/logoDef.svg" alt="eddy's logo" class="logo">
+                    </div>
+                </a>
+            </div>
+
+            <div class="menu">
+                <!-- hamburger -->
+                <input type="checkbox" id="navi-toggle" class="checkbox" onchange="toggleScrollLock()" />
+                    <label for="navi-toggle" class="button">
+                        <span class="icon"></span>
+                    </label>
+                <div class="background">&nbsp;</div>
+
+                <!-- nav -->
+                <nav class="nav">
+                    <ul class="list">
+                        <li class="item shrink"><a href="./index.html" class="active"><span class="loraloraNav loraloraNavActive">01</span> Projects</a></li>
+                        <li class="item shrink"><a href="./gallery.html"><span class="loraloraNav">02</span> Gallery</a></li>
+                        <li class="item shrink"><a href="./about.html"><span class="loraloraNav">03</span> About</a></li>
+                        <li class="item shrink"><a href="https://drive.google.com/file/d/12otNWZraQG9OSkzQRuY6tvBxFvP9WnDb/view?usp=drive_link" target="_blank"><span class="loraloraNav">04</span> Resume</a></li>
+                        <li class="item shrink"><a href="mailto: eddypeng3@gmail.com"><span class="loraloraNav">05</span> Email</a></li>
+                        <li class="item shrink"><a href="https://www.linkedin.com/in/eddy-peng/" target="_blank"><span class="loraloraNav">06</span> LinkedIn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- desktop navigation -->
+        <div class="desktopNav">
+            <div class="navTabs">
+                <a href="./index.html">
+                    <div class="desktopLogo bigShrink">
+                        <svg class="logo" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H26H51H76H101V26V51V76V101H76H51H26H1V76V51V26V1Z" fill="white"/>
+                            <path d="M1 1V26V51M1 1H26H51H76M1 1H76M101 51V26V1H76M101 51V76V101H76M101 51H76M1 51V76V101H26H51H76M1 51L38.5 26M1 51L38.5 76M1 51H76M76 1L38.5 26M76 51L38.5 26M76 51L38.5 76M76 101L38.5 76" stroke="#303030" stroke-width="2"/>
+                        </svg>
+                        
+                        <div class="centeringName">
+                            <h1>Eddy Peng</h1>
+                        </div>
+                    </div>
+                </a>
+                <nav class="centerNav">
+                    <a href="./index.html" class="active"><span class="underlined">Projects</span></a>
+                    <a href="./gallery.html" class="bigShrink">Gallery</a>
+                    <a href="./about.html" class="bigShrink">About</a>
+                    <a href="https://drive.google.com/file/d/12otNWZraQG9OSkzQRuY6tvBxFvP9WnDb/view?usp=drive_link" target="_blank" class="bigShrink">Resume</a>
+                </nav>
+            </div>
+            <div class="socialArea">
+                <a href="mailto: eddypeng3@gmail.com">
+                    <div class="bigShrink emailBox">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);">
+                            <path fill="#303030" d="M32.33 6a2 2 0 0 0-.41 0h-28a2 2 0 0 0-.53.08l14.45 14.39Z" class="clr-i-solid clr-i-solid-path-1"/><path fill="#303030" d="m33.81 7.39l-14.56 14.5a2 2 0 0 1-2.82 0L2 7.5a2 2 0 0 0-.07.5v20a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V8a2 2 0 0 0-.12-.61ZM5.3 28H3.91v-1.43l7.27-7.21l1.41 1.41Zm26.61 0h-1.4l-7.29-7.23l1.41-1.41l7.27 7.21Z" class="clr-i-solid clr-i-solid-path-2"/><path fill="none" d="M0 0h36v36H0z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/eddy-peng/" target="_blank">
+                    <div class="bigShrink linkedInBox">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);">
+                            <path fill="#303030" fill-rule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4V8.969ZM2.57 21.83h4V8.799h-4V21.83ZM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.573 2.573 0 0 1-1.82.748a2.59 2.59 0 0 1-1.818-.747A2.548 2.548 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.583 2.583 0 0 1 4.571 2c.682 0 1.336.269 1.819.747c.482.478.753 1.126.753 1.803Z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- End of Desktop Navigation -->
+    </header>
+    
+    <body>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+
+        <div class="title fadeIn" id="caseTitle">
+            <h1>Event Website</h1>
+            <h2>For TEDxUofW (Non-profit)</h2>
+        </div>
+        <img src="./img/tedx/tedxFullCover.png" class="portImg cover fadeIn">
+        <div href="javascript:" id="bookmarks" class="telePoints fadeIn">
+            <p>Chapters</p>
+            <ul>
+                <a href="#context"><li>Context</li></a>
+                <a href="#role"><li>Role</li></a>
+                <a href="#design"><li>Design</li></a>
+                <a href="#branding"><li>Branding</li></a>
+                <a href="#animations"><li>Animations</li></a>
+                <a href="#constraints"><li>Constraints</li></a>
+                <a href="#results"><li>Results</li></a>
+                <a href="#reflections"><li>Reflections</li></a>
+            </ul>
+        </div>
+
+        <div class="caseContent fadeIn">
+            <div class="context">
+                <div>
+                    <h2>Role</h2>
+                    <p>UX Designer</p>
+                </div>
+                <div>
+                    <h2>Team</h2>
+                    <p>
+                        6 Designers
+                        <br/>
+                        4 Engineers
+                    </p>
+                </div>
+                <div>
+                    <h2>Timeline</h2>
+                    <p>
+                        Oct 2023 – May 2024
+                        <br/>
+                        <span class="timelineSubtitle">(8 Months)</span>
+                    </p>
+                </div>
+                <div>
+                    <h2>Media</h2>
+                    <p class="caseLink">
+                        <a class="underlinedLink" href="https://crossroads.tedxatuofw.com/" target="_blank">Conference Website</a>
+                    </p>
+                </div>
+            </div>
+            <div class="sec" id="context">
+                <h2>Context</h2>
+                <h1>
+                    The TEDxTalks organization at the University of Washington needed a website to facilitate marketing and ticket sales for its conference.
+                </h1>
+                <p>
+                    At my university, a student-driven club hosts annual TEDxTalks conferences with a unique theme. The club comprises cross-functional teams like business, design, logistics, and engineering who come together to make the event run smoothly. Every year, the organization's design team creates a responsive website to lead visitors and potential audience members to the online ticket sales portal.
+                </p>
+
+                <img src="./img/tedx/conference1.png" class="portImg">
+                <img src="./img/tedx/conference2.png" class="portImg specBento">
+                <p class="caption spaceBelow">
+                    Images are from the TEDxUofW Crossroads Conference hosted at the University of Washington in April 2024.
+                </p>
+            </div>
+            <div class="sec" id="role">
+                <h2>Role</h2>
+                <h1>
+                    I was a designer in charge of collaborating with engineers while contributing to branding, design, and consistency.
+                </h1>
+                <p>
+                    I was involved in logo creation, visual design, user research, and design systems. Because I had a long history of collaborating with engineers and speaking their language, I became the design team’s representative to the engineering team after the design handoff, when the final deadline for making the website live loomed closely.
+                </p>
+            </div>
+            <div class="sec" id="design">
+                <h2>Design</h2>
+                <h1>
+                    The launched website is a fusion of information and branding that sets visitors' expectations high before the event.
+                </h1>
+                <p>
+                    Perhaps the most influential factor after user research was the design team themselves (including me)! Each individual brought a unique set of skills that culminated in an epic fusion of branding, visuals, motion, and user experience. All are proudly represented on the product, consistent with the marketing campaign and the branding for the annual conference.
+                </p>
+
+                <img src="./img/tedx/design1.png" class="portImg">
+                <img src="./img/tedx/design2.png" class="portImg specBento">
+                <img src="./img/tedx/design3.png" class="portImg specBento">
+                <img src="./img/tedx/design4.png" class="portImg specBento">
+                <p class="caption spaceBelow">
+                    Check out the complete website <a class="underlinedLink" href="https://crossroads.tedxatuofw.com/" target="_blank">here</a>.
+                </p>
+            </div>
+            <div class="sec" id="branding">
+                <h2>Branding</h2>
+                <h1>
+                    The 2024 conference's theme was crossroads, and the branding and marketing material needed to embody that.
+                </h1>
+                <p>
+                    The conference's theme is open to interpretation. It may mean something different to different people. However, the organization needed to decide on a direction, and the design team was at the forefront.
+                </p>
+                <p>
+                    When I thought of crossroads, some keywords that jumped out at me were fate, dilemmas, decisions, vagueness, and confronting the unknown. Then, I formed a mood board of visualizations that emulated those keywords and presented my reasonings and ideas during a team meeting.
+                </p>
+                <img src="./img/tedx/moodboard.png" class="portImg">
+                <p class="caption spaceBelow">
+                    I sourced the images from Pinterest and the internet.                                     
+                </p>
+                <p>
+                    It was wonderful seeing how my teammates took the theme in different directions. A notable moment came when one teammate said that crossroads meant an “epiphany” to them, which I thought was interesting when I related that with my keywords of dilemmas and vagueness. On a whim, I threw out my mental image of the northern lights and how they symbolized an epiphany.
+                </p>
+                <p>
+                    In the end, the image stuck and became the driving idea behind the theme, influencing the color scheme and language of the 2024 Crossroads conference. By chance, a month after the conference in April of that year, the northern lights could be seen in Seattle, Washington.
+                </p>
+                <img src="./img/tedx/lights.png" class="portImg">
+                <p class="caption spaceBelow">
+                    My teammates and I snapped images of the aurora borealis when it was visible in <a class="underlinedLink" href="https://www.foxweather.com/watch/play-71fe83441001457" target="_blank">Seattle</a>.
+                </p>
+                <p>
+                    My mood-boarding efforts, specifically the visual of the two paths, made their way onto the product’s front page, fliers, and brochures. It was a nice touch since it touched on many of the keywords my teammates and I resonated with.
+                </p>
+                <img src="./img/tedx/influence.png" class="portImg">
+                <p class="caption spaceBelow">
+                    My original mood-boarding image (left) became a major player in event marketing.                   
+                </p>
+            </div>
+            <div class="sec" id="animations">
+                <h2>Animations</h2>
+                <h1>
+                    I set the potential audience member’s expectations high through moving background and initial landing animations.
+                </h1>
+                <p>
+                    Collaborating with team members with vast experience in motion and animation design has taught me one thing: expectations were set high. As designers, my team and I wanted the product to feel magnificent and have meaningful animation that adds more to the user experience. However, my time working with engineers brought me back to reality. It would be unrealistic and impractical for the design team to request the engineers to implement mouth-watering website animations when time is of the essence.
+                </p>
+                <p>
+                    I came up with a solution that balanced time-effective implementation and purposeful animations that promote UX. After some experimentation, I opted to focus on animations that were based entirely on HTML and CSS. This way, I can pass the engineering team actionable source code that would speed up their workflow.
+                </p>
+                <img src="https://i.postimg.cc/LXPvxghq/animation.gif" class="portImg">
+                <p class="caption spaceBelow">
+                    I prototyped the website load-in animation using Figma (the moving background from the GIF due to file size).
+                </p>
+            </div>
+            <div class="sec" id="constraints">
+                <h2>Constraints</h2>
+                <h1>
+                    I devised and implemented a solution after organization leaders enforced a content length constraint on card components.
+                </h1>
+                <p>
+                    Due to more time spent on brand experimentation, the design team had to rush the website design. As such, the design hand-off was close to the expected website release. Therefore, it was paramount that the development phase ran smoothly.
+                </p>
+                <p>
+                    At first, it was smooth sailing. One day, the design director told me that the organization's leaders denied one of the design team's requests. The request involved condensing the text content on some card components, like the ones introducing the speakers. The design team optimized the prototype for a specific text amount. The actual content was three to four times the amount envisioned in the design.
+                </p>
+                <p>
+                    Ignoring the design team's objections about content overload and the decreased likelihood of visitors reading the big blocks of text on the website, the organization's leaders insisted that the content must remain unchanged.
+                </p>
+                <img src="./img/tedx/contentLength.png" class="portImg">
+                <p class="caption spaceBelow">
+                    The actual length of the required content was longer than expected.
+                </p>
+                <p>
+                    I took on the challenge since I was arm’s length away from the engineers and knew their progress. The engineers had already completed most of the website layout and components, and due to the time constraints, the ideal solution must work with the current design. So, the question became how do I fit a lot of content into the current design and make it look good while keeping the user experience high?
+                </p>
+                <img src="./img/tedx/originCard.png" class="portImg">
+                <p class="caption spaceBelow">
+                    The original version of a speakers' card only accommodated several sentences at most.
+                </p>
+                <p>
+                    If I forced the entire content into the current design, it wouldn’t fit unless I clip the text. I could also add a scroll bar and allow scrolling on the card, but having the text flow to the edge by default makes the design cluttered. Therefore, I added a text gradient that made the text disappear as it approached the bottom edge of the card. To facilitate a cleaner appearance, I made the text gradient the rest state and hid the scroll bar. Then, when the user hovers over the card, the text color will become solid to reveal the scrollable content.
+                </p>
+                <p>
+                    This approach was so well-liked by the design and engineering team that it became a part of the website’s visual language. Since the deadline neared, I used my knowledge of HTML and CSS to execute my concept, passing lines of code to the engineers to speed up their workflow.
+                </p>
+                <img src="https://i.postimg.cc/8CD5nqyT/new-Tedx-Card.gif" class="portImg">
+                <p class="caption spaceBelow">
+                    My modified version of the speakers' card meets the organization leader's requirements by accommodating more text.
+                </p>
+            </div>
+            <div class="sec" id="results">
+                <h2>Results</h2>
+                <h1>
+                    My collaboration with the engineering team ensured an on-time website launch, boosting ticket sales and drawing 196 attendees.
+                </h1>
+                <img src="./img/tedx/results.png" class="portImg">
+            </div>
+            <div class="sec">
+                <h2>Testimonials</h2>
+                <h1>
+                    My teammates had fantastic words to say about me!
+                </h1>
+                <div id="recommenders">
+                    <div class="row" id="optionThumbs">
+                        <div class="column" id="thumb1">
+                            <img src="img/aboutMe/michelle.jpg" alt="Quote 1" onclick="showQuote('quote1', 'thumb1');">
+                        </div>
+                        <div class="column" id="thumb2">
+                            <img src="img/aboutMe/stephanie.jpg" alt="Quote 2" onclick="showQuote('quote2', 'thumb2');">
+                        </div>
+                    </div>
+                </div>
+                <div id="quote1" class="quoteCard">
+                    <img src="img/aboutMe/quote.svg" class="quoteIcon">
+                    <p>
+                        I had the pleasure of working with Eddy during my first year at the University of Washington as part of TEDxUofW. Eddy impressed me with his versatility—he excels in UX research, creates beautiful high-fidelity prototypes, and has a thorough understanding of design systems, as demonstrated in his work on the 2024 TEDxUofW conference website.
+                    </p>
+                    <p>
+                        Eddy is not only a skilled designer but also a natural leader. He works seamlessly with cross-functional teams, meets deadlines with noteworthy time management, and consistently delivers high-quality results. His passion for design is evident in everything he does, and he brings a positive, motivational energy whenever he is present.
+                    </p>
+                    <p>
+                        I would gladly work with Eddy again, and anyone lucky enough to collaborate with him will quickly recognize what a great addition he is to any team.
+                    </p>
+                    <div class="whoSaid">
+                    <img src="img/aboutMe/michelle.jpg">
+                    <div class="attributed">
+                        <p>Michelle Nguyen</p>
+                        <p>UX Designer</p>
+                        <p>TEDxUofW</p>
+                    </div>
+                    </div>
+                </div>
+                <div id="quote2" class="quoteCard">
+                    <img src="img/aboutMe/quote.svg" class="quoteIcon">
+                    <p>
+                        I had the opportunity to work with Eddy this past year on TEDxUW, and I loved seeing his technical expertise shine time and time again. His ability to cross-collaborate with our Web Development team to ensure we had clear communication of our needs was excellent and indicative of how prepared he is in a professional capacity. On a personal level, Eddy’s wit and approachable nature make him a joy to work with. I have no doubt he’s well-equipped to excel in any role he pursues.
+                    </p>
+                    <div class="whoSaid">
+                    <img src="img/aboutMe/stephanie.jpg">
+                    <div class="attributed">
+                        <p>Stephanie Chou</p>
+                        <p>Designer</p>
+                        <p>TEDxUofW</p>
+                    </div>
+                    </div>
+                </div>
+                <p>
+                    See what other people are saying about me <a href="./about.html#testimonials" class="underlinedLink">here</a>.
+                </p>
+            </div>
+            <div class="sec" id="reflections">
+                <h2>Reflections: What I Could Have Done Differently</h2>
+                <h1>
+                    I should have taken a firmer stance on the website’s responsive sizing and behavior.
+                </h1>
+                <p>
+                    The delivered website is by no means a perfect product. Though it does many things well, like fulfilling the objective as the entry-point to the ticket sales and hyping up visitors for the conference, it also does some things poorly. One glaring issue was the website’s content proportions. Some elements are too big, while others are too small. There was a lack of white space for content to breathe. All of these flaws build up and could hamper the user’s experience of the website and erode trust in the TEDxUofW brand.
+                </p>
+                <p>
+                    Looking back, I would have leveraged my experience designing and developing responsive websites. Doing that could have allowed me to form concrete arguments for proper element sizing and breathing room. When I noticed the errors through the chaos, it was too late. Moving forward, I will be more assertive and scrutinize ideas early in the project to ensure that my team delivers a high-quality product that each member is proud of.
+                </p>
+            </div>
+            <div class="sec">
+                <h2>Reflections: Learnings</h2>
+                <h1>
+                    I learned the importance of bonding with teammates along the journey while achieving project goals.
+                </h1>
+                <p>
+                    Among my previous projects and teams up to this point, I haven’t had many chances to get to know my teammates outside of collaborating with them. The common trend has been to do work, and then all teammates would go their separate ways. Perhaps the most important thing I’ll take away from working with this team of talented individuals is that a large part of achieving goals is also knowing the people I work with. My team and I formed some of the most pivotal contributions during and after the hang-out events when work wasn’t the main focus.
+                </p>
+                <img src="./img/tedx/teambonding1.png" class="portImg">
+                <img src="./img/tedx/teambonding2.png" class="portImg specBento">
+            </div>
+        </div>
+        <hr/>
+        <div class="otherProject">
+            <p>Back To All Projects</p>
+            <a href="./allProjects.html">
+                <h1 class="shrink nextHover"><span class="flipHorizontal">➢</span> All Projects
+                    <img src="./img/universal/portfolioRawCover.png"/>
+                </h1>
+            </a>
+        </div>
+    </body>
+    
+    <!-- Footer -->
+    <footer class="spaceTop">
+        <div class="footerContent">
+            <div class="contactInfo">
+                <p class="loralora callToAction">Let's tell a story together!</p>
+                <div class="contactLinks">
+                    <!-- Email -->
+                    <div>
+                        <p class="footerLabels">Email</p>
+                        <p><a href="mailto: eddypeng3@gmail.com" class="underlinedLink labelContent">eddypeng3@gmail.com</a></p>
+                    </div> 
+
+                    <!-- LinkedIn -->
+                    <div>
+                        <p class="footerLabels">LinkedIn</p>
+                        <p><a href="https://www.linkedin.com/in/eddy-peng/" class="underlinedLink labelContent" target="_blank">in/eddy-peng</a></p>
+                    </div>
+
+                    <!-- Phone -->
+                    <div>
+                        <p class="footerLabels">Phone</p>
+                        <p class="labelContent">+1 (206) 765-7450</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="footerButtons">
+                <a href="./index.html"><div class="bigShrink"><p>Projects</p></div></a>
+                <a href="./gallery.html"><div class="bigShrink"><p>Gallery</p></div></a>
+                <a href="./about.html"><div class="bigShrink"><p>About</p></div></a>
+                <a href="https://drive.google.com/file/d/12otNWZraQG9OSkzQRuY6tvBxFvP9WnDb/view?usp=drive_link" target="_blank"><div class="bigShrink"><p>Resume</p></div></a>
+            </div>
+        </div>
+        <div class="footerMetaData">
+            <hr/>
+            <div class="footerMetaDataContainer">
+                <div class="footerLabelContainer">
+                    <div>
+                        <p class="footerLabels">Status</p>
+                        <div class="status">
+                            <p class="labelContent spinSpokes">✳︎</p>
+                            <p class="labelContent">
+                                <span class="loader">Building<span 
+                                    class="loader__dot">.</span><span 
+                                    class="loader__dot">.</span><span 
+                                    class="loader__dot">.</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="footerLabels">Updated</p>
+                        <p class="labelContent">12.29.2024</p>
+                    </div>
+                    <div>
+                        <p class="footerLabels">Location</p>
+                        <p class="labelContent">Seattle, WA, US</p>
+                    </div>
+                    <div>
+                        <p class="footerLabels">Time</p>
+                        <p class="labelContent" id="time">clock</p>
+                    </div> 
+                </div>
+                <div class="bragArea">
+                    <p class="footerLabels secretText">Never gonna give you up...</p>
+                    <p class="bragFooter">© 2024 version designed & coded by Eddy <span class="peaceSymbol">✌︎</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const options = {
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+            hour12: true, // Use 12-hour format with AM/PM
+            timeZone: 'America/Los_Angeles' // Display Pacific Time
+        };
+    
+        const isDaylightSavingTime = (date) => {
+            const january = new Date(date.getFullYear(), 0, 1).getTimezoneOffset();
+            const july = new Date(date.getFullYear(), 6, 1).getTimezoneOffset();
+            return date.getTimezoneOffset() < Math.max(january, july);
+        };
+    
+        const clock = () => {
+            const now = new Date();
+            const timeZoneSuffix = isDaylightSavingTime(now) ? "PDT" : "PST";
+            time.innerText = new Intl.DateTimeFormat('en-US', options).format(now) + ` ${timeZoneSuffix}`;
+        };
+    
+        clock();
+        setInterval(clock, 1000);
+    </script>
+    <!-- html and jQuery code for floating back to top button is written by Muhammad Asif -->
+    <!-- https://codeconvey.com/floating-back-to-top-button-html/ -->
+    <a href="javascript:" id="return-to-top">
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.0933 53.0027L25.2107 48.2987C29.1929 45.8596 32.6276 43.4951 35.5147 41.2053C38.4516 38.9156 41.0649 36.5511 43.3547 34.112C45.6444 31.6729 47.7849 29.0596 49.776 26.272H50.224C52.2649 29.0596 54.4053 31.6729 56.6453 34.112C58.9351 36.5511 61.5484 38.9156 64.4853 41.2053C67.4222 43.4951 70.8569 45.8596 74.7893 48.2987L70.9067 53.0027C67.7707 50.9618 64.9333 48.9209 62.3947 46.88C59.9058 44.7893 57.7156 42.7236 55.824 40.6827C53.9324 38.6418 52.3893 36.6507 51.1947 34.7093C50 32.768 49.1787 30.9013 48.7307 29.1093H51.2693C50.8213 30.9013 50 32.768 48.8053 34.7093C47.6107 36.6507 46.0676 38.6418 44.176 40.6827C42.2844 42.7236 40.0693 44.7893 37.5307 46.88C35.0418 48.9209 32.2293 50.9618 29.0933 53.0027ZM47.0133 76V49.4933C47.0133 46.3573 47.088 43.6196 47.2373 41.28C47.3867 38.8907 47.5609 36.7751 47.76 34.9333L50 30.4533L52.24 34.9333C52.4391 36.7751 52.6133 38.8907 52.7627 41.28C52.912 43.6196 52.9867 46.3573 52.9867 49.4933V76H47.0133Z" fill="#303030"/>
+        </svg>
+    </a>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 300) {
+                $('#return-to-top').fadeIn(200);
+            } else {
+                $('#return-to-top').fadeOut(200);
+            }
+        });
+        $('#return-to-top').click(function() {
+            $('body,html').animate({
+                scrollTop : 0
+            }, 500);
+        });
+    </script>
+    <script>
+        function showQuote(quoteId, thumbId) {
+        // Hide all quote cards
+        var quotes = document.getElementsByClassName('quoteCard');
+        for (var i = 0; i < quotes.length; i++) {
+            quotes[i].style.display = 'none';
+        }
+    
+        // Show the selected quote card
+        document.getElementById(quoteId).style.display = 'block';
+    
+        // Remove 'activeThumb' class from all thumbnails
+        var thumbs = document.getElementsByClassName('column');
+        for (var i = 0; i < thumbs.length; i++) {
+            thumbs[i].classList.remove('activeThumb');
+        }
+    
+        // Add 'activeThumb' class to the clicked thumbnail
+        document.getElementById(thumbId).classList.add('activeThumb');
+        }
+    </script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 300) {
+                $('#bookmarks').fadeIn(200);
+            } else {
+                $('#bookmarks').fadeOut(200);
+            }
+        });
+    </script>
+
+    <script>
+        function toggleScrollLock() {
+            const checkbox = document.getElementById("navi-toggle");
+            const body = document.body;
+
+            if (checkbox.checked) {
+                body.classList.add("no-scroll");
+            } else {
+                body.classList.remove("no-scroll");
+            }
+        }
+    </script>
+
+    <script>
+        // Define the media query
+        const mediaQuery = window.matchMedia("(min-width: 768px)");
+    
+        // First script function
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    
+        // Second script function
+        function toggleNavigation() {
+            var prevScrollpos = window.pageYOffset;
+
+            window.onscroll = function() {
+                const checkbox = document.getElementById("navi-toggle");
+                if (checkbox.checked) return; // Prevent hiding navigation when menu is open.
+
+                var currentScrollPos = window.pageYOffset;
+                var navigation = document.querySelector(".navigation");
+                var navBackground = document.querySelector(".navBackground");
+
+                if (prevScrollpos > currentScrollPos) {
+                    navigation.style.top = "8px";
+                    navBackground.style.top = "0px";
+                } else {
+                    navigation.style.top = "-58px";
+                    navBackground.style.top = "-58px";
+                }
+                prevScrollpos = currentScrollPos;
+            };
+        }
+    
+        // Function to switch scripts based on screen width
+        function applyScript(e) {
+            if (e.matches) {
+                // Screen is 768px or wider
+                window.onscroll = myFunction;
+            } else {
+                // Screen is less than 768px
+                toggleNavigation();
+            }
+        }
+    
+        // Listen for changes in screen width
+        mediaQuery.addEventListener("change", applyScript);
+    
+        // Initialize the correct script on page load
+        applyScript(mediaQuery);
+    </script>
+</html>
