@@ -367,6 +367,10 @@ body {
   margin-top: 20px;
 }
 
+.specBento {
+  margin-top: 0px;
+}
+
 .moreAboutContent div {
   margin-bottom: 5vh;
 }
