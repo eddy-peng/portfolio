@@ -203,6 +203,10 @@
     .person:hover p {
       color: #0965E3;
     }
+
+    #archiveTitleText {
+      font-size: 40px;
+    }
   
     /* case study stuff */
     .caseContent {
@@ -243,7 +247,6 @@
       font-size: 20px;
       padding: 12px 16px;
     }
-
     .underlinedLink, .contactMe a {
       color: #303030;
       text-decoration: none;

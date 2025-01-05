@@ -169,6 +169,10 @@ body {
   grid-row-gap: 24px;
 }
 
+#archiveTitleText {
+  font-size: 32px;
+}
+
 /* about stuff */
 .aboutContent, .moreAboutContent {
   margin-left: 5vh;
@@ -251,10 +255,6 @@ div ul li {
   margin-left: 0px;
 }
 
-#galleryTitle h1, #galleryTitle p {
-  max-width: 50%;
-}
-
 /* .progressBar {
   position: absolute;
   right: 0;
@@ -283,13 +283,25 @@ footer {
 }
 .footerButtons {
   margin-top: 48px;
+  display: flex;
+  gap: 12px;
+}
+.footerButtons div {
+  background: #FFFFFF;
+  border: 1px solid #303030;
+  display: inline-block;
 }
 .footerButtons p {
   font-size: 16px;
+  margin: 0px;
   padding: 12px 14px;
 }
+.footerButtons a {
+  text-decoration: none;
+  color: #303030;
+}
+
 .footerLabelContainer {
-  display: flex;
   gap: 48px;
 }
 .footerLabels {
@@ -303,38 +315,11 @@ footer {
   margin-top: 0px;
   margin-bottom: 8px;
 }
-.status {
-  display: flex;
-  gap: 4px;
-  align-items: center;
+.lineVisOnDeskTopOnly, .locationVisDesktopOnly {
+  display: block;
 }
-.spinSpokes {
-  color:#0965E3;
-  padding: 0px;
-  font-size: 16px;
-  margin: 0px;
-  display: inline-block;
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-  font-weight: 500;
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
-}
-
-.loader__dot {
-  animation: 1s blink infinite;
-}
-
-.loader__dot:nth-child(2) {
-  animation-delay: 250ms;
-}
-
-.loader__dot:nth-child(3) {
-  animation-delay: 500ms;
+.lineVisOnMobileOnly {
+  display: none;
 }
 
 .secretText {
