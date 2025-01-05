@@ -1098,15 +1098,6 @@ footer {
   margin: 0;
   padding: 0; 
 }
-.contactLinks {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-.contactLinks div p {
-  margin-top: 0px;
-  margin-bottom: 8px;
-}
 .footerButtons {
   display: none;
 }
@@ -1114,11 +1105,12 @@ footer {
   display: flex;
   gap: 24px;
   margin-bottom: 12px;
+  flex-wrap: wrap;
 }
 .secretText {
   display: none;
 }
-.spinSpokes {
+/* .spinSpokes {
   color:#0965E3;
   padding: 0px;
   font-size: 16px;
@@ -1129,6 +1121,24 @@ footer {
   animation-iteration-count: infinite;
   animation-timing-function: linear; 
   font-weight: 500;
+} */
+.spinSpokes {
+  color: #0965E3;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1; /* Ensures no additional line spacing */
+  display: inline-block;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border: none; /* Ensures no borders */
+  box-sizing: content-box; /* Ensures padding and border are not added to size */
+  vertical-align: middle; /* Aligns inline elements properly */
+  text-indent: 0; /* Removes any unintended text indentation */
+  text-align: center; /* Ensures text alignment doesn't affect layout */
 }
 
 @keyframes blink {
@@ -1150,6 +1160,8 @@ footer {
   display: flex;
   gap: 4px;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 .bragArea .labelContent {
   color: #767676;
