@@ -1082,9 +1082,21 @@ footer {
 .footerLabels {
   color: #767676;
   font-size: 12px;
+  margin: 0;
+  padding: 0; 
+}
+.footerLabelContainer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  gap: 12px;
+  margin: 0;
+  padding: 0; 
 }
 .labelContent {
   font-size: 14px;
+  margin: 0;
+  padding: 0; 
 }
 .contactLinks {
   display: flex;
@@ -1101,6 +1113,7 @@ footer {
 .footerLabelContainer {
   display: flex;
   gap: 24px;
+  margin-bottom: 12px;
 }
 .secretText {
   display: none;
@@ -1133,32 +1146,23 @@ footer {
 .loader__dot:nth-child(3) {
   animation-delay: 500ms;
 }
-.footerMetaData div p {
-  margin-top: 0px;
-  margin-bottom: 8px;
-}
 .status {
   display: flex;
   gap: 4px;
   align-items: center;
 }
-.bragFooter {
+.bragArea .labelContent {
   color: #767676;
-  padding-top: 0px;
-  padding-bottom: 8px;
-}
-.bragFooter {
-  font-size: 14px;
 }
 hr {
   color: #ededed;
   opacity: 0.2;
 }
 .lineVisOnDeskTopOnly, .locationVisDesktopOnly {
-  display: none;
+  display: none !important;
 }
 .lineVisOnMobileOnly {
-  display: block;
+  display: block !important;
 }
 
 

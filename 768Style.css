@@ -311,24 +311,16 @@ footer {
   display: block;
   margin-bottom: 24px;
 }
-.footerMetaData div p {
-  margin-top: 0px;
-  margin-bottom: 8px;
-}
 .lineVisOnDeskTopOnly, .locationVisDesktopOnly {
-  display: block;
+  display: flex !important;
 }
 .lineVisOnMobileOnly {
-  display: none;
+  display: none !important;
 }
 
 .secretText {
   display: block;
   color: white;
   text-align: right;
-}
-.bragFooter {
-  padding-top: 12px;
-  font-size: 16px;
 }
 }
