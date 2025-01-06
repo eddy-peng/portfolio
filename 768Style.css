@@ -11,7 +11,7 @@
       display: flex;
       padding-top: 32px;
       width: 100%;
-      /* background-color: blue; */
+      background-color: #FFFFFF;
     }
   
     /* the larger rectangle */
@@ -321,6 +321,5 @@ footer {
 .secretText {
   display: block;
   color: white;
-  text-align: right;
 }
 }

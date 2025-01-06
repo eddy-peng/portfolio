@@ -367,6 +367,10 @@ body {
   margin-top: 20px;
 }
 
+.portImgNoSpace {
+  width: 100%;
+}
+
 .specBento {
   margin-top: 0px;
 }
@@ -588,7 +592,6 @@ a {
 /* case study card */
 .card {
   margin-bottom: 8vh;
-  background-color: #FFFFFF;
   overflow: hidden;
 }
 
@@ -602,11 +605,6 @@ a {
 .card .imgContain {
   border: 1px solid #303030;
   overflow: hidden;
-}
-
-/* Add some padding inside the card container */
-.container {
-  background: white;
 }
 
 .quickFacts {
@@ -1191,7 +1189,6 @@ hr {
   justify-content: center;
   align-items: center;
   border: 1px solid #303030;
-  background-color: #ffffff;
   padding: 16px;
   text-align: center;
   box-sizing: border-box;
@@ -1224,7 +1221,6 @@ hr {
 .updateCard {
   padding: 24px;
   border: 1px solid #303030;
-  background-color: #FFFFFF;
   margin-bottom: 24px;
 }
 .updateCard h1 {

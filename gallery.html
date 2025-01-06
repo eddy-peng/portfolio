@@ -353,9 +353,16 @@
                 <hr class="lineVisOnMobileOnly"/>
                 <div class="footerLabelContainer">
                     <div class="bragArea">
-                        <p class="footerLabels secretText">Never gonna give you up..</p>
-                        <p class="labelContent">© 2025 version designed & coded by Eddy <span class="peaceSymbol">✌︎</span></p>
+                        <p class="footerLabels secretText">Never gonna give you up...</p>
+                        <p class="labelContent">© <span id="current-year"></span> version designed & coded by Eddy <span class="peaceSymbol">✌︎</span></p>
                     </div> 
+                    <script>
+                        function updateCopyrightYear() {
+                          const currentYear = new Date().getFullYear();
+                          document.getElementById("current-year").textContent = currentYear;
+                        }
+                        updateCopyrightYear();
+                    </script>
                 </div>
             </div>
         </div>

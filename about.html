@@ -608,10 +608,10 @@
                     </p>
                 </div>
                 <div class="values">
-                    <img src="./img/aboutMe/heart.png" class="portImg">
-                    <img src="./img/aboutMe/personCheck.png" class="portImg">
-                    <img src="./img/aboutMe/growth.png" class="portImg">
-                    <img src="./img/aboutMe/creative.png" class="portImg">
+                    <img src="./img/aboutMe/respect.svg" class="portImgNoSpace">
+                    <img src="./img/aboutMe/acceptMistakes.svg" class="portImgNoSpace">
+                    <img src="./img/aboutMe/growth.svg" class="portImgNoSpace">
+                    <img src="./img/aboutMe/creative.svg" class="portImgNoSpace">
                 </div>
             </div>
 
@@ -936,9 +936,16 @@
                 <hr class="lineVisOnMobileOnly"/>
                 <div class="footerLabelContainer">
                     <div class="bragArea">
-                        <p class="footerLabels secretText">Never gonna give you up..</p>
-                        <p class="labelContent">© 2025 version designed & coded by Eddy <span class="peaceSymbol">✌︎</span></p>
+                        <p class="footerLabels secretText">Never gonna give you up...</p>
+                        <p class="labelContent">© <span id="current-year"></span> version designed & coded by Eddy <span class="peaceSymbol">✌︎</span></p>
                     </div> 
+                    <script>
+                        function updateCopyrightYear() {
+                          const currentYear = new Date().getFullYear();
+                          document.getElementById("current-year").textContent = currentYear;
+                        }
+                        updateCopyrightYear();
+                    </script>
                 </div>
             </div>
         </div>
