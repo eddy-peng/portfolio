@@ -509,6 +509,11 @@ div ul li {
   font-weight: 400;
 }
 
+#me {
+  margin-bottom: 0vh;
+}
+
+
 /* sections */
 .sec {
   margin-bottom: 15vh;
@@ -892,6 +897,8 @@ a {
   display: flex;
   gap: 12px;
   overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .column img {
   pointer-events: auto !important;
@@ -992,11 +999,11 @@ a {
   );
 }
 
-.marquee--9 {
+.marquee--logos {
   --marquee-item-width: 200px;
   --marquee-item-height: 200px;
   --marquee-duration: 36s;
-  --marquee-items: 10;
+  --marquee-items: 9;
 }
 
 .marquee__item {
@@ -1011,40 +1018,36 @@ a {
   animation: go linear var(--marquee-duration) var(--marquee-delay, 0s) infinite;
 }
 
-.marquee--9 .marquee__item:nth-of-type(1) {
+.marquee--logos .marquee__item:nth-of-type(1) {
   --marquee-item-index: 1;
 }
 
-.marquee--9 .marquee__item:nth-of-type(2) {
+.marquee--logos .marquee__item:nth-of-type(2) {
   --marquee-item-index: 2;
 }
 
-.marquee--9 .marquee__item:nth-of-type(3) {
+.marquee--logos .marquee__item:nth-of-type(3) {
   --marquee-item-index: 3;
 }
 
-.marquee--9 .marquee__item:nth-of-type(4) {
+.marquee--logos .marquee__item:nth-of-type(4) {
   --marquee-item-index: 4;
 }
 
-.marquee--9 .marquee__item:nth-of-type(5) {
+.marquee--logos .marquee__item:nth-of-type(5) {
   --marquee-item-index: 5;
 }
 
-.marquee--9 .marquee__item:nth-of-type(6) {
+.marquee--logos .marquee__item:nth-of-type(6) {
   --marquee-item-index: 6;
 }
 
-.marquee--9 .marquee__item:nth-of-type(7) {
+.marquee--logos .marquee__item:nth-of-type(7) {
   --marquee-item-index: 7;
 }
 
-.marquee--9 .marquee__item:nth-of-type(8) {
+.marquee--logos .marquee__item:nth-of-type(8) {
   --marquee-item-index: 8;
-}
-
-.marquee--9 .marquee__item:nth-of-type(9) {
-  --marquee-item-index: 9;
 }
 
 @keyframes go {
@@ -1053,6 +1056,38 @@ a {
   }
 }
 
+.scroll-container {
+  position: relative; /* Relative positioning for fade overlays */
+  width: 100%;
+  overflow: hidden; /* Hide overflowing content */
+}
+/* Fade overlay styles */
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px; /* Adjust width of the fade effect */
+  pointer-events: none; /* Allow interaction with scrollable content */
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+  z-index: 1;
+  display: block; /* Keep them in the DOM */
+  opacity: 0; /* Start with the fade invisible */
+  transition: opacity 0.3s ease-in-out; /* Adjust duration and timing function as needed */
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+}
+
+.fade-overlay.active {
+  opacity: 1; /* Fully visible when active */
+}
 
 
 
@@ -1222,6 +1257,8 @@ hr {
   padding: 24px;
   border: 1px solid #303030;
   margin-bottom: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 .updateCard h1 {
   line-height: 1.8;

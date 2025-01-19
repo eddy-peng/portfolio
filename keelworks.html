@@ -258,28 +258,64 @@
                 <h1>
                     My teammates had amazing words to say about me!
                 </h1>
-                <div id="recommenders">
-                    <div class="row" id="optionThumbs">
-                        <div class="column" id="thumb1">
-                            <img src="img/aboutMe/armaghan.jpg" alt="Quote 1" onclick="showQuote('quote1', 'thumb1');">
+                <div class="scroll-container">
+                    <div id="recommenders">
+                        <div class="row" id="optionThumbs">
+                            <div class="column" id="thumb1">
+                                <img src="img/aboutMe/armaghan.jpg" alt="Quote 1" onclick="showQuote('quote1', 'thumb1');">
+                            </div>
+                            <div class="column" id="thumb2">
+                                <img src="img/aboutMe/fian.jpg" alt="Quote 2" onclick="showQuote('quote2', 'thumb2');">
+                            </div>
+                            <div class="column" id="thumb3">
+                                <img src="img/aboutMe/lesi.png" alt="Quote 3" onclick="showQuote('quote3', 'thumb3');">
+                            </div>
+                            <div class="column" id="thumb4">
+                                <img src="img/aboutMe/pranali.png" alt="Quote 4" onclick="showQuote('quote4', 'thumb4');">
+                            </div>
+                            <div class="column" id="thumb5">
+                                <img src="img/aboutMe/sanjana.jpg" alt="Quote 5" onclick="showQuote('quote5', 'thumb5');">
+                            </div>
+                            <div class="column" id="thumb6">
+                              <img src="img/aboutMe/sabrina.jpg" alt="Quote 6" onclick="showQuote('quote6', 'thumb6');">
+                            </div>
                         </div>
-                        <div class="column" id="thumb2">
-                            <img src="img/aboutMe/fian.jpg" alt="Quote 2" onclick="showQuote('quote2', 'thumb2');">
-                        </div>
-                        <div class="column" id="thumb3">
-                            <img src="img/aboutMe/lesi.png" alt="Quote 3" onclick="showQuote('quote3', 'thumb3');">
-                        </div>
-                        <div class="column" id="thumb4">
-                            <img src="img/aboutMe/pranali.png" alt="Quote 4" onclick="showQuote('quote4', 'thumb4');">
-                        </div>
-                        <div class="column" id="thumb5">
-                            <img src="img/aboutMe/sanjana.jpg" alt="Quote 5" onclick="showQuote('quote5', 'thumb5');">
-                        </div>
-                        <div class="column" id="thumb6">
-                          <img src="img/aboutMe/sabrina.jpg" alt="Quote 6" onclick="showQuote('quote6', 'thumb6');">
-                        </div>
+                        <div class="fade-overlay fade-left"></div>
+                        <div class="fade-overlay fade-right"></div>
                     </div>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                        const scrollContainer = document.querySelector(".scroll-container");
+                        const fadeLeft = document.querySelector(".fade-left");
+                        const fadeRight = document.querySelector(".fade-right");
+                        const optionThumbs = document.getElementById("optionThumbs");
+
+                        const updateFades = () => {
+                            const scrollLeft = optionThumbs.scrollLeft; // Horizontal scroll position
+                            const scrollWidth = optionThumbs.scrollWidth; // Total width of the scrollable content
+                            const clientWidth = optionThumbs.clientWidth; // Visible width of the container
+
+                            // Add or remove the "active" class based on scroll position
+                            if (scrollLeft > 0) {
+                            fadeLeft.classList.add("active");
+                            } else {
+                            fadeLeft.classList.remove("active");
+                            }
+
+                            if (scrollLeft + clientWidth < scrollWidth) {
+                            fadeRight.classList.add("active");
+                            } else {
+                            fadeRight.classList.remove("active");
+                            }
+                        };
+
+                        // Initialize fades and listen for scroll events
+                        updateFades();
+                        optionThumbs.addEventListener("scroll", updateFades);
+                        });
+                    </script>
                 </div>
+
                 <div class="quoteContainer">
                     <div id="quote1" class="quoteCard">
                         <img src="img/aboutMe/quote.svg" class="quoteIcon">
@@ -472,7 +508,7 @@
                     </div>
                     <div>
                         <p class="footerLabels">Updated</p>
-                        <p class="labelContent"><a href="./changelog.html" class="underlinedLink">01.04.2025</a></p>
+                        <p class="labelContent"><a href="./changelog.html" class="underlinedLink">01.18.2025</a></p>
                     </div>
                     <div class="locationVisDesktopOnly">
                         <p class="footerLabels">Location</p>
