@@ -941,10 +941,6 @@ a {
   margin: 0px;
   line-height: 1.4;
 }
-.attributed p:first-child {
-  font-size: 20px;
-  font-weight: 400;
-}
 
 .recommenderName {
   display: flex;
@@ -952,9 +948,21 @@ a {
   gap: 8px;
 }
 
+.recommenderName p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .recommenderName a {
-  display: none;
   height: 16px;
+}
+
+.recommenderName .short {
+  display: flex;
+}
+
+.recommenderName .full {
+  display: none;
 }
 
 /* General container styling */

@@ -328,7 +328,11 @@ footer {
   margin-right: 0px;
 }
 
-.recommenderName a {
+.recommenderName .short {
+  display: none;
+}
+
+.recommenderName .full {
   display: flex;
 }
 }
