@@ -865,30 +865,6 @@ a {
   display: none;
 }
 
-.processContain {
-  padding-top: 20px;
-  display: flex;
-  gap: 24px;
-  overflow-x: scroll;
-}
-
-.processCard {
-  border: 1px solid #303030;
-  padding: 24px;
-  min-width: 200px;
-  height: auto;
-  align-content: end;
-}
-.processCard p {
-  color: #767676;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.processCard h1 {
-  margin-bottom: 2px;
-}
-
-
 /* Styling for the thumbnails */
 
 
@@ -952,8 +928,8 @@ a {
 }
 
 .whoSaid img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   padding-right: 8px;
 }
 
@@ -969,10 +945,16 @@ a {
   font-size: 20px;
   font-weight: 400;
 }
-.attributed p:last-child {
-  color: #767676;
-  font-size: 14px;
-} 
+
+.recommenderName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.recommenderName a {
+  height: 16px;
+}
 
 /* General container styling */
 .quoteContainer {
