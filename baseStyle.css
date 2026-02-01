@@ -221,13 +221,14 @@ img {
 
 html {
   max-width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
 /* Applies to the whole page */
 body {
     overflow-x: hidden !important;
+    overflow-y: auto;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     z-index: -99;
